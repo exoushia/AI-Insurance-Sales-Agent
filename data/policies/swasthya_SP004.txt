@@ -1,0 +1,351 @@
+================================================================================
+SWASTHYA HEALTH INSURANCE CO.
+IRDAI Registration No. 147 | CIN: U66010MH2020PLC345678
+Head Office: Swasthya House, 14th Floor, Bandra Kurla Complex, Mumbai – 400 051
+================================================================================
+
+SWASTHYA AROGYA SANJEEVANI
+Health Insurance Policy – IRDAI Standard Health Insurance Product
+IRDAI UIN: SWIHLIP24004V012024
+Policy Wording – Effective 01 April 2024
+
+================================================================================
+SECTION 1: PRODUCT OVERVIEW
+================================================================================
+
+Clause 1.1 – Product Name and Identity
+"Swasthya Arogya Sanjeevani" (SP004), IRDAI UIN: SWIHLIP24004V012024, is
+issued by Swasthya Health Insurance Co. Limited (IRDAI Reg. No. 147).
+This product is issued in compliance with the IRDAI (Standard Health
+Insurance Product, Arogya Sanjeevani) Guidelines, Circular Ref.
+IRDAI/HLT/REG/CIR/194/07/2019, as amended from time to time.
+
+Clause 1.2 – Product Type and Structure
+This is the IRDAI-standardised health insurance product. All terms,
+conditions, exclusions, and benefits are prescribed by IRDAI and are
+uniform across all insurers offering this product. The product name may
+include the Company's name prefix but the core product structure cannot
+be altered. This Policy is available on Individual and Family Floater basis.
+
+Clause 1.3 – Target Audience and Summary
+Swasthya Arogya Sanjeevani is designed for cost-conscious individuals and
+families in Tier 2 and Tier 3 cities and rural areas seeking standardised,
+affordable hospitalisation cover. The product features a 5% mandatory
+co-payment on all admissible claims; room rent capped at 2% of Sum Insured
+per day (ICU at 5%); and fixed exclusions per IRDAI circular. No optional
+riders are permitted under this product. This standardised product enables
+easy comparison across insurers and facilitates portability.
+
+================================================================================
+SECTION 2: DEFINITIONS
+================================================================================
+
+Clause 2.1 – Accident: Sudden, unforeseen involuntary event by external means.
+Clause 2.2 – Cashless Facility (कैशलेस): Direct hospital settlement by Company.
+Clause 2.3 – Claim (दावा): Formal demand for payment of covered medical expenses.
+Clause 2.4 – Co-payment (सह-भुगतान): 5% of admissible claim borne by Insured
+    on every claim. Co-payment does not reduce the Sum Insured.
+Clause 2.5 – Deductible (कटौती): No deductible applicable under this product
+    (per IRDAI Arogya Sanjeevani guidelines).
+Clause 2.6 – Day Care Treatment: Procedures in Annexure I requiring less than
+    24 hours hospitalisation due to technological advancement.
+Clause 2.7 – Exclusion (बहिष्करण): Conditions excluded per IRDAI circular
+    and Section 7 of this Policy.
+Clause 2.8 – Family: Self, Spouse, Children (3 months–25 years, unmarried),
+    Parents, Parents-in-Law. Family Floater: max 2 adults + 4 children.
+Clause 2.9 – Hospitalisation (अस्पताल में भर्ती): Admission for minimum 24
+    consecutive hours, except for listed Day Care Treatments.
+Clause 2.10 – Hospital: As per IRDAI standard definition — registered hospital
+    with min. 10 beds (smaller towns) or 15 beds (elsewhere), 24-hour nursing
+    and medical practitioner, qualified operation theatre.
+Clause 2.11 – Illness: Sickness or disease requiring medical treatment.
+Clause 2.12 – Insured/Insured Person: Proposer and named members in Policy Schedule.
+Clause 2.13 – Network Hospital: Hospital on Company's empanelled cashless list.
+Clause 2.14 – Pre-Existing Disease (पहले से मौजूद बीमारी): Condition diagnosed
+    or treated within 48 months of first Policy inception.
+Clause 2.15 – Premium (प्रीमियम): Annual consideration payable, exclusive of GST.
+Clause 2.16 – Sum Insured (बीमा राशि): Maximum aggregate Company liability per
+    Policy Year. Available: ₹1 Lakh to ₹5 Lakh in increments of ₹50,000.
+Clause 2.17 – Waiting Period (प्रतीक्षा अवधि): Duration from inception during
+    which certain conditions are not covered.
+Clause 2.18 – Room Rent Limit: 2% of Sum Insured per day (general ward);
+    5% of Sum Insured per day (ICU/ICCU). Exceeding the entitled room category
+    results in proportionate deduction of all associated charges.
+Clause 2.19 – AYUSH Treatment: Treatment under Ayurveda, Yoga, Naturopathy,
+    Unani, Siddha, Homeopathy systems at recognised AYUSH hospitals.
+Clause 2.20 – Cataract Sub-Limit: As mandated by IRDAI: 25% of Sum Insured
+    or ₹40,000, whichever is lower, per eye.
+
+================================================================================
+SECTION 3: ELIGIBILITY AND ENROLLMENT
+================================================================================
+
+Clause 3.1 – Entry Age: 18 years (adult) to 65 years (new entrant). Children:
+    3 months to 25 years (unmarried and dependent). Lifelong renewability.
+
+Clause 3.2 – Family Composition: Self + Spouse + up to 4 dependent children
+    + Parents + Parents-in-Law. Family Floater: max 2A + 4C on one policy.
+
+Clause 3.3 – Medical Underwriting: As per Company's standard underwriting
+    guidelines applicable to Arogya Sanjeevani. May require medical exam for
+    entrants above 45 years or adverse health declarations.
+
+Clause 3.4 – Documents Required: Proposal Form; Proof of Identity (Aadhaar
+    preferred); Age proof; Address proof; Health declaration.
+
+Clause 3.5 – Free-Look Period: 15 days from Policy receipt. Full refund
+    (less stamp duty and pro-rata risk premium) if no claim made.
+
+================================================================================
+SECTION 4: COVERAGE AND BENEFITS
+================================================================================
+
+Clause 4.1 – In-patient Hospitalisation
+Medical expenses for medically necessary in-patient treatment:
+(a) Room, boarding, nursing expenses – up to 2% of SI per day;
+(b) ICU/ICCU – up to 5% of SI per day;
+(c) Surgeon, anaesthetist, consultant, specialist fees;
+(d) Anesthesia, blood, oxygen, operation theatre charges;
+(e) Medicines, consumables;
+(f) Diagnostics, X-ray, laboratory tests.
+Note: If actual room rent exceeds 2% SI/day, all associated charges are
+proportionately limited to rates applicable at the 2% SI/day room category.
+
+Clause 4.2 – Room Rent Limits (Illustrative)
+SI ₹1,00,000: Room ₹2,000/day; ICU ₹5,000/day.
+SI ₹2,00,000: Room ₹4,000/day; ICU ₹10,000/day.
+SI ₹3,00,000: Room ₹6,000/day; ICU ₹15,000/day.
+SI ₹4,00,000: Room ₹8,000/day; ICU ₹20,000/day.
+SI ₹5,00,000: Room ₹10,000/day; ICU ₹25,000/day.
+
+Clause 4.3 – Pre-Hospitalisation: 30 days prior to hospitalisation.
+Clause 4.4 – Post-Hospitalisation: 60 days from date of discharge.
+
+Clause 4.5 – Day Care Treatments: As listed in Annexure I (IRDAI-approved
+    list), including cataract (subject to sub-limit per Clause 2.20).
+
+Clause 4.6 – AYUSH Treatment: In-patient AYUSH treatment up to Sum Insured,
+    at IRDAI-recognised AYUSH hospitals. Co-payment of 5% applies.
+
+Clause 4.7 – Road Ambulance: Up to ₹2,000 per hospitalisation.
+
+Clause 4.8 – Mandatory Co-payment
+A mandatory co-payment of 5% of the admissible claim amount shall apply
+to all claims under this Policy, regardless of age, network/non-network
+hospital, or type of illness. The co-payment does not reduce the Sum Insured.
+Example: Admissible claim ₹50,000. Co-pay = ₹2,500. Company pays ₹47,500.
+
+Clause 4.9 – No Claim Bonus (NCB)
+5% of Base Sum Insured per claim-free year, maximum 50%. (Per IRDAI Arogya
+Sanjeevani guidelines, NCB rate is 5%, not the 10% offered in SP001–SP003.)
+NCB reduces to nil on any claim in a Policy Year.
+
+Clause 4.10 – Cataract Treatment
+Covered after 2-year specific waiting period. Sub-limit: 25% of Sum Insured
+or ₹40,000 per eye, whichever is lower. 5% co-pay applies.
+
+Clause 4.11 – Restoration Benefit
+Not available under Arogya Sanjeevani. This product does not include
+restoration, OPD, consumables cover, or international treatment.
+
+Clause 4.12 – Optional Riders
+No optional riders are permitted under this standardised product per
+IRDAI guidelines. For additional benefits, a separate policy may be purchased.
+
+================================================================================
+SECTION 5: SUM INSURED AND PREMIUM SCHEDULE
+================================================================================
+
+Clause 5.1 – Sum Insured Options
+₹1,00,000 to ₹5,00,000 in increments of ₹50,000.
+
+Clause 5.2 – Indicative Annual Premium Schedule (Exclusive of GST at 18%)
+
+INDIVIDUAL POLICY – ZONE A:
+Age Band          SI ₹1L    SI ₹2L    SI ₹3L    SI ₹5L
+18–25 years      ₹1,850    ₹3,100    ₹3,900    ₹5,100
+26–35 years      ₹2,100    ₹3,600    ₹4,500    ₹5,900
+36–45 years      ₹3,000    ₹5,000    ₹6,300    ₹8,200
+46–55 years      ₹4,600    ₹7,600    ₹9,600    ₹12,500
+56–65 years      ₹6,800    ₹11,200   ₹14,200   ₹18,500
+
+FAMILY FLOATER – ZONE A (eldest member's age):
+Age of Eldest     SI ₹2L    SI ₹3L    SI ₹5L
+25 years         ₹4,800    ₹6,000    ₹7,900
+35 years         ₹6,400    ₹8,000    ₹10,500
+45 years         ₹9,000    ₹11,200   ₹14,800
+55 years         ₹12,800   ₹16,000   ₹21,000
+
+Zone B: 10% discount. Premiums include mandatory 5% co-pay factored.
+No optional riders permitted; no customisation of premium.
+
+Clause 5.3 – Premium Calculation
+Fixed rates as per IRDAI Arogya Sanjeevani product framework. Zone and age
+are the only variables. No individual loading based on specific health history
+(at entry; standard underwriting may apply). No multi-year discounts above
+IRDAI-permitted levels.
+
+Clause 5.4 – GST: 18% applicable. Section 80D deduction available.
+
+Clause 5.5 – Price Comparison with SP001
+Arogya Sanjeevani premium at ₹5L SI is approximately 17–18% lower than
+SP001 (Swasthya Protect) at the same SI for comparable age bands, reflecting
+the 5% co-pay obligation and reduced benefits (30-day pre-hospitalisation
+vs 60 days, 60-day post-hospitalisation vs 90 days, no restoration,
+no consumables coverage).
+
+================================================================================
+SECTION 6: WAITING PERIODS
+================================================================================
+
+Clause 6.1 – Initial Waiting Period
+30 days from Policy inception for illness claims. Not applicable for
+Accidental Bodily Injury. Waived on continuous renewal.
+
+Clause 6.2 – Specific Disease Waiting Period (Mandated by IRDAI)
+The following shall not be covered during the periods specified below:
+(a) 24-month period: Cataracts; benign prostatic hypertrophy; hysterectomy
+    for menorrhagia or fibromyoma; all types of hernia; hydrocele; joint
+    replacement surgery; sinusitis; calculus diseases; fistula and piles;
+    gastric/duodenal ulcers; non-infective arthritis.
+(b) 48-month period: Pre-Existing Diseases.
+
+Clause 6.3 – PED Waiting Period: 48 months continuous coverage.
+
+Clause 6.4 – No Maternity Waiting Period: Maternity not covered. No rider.
+
+================================================================================
+SECTION 7: EXCLUSIONS (IRDAI-MANDATED STANDARD EXCLUSIONS)
+================================================================================
+
+Clause 7.1 – PED during waiting period.
+Clause 7.2 – Illness within 30 days of inception (except accident).
+Clause 7.3 – Treatment of specified diseases during 24-month waiting period.
+Clause 7.4 – Maternity and childbirth (normal and C-section); miscarriage;
+    abortion; fertility treatments; surrogacy.
+Clause 7.5 – Cosmetic and aesthetic procedures.
+Clause 7.6 – Dental treatment (unless accidental injury, hospitalisation required).
+Clause 7.7 – Vision correction (spectacles, contact lenses, LASIK below 7.5D).
+Clause 7.8 – Hearing aids and external devices.
+Clause 7.9 – Self-inflicted injury and suicide attempts.
+Clause 7.10 – Substance abuse and addiction treatment.
+Clause 7.11 – War, terrorism, nuclear, chemical, biological risks.
+Clause 7.12 – Experimental/unproven treatments.
+Clause 7.13 – External Congenital Anomalies.
+Clause 7.14 – Treatment outside India.
+Clause 7.15 – OPD and non-hospitalisation treatment.
+Clause 7.16 – Preventive care and routine vaccinations.
+Clause 7.17 – Gender reassignment treatment.
+Clause 7.18 – Obesity surgery (unless meeting IRDAI criteria).
+Clause 7.19 – Adventure sports (professional participation).
+Clause 7.20 – Non-medical personal expenses during hospitalisation.
+Clause 7.21 – Circumcision (unless medically necessary).
+Clause 7.22 – Epidemics (as notified by WHO/Government of India).
+Clause 7.23 – Genetic testing and hereditary conditions.
+Clause 7.24 – Domiciliary treatment specific exclusions (asthma, hypertension,
+    diabetes in isolation, epilepsy, psychiatric disorders).
+Clause 7.25 – Treatment at excluded providers.
+
+================================================================================
+SECTION 8: CLAIM PROCEDURE
+================================================================================
+
+Clause 8.1 – Cashless: TPA intimation 48 hours (planned), 6 hours (emergency).
+    Pre-auth in 1 hour (initial), 6 hours (final). 5% co-pay collected by hospital.
+Clause 8.2 – Reimbursement: Intimation within 48 hours. Submit within 15 days
+    of discharge. Settlement within 30 days. 5% co-pay deducted from payout.
+Clause 8.3 – Documents: Standard claim form, bills (original), discharge
+    summary, investigation reports, pharmacy bills with prescriptions,
+    doctor's certificate, FIR/MLC (accident), cancelled cheque, KYC.
+Clause 8.4 – Co-payment Collection: At Network Hospitals, 5% co-pay
+    collected by the hospital at discharge. At non-Network Hospitals, co-pay
+    deducted from reimbursement amount.
+Clause 8.5 – Settlement Timeline: 30 days. Interest at 2% above RBI bank
+    rate for delays beyond 30 days.
+Clause 8.6 – Fraud: Forfeiture of all benefits; policy cancellation; IIB reporting.
+Clause 8.7 – Investigation: Completed within 30 days.
+Clause 8.8 – Appeal: Written appeal to Company within 30 days of rejection.
+    Thereafter IRDAI IGMS or Ombudsman recourse.
+
+================================================================================
+SECTION 9: RENEWAL, PORTABILITY, AND CANCELLATION
+================================================================================
+
+Clause 9.1 – Lifelong Renewal: Per IRDAI Arogya Sanjeevani guidelines.
+Clause 9.2 – Grace Period: 30 days.
+Clause 9.3 – Portability: Per IRDAI portability guidelines. Easy porting
+    to/from Arogya Sanjeevani products of other insurers with same terms.
+Clause 9.4 – Cancellation by Insured: 15 days' notice. Refund: ≤1M: 75%;
+    ≤3M: 50%; ≤6M: 25%; >6M: nil.
+Clause 9.5 – No cancellation on individual claims experience.
+
+================================================================================
+SECTION 10: GRIEVANCE REDRESSAL
+================================================================================
+
+Clause 10.1 – Company: grievance@swasthyainsurance.in | 1800-XXX-XXXX
+Clause 10.2 – IRDAI IGMS: www.igms.irda.gov.in | 155255
+Clause 10.3 – Insurance Ombudsman: www.cioins.co.in
+
+================================================================================
+SECTION 11: FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q1. What is the co-payment under Arogya Sanjeevani and why is it mandatory?
+A1. A 5% co-payment on all admissible claims is mandatory under the IRDAI-
+    standardised Arogya Sanjeevani product for all insurers. This means if
+    your admissible claim is ₹40,000, you pay ₹2,000 and the insurer pays
+    ₹38,000. The co-payment encourages responsible healthcare utilisation and
+    keeps premiums lower. It does not reduce your Sum Insured.
+
+Q2. क्या मैं Arogya Sanjeevani में कोई अतिरिक्त राइडर जोड़ सकता हूँ?
+    (Can I add any additional rider to Arogya Sanjeevani?)
+A2. नहीं। IRDAI के नियमानुसार, Arogya Sanjeevani एक मानकीकृत उत्पाद है
+    और इसमें कोई भी वैकल्पिक राइडर या अतिरिक्त लाभ नहीं जोड़े जा सकते।
+    अतिरिक्त कवरेज के लिए एक अलग पॉलिसी खरीदी जा सकती है।
+    (No. Per IRDAI regulations, Arogya Sanjeevani is a standardised product
+    and no optional riders can be added. For additional coverage, a separate
+    policy can be purchased alongside this one.)
+
+Q3. How is room rent capped and what happens if I take a higher-category room?
+A3. Room rent is capped at 2% of Sum Insured per day. If your SI is ₹3 Lakh,
+    your entitled room rent is ₹6,000/day. If you occupy a room at ₹10,000/day,
+    all associated charges (surgeon fees, nursing, ICU if applicable) will be
+    proportionately reduced in the ratio 6,000:10,000 = 60%. You will be
+    reimbursed 60% of those charges only.
+
+Q4. Is Arogya Sanjeevani identical across all insurers?
+A4. The product structure, benefits, exclusions, and waiting periods are
+    standardised and identical across all IRDAI-regulated insurers. The
+    premium may vary slightly across insurers based on their actuarial
+    assessment, but all key terms are fixed by IRDAI.
+
+Q5. Can I port from another insurer's Arogya Sanjeevani to Swasthya's?
+A5. Yes. Portability is straightforward as the product is standardised.
+    All accumulated waiting period credits transfer with you. Submit portability
+    request to Swasthya at least 45 days before your renewal date.
+
+Q6. Is there any restoration benefit under this plan?
+A6. No. The IRDAI-standardised Arogya Sanjeevani does not include a restoration
+    benefit. Once the Sum Insured is exhausted in a Policy Year, no further
+    claims are payable until renewal. For restoration benefit, consider
+    Swasthya Protect (SP001) or Swasthya Protect Plus (SP002).
+
+Q7. What is the maximum Sum Insured under Arogya Sanjeevani?
+A7. The maximum Sum Insured under the IRDAI-standardised Arogya Sanjeevani
+    product is ₹5,00,000 (Five Lakh). For higher Sum Insured, consider
+    Swasthya Protect (SP001: up to ₹10L) or Swasthya Protect Plus (SP002:
+    up to ₹50L). A Super Top-Up (SP010) can be added on top.
+
+================================================================================
+REGULATORY DISCLAIMER
+================================================================================
+
+This product is issued in compliance with IRDAI Guidelines on Standard Health
+Insurance Product (Arogya Sanjeevani), Circular IRDAI/HLT/REG/CIR/194/07/2019.
+All product terms are mandated by IRDAI and uniform across all insurers.
+Insurance is the subject matter of solicitation. IRDAI Registration No. 147.
+Section 80D tax benefits subject to prevailing Income Tax Act provisions.
+Swasthya Health Insurance Co. Ltd. | CIN: U66010MH2020PLC345678
+UIN: SWIHLIP24004V012024 | Version 1.0 | Effective: 01 April 2024
+================================================================================

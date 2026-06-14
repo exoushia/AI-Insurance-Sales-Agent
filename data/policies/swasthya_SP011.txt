@@ -1,0 +1,249 @@
+SWASTHYA HEALTH INSURANCE CO. LTD.
+Registered Office: Swasthya House, 14th Floor, Bandra Kurla Complex, Mumbai – 400 051
+IRDAI Registration No.: 147 | CIN: U66010MH2020PLC345678
+Toll-Free: 1800-123-7890 | Email: care@swasthyahealth.in | www.swasthyahealth.in
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SWASTHYA HOSPITAL DAILY CASH BENEFIT POLICY
+Product Code: SP011 | UIN: SWIHLIP24011V012024
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRODUCT PHILOSOPHY
+This is a FIXED BENEFIT policy. It pays a pre-agreed daily cash amount for every day
+of hospitalisation, regardless of the actual hospital bill. No bills. No receipts.
+No haggling. The benefit is paid in addition to any other health insurance — it
+compensates for income loss, attendant costs, travel, and incidentals that indemnity
+policies do not cover.
+
+Hindi: यह "दैनिक नकद लाभ" (Dainik Nakad Labh) नीति है — बिल के बिना, सीधे आपके खाते में।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 1: DEFINITIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1.1 DAILY CASH BENEFIT (दैनिक नकद लाभ): The fixed amount per day of hospitalisation
+    chosen at inception, payable irrespective of actual medical expenses incurred.
+
+1.2 ICU BENEFIT: 2× the Daily Cash Benefit for each day the Insured is in an Intensive
+    Care Unit (ICU), High Dependency Unit (HDU), or Coronary Care Unit (CCU).
+
+1.3 HOSPITALISATION DAY: Each 24-hour period (or part thereof exceeding 12 hours)
+    of continuous in-patient stay. The day of admission AND day of discharge are each
+    counted as separate hospitalisation days if the stay spans midnight.
+
+1.4 CONVALESCENCE BENEFIT: An additional lump-sum payment for extended hospitalisation
+    beyond 10 consecutive days.
+
+1.5 QUALIFYING HOSPITALISATION: Admission to a registered allopathic or AYUSH hospital
+    for a minimum of 24 hours for medically necessary treatment.
+
+1.6 POLICY YEAR BENEFIT LIMIT: The maximum total daily cash payable in a policy year,
+    expressed in days.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 2: PLAN OPTIONS AND PREMIUM SCHEDULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2.1 PLAN TIERS
+
+    Plan        | Daily Benefit | ICU Benefit  | Max Days/Year | Annual Cap
+    ------------|---------------|--------------|---------------|------------
+    HDC-Bronze  | ₹1,000/day    | ₹2,000/day   | 60 days       | ₹60,000
+    HDC-Silver  | ₹2,000/day    | ₹4,000/day   | 60 days       | ₹1,20,000
+    HDC-Gold    | ₹3,000/day    | ₹6,000/day   | 90 days       | ₹2,70,000
+    HDC-Platinum| ₹5,000/day    | ₹10,000/day  | 90 days       | ₹4,50,000
+
+2.2 ANNUAL PREMIUM (Individual, Age 35)
+
+    Plan            | Annual Premium | Monthly (ECS)
+    ----------------|----------------|---------------
+    HDC-Bronze      | ₹1,500         | ₹135
+    HDC-Silver      | ₹2,800         | ₹252
+    HDC-Gold        | ₹4,600         | ₹414
+    HDC-Platinum    | ₹7,200         | ₹648
+
+2.3 AGE LOADING
+    Age 18–35   : Base premium (as above)
+    Age 36–45   : +20%
+    Age 46–55   : +45%
+    Age 56–65   : +80%
+    Age 66+     : +120% (renewal only)
+
+2.4 FAMILY COVER OPTION: Enrol spouse and up to 3 children under one policy with
+    separate benefit amounts per member. Multi-member discount: 10% on total premium.
+
+2.5 CONVALESCENCE BENEFIT (included in all plans):
+    Hospitalisation 11–20 days continuous : Additional lump-sum = 5× Daily Benefit
+    Hospitalisation 21+ days continuous   : Additional lump-sum = 10× Daily Benefit
+    (Payable once per hospitalisation event, max twice per policy year)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 3: BENEFIT ILLUSTRATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+─────────────────────────────────────────────────────────────────────────
+ILLUSTRATION A: 5-DAY GENERAL WARD HOSPITALISATION (Typhoid)
+Plan: HDC-Gold (₹3,000/day)
+─────────────────────────────────────────────────────────────────────────
+  Hospital bill (covered by SP001 indemnity policy): ₹62,000 — paid separately.
+
+  SP011 Daily Cash Benefit calculation:
+    Days in general ward   : 5 days × ₹3,000 = ₹15,000
+    ICU days               : 0
+    Convalescence bonus    : Not applicable (< 11 days)
+    TOTAL SP011 PAYOUT     : ₹15,000 (paid directly to Insured, no bills needed)
+
+  USE OF ₹15,000: Attendant's food and accommodation (4 nights hotel near hospital),
+  auto-rickshaw/cab expenses, lost wages for 5 working days.
+
+─────────────────────────────────────────────────────────────────────────
+ILLUSTRATION B: 18-DAY HOSPITALISATION WITH ICU (Cardiac Event)
+Plan: HDC-Platinum (₹5,000/day)
+─────────────────────────────────────────────────────────────────────────
+  Days 1–4   : ICU          = 4 × ₹10,000 = ₹40,000
+  Days 5–18  : General ward = 14 × ₹5,000 = ₹70,000
+  Sub-total                              = ₹1,10,000
+  Convalescence bonus (11–20 day band)   = 5 × ₹5,000 = ₹25,000
+  TOTAL SP011 PAYOUT                     : ₹1,35,000
+
+─────────────────────────────────────────────────────────────────────────
+ILLUSTRATION C: 35-DAY HOSPITALISATION (Road Accident, ICU + Rehab)
+Plan: HDC-Platinum (₹5,000/day)
+─────────────────────────────────────────────────────────────────────────
+  Days 1–10  : ICU          = 10 × ₹10,000 = ₹1,00,000
+  Days 11–35 : General ward = 25 × ₹5,000  = ₹1,25,000
+  Sub-total                               = ₹2,25,000
+  Convalescence bonus (21+ day band)      = 10 × ₹5,000 = ₹50,000
+  TOTAL SP011 PAYOUT                      : ₹2,75,000
+
+  Note: Days 36–90 remain available in this policy year for subsequent hospitalisations.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 4: SCOPE OF COVER AND BENEFIT CONDITIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4.1 BENEFIT IS PAYABLE FOR:
+    a) Any illness or injury requiring in-patient hospitalisation ≥ 24 hours
+    b) Day-care procedures lasting ≥ 6 hours (50% of daily benefit, max 10 events/year)
+    c) Government hospital admissions (no cashless requirement; discharge certificate sufficient)
+    d) AYUSH in-patient treatment in registered hospitals
+
+4.2 BENEFIT IS NOT PAYABLE FOR:
+    a) OPD visits, emergency room attendance without admission
+    b) Same-day discharge procedures under 6 hours
+    c) Quarantine without active medical treatment (e.g., COVID isolation without symptoms)
+    d) Cosmetic, dental (elective), or fertility treatment admissions
+    e) Substance withdrawal/detox programmes (unless certified by psychiatrist)
+    f) Naturopathy/wellness stays not under active medical supervision
+
+4.3 MULTIPLE HOSPITALISATIONS: Benefits paid for each separate qualifying hospitalisation,
+    subject to overall 60/90 day annual limit per plan.
+
+4.4 SIMULTANEOUS CLAIMS: SP011 may be claimed simultaneously with SP001–SP010. This
+    policy is explicitly designed as a complement to indemnity policies. The company
+    shall not apply coordination of benefits or reduce this fixed benefit on account
+    of amounts received under any other policy.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 5: WAITING PERIODS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5.1 Initial Waiting Period : 30 days from inception (accidents exempt from Day 1).
+5.2 Pre-Existing Diseases  : 24 months from first inception date.
+5.3 Specific Diseases      : 12 months (hernia, cataract, joint replacement, kidney stones).
+5.4 Mental Health          : 24 months; benefit available from Year 3 for in-patient
+                             psychiatric hospitalisation.
+5.5 PORTING CREDIT: Prior continuous cover from another insurer credited against all
+    waiting periods per IRDAI portability guidelines.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 6: CLAIMS PROCESS — SIMPLIFIED (NO BILL REQUIRED)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6.1 REQUIRED DOCUMENTS:
+    a) Discharge Summary from hospital (showing admission date, discharge date,
+       ward type — general/ICU — and treating doctor's name and registration number)
+    b) Insured's identity proof (Aadhaar/PAN) and bank account details (first claim only)
+
+6.2 DOCUMENTS NOT REQUIRED:
+    — Itemised bills, receipts, or invoices
+    — Other insurer's settlement letter
+    — Pharmacy bills or diagnostic reports
+
+6.3 CLAIM SUBMISSION: Via Swasthya mobile app (photo of discharge summary), WhatsApp
+    (1800-123-7890), email (claims@swasthyahealth.in), or branch walk-in.
+
+6.4 SETTLEMENT TAT: 7 working days from receipt of complete discharge summary.
+    Direct NEFT/IMPS to registered bank account. SMS + email confirmation.
+
+6.5 INTIMATION: Within 48 hours of discharge (or admission for planned hospitalisation).
+    Late intimation does not automatically void the claim but may require explanation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 7: EXCLUSIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.1 All standard IRDAI exclusions apply.
+7.2 Hospitalisations arising from: self-inflicted injury, war, nuclear contamination,
+    participation in criminal activities, alcohol or drug abuse.
+7.3 Cosmetic surgery, sex reassignment surgery (unless medically necessary and certified).
+7.4 Experimental treatments not approved by the NMC or equivalent regulatory body.
+7.5 Rest cures, convalescent homes, or admission primarily for nursing care.
+7.6 In-vitro fertilisation and related ART procedures.
+7.7 Admission in a facility not recognised as a "Hospital" under IRDAI regulations.
+7.8 Benefit days already exhausted in the policy year (60/90 day limit).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 8: RENEWAL, NCB, AND UPGRADE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.1 LIFELONG RENEWABILITY: Guaranteed.
+8.2 NO-CLAIM DISCOUNT: 5% per claim-free year, maximum 20% discount on premium.
+    Discount is reset to 0% in the year following a claim.
+8.3 PLAN UPGRADE: Insured may upgrade from a lower plan to a higher plan at renewal
+    without fresh underwriting, subject to a 12-month waiting period on the incremental
+    benefit amount for pre-existing conditions.
+8.4 BENEFIT INCREASE OPTION: At every 3rd renewal, the Insured may increase the daily
+    benefit by one step (e.g., ₹1,000/day to ₹2,000/day) without medical examination.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 9: ELIGIBILITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9.1 Entry Age: 18 to 65 years; children from 91 days to 25 years under family option.
+9.2 Medical Exam: Not required at entry for age ≤ 50 and HDC-Silver or below.
+    Required for age 51+ or HDC-Gold and above.
+9.3 No restriction on number of other health policies held simultaneously.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 10: TAX AND REGULATORY INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10.1 Section 80D Benefit: Premium eligible for deduction under Section 80D of the
+     Income Tax Act, 1961 (subject to overall limits applying to all health insurance
+     premiums paid by the Insured).
+10.2 Benefits received (daily cash) are generally not taxable income under Section
+     10(10D) of the Income Tax Act as they are indemnity for personal hardship.
+     Insured should consult their tax advisor.
+10.3 This policy is governed by the Insurance Act, 1938 and IRDAI regulations.
+10.4 Free Look Period: 15 days.
+10.5 Grievance: complaints@swasthyahealth.in | IRDAI Bima Bharosa Portal.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 11: IDEAL CUSTOMER PROFILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+11.1 Self-employed professionals (lawyers, CAs, consultants) — no sick leave; income
+     stops when hospitalised.
+11.2 Gig economy workers — delivery riders, freelancers, contract workers with no
+     employer-provided sick pay.
+11.3 Small business owners — hospitalisation disrupts business operations; cash benefit
+     helps cover staff wages and overhead during absence.
+11.4 Government employees with CGHS — CGHS covers treatment; SP011 covers the
+     non-medical hardship costs.
+11.5 Anyone with an existing indemnity policy seeking to cover the "invisible costs"
+     of hospitalisation: attendant food, travel, lost income, domestic help.
+
+UIN: SWIHLIP24011V012024
+"Insurance is the subject matter of solicitation."
+BEWARE OF SPURIOUS PHONE CALLS — IRDAI never asks for premium payments over phone.

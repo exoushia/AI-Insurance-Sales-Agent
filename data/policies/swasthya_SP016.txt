@@ -1,0 +1,235 @@
+SWASTHYA HEALTH INSURANCE CO. LTD.
+Registered Office: Swasthya House, 14th Floor, Bandra Kurla Complex, Mumbai – 400 051
+IRDAI Registration No.: 147 | CIN: U66010MH2020PLC345678
+Toll-Free: 1800-123-7890 | Email: care@swasthyahealth.in | www.swasthyahealth.in
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SWASTHYA CORPORATE CARE — GROUP HEALTH INSURANCE
+Product Code: SP016 | UIN: SWIHLIP24016V012024
+Master Policy Format — For Employer-Employee Groups (Minimum 50 Employees)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRODUCT OVERVIEW
+Swasthya Corporate Care is a group health insurance master policy for mid-to-large
+employers (50+ employees). It provides comprehensive, Day-1 PED cover, maternity benefits,
+and mental health cover — no individual underwriting, no waiting periods for the standard
+suite of conditions. Administered via the Swasthya HR Portal with real-time employee
+enrolment, claims tracking, and utilisation dashboards.
+
+Hindi: "कॉर्पोरेट स्वास्थ्य देखभाल" (Corporate Swasthya Dekhbhal) — कर्मचारियों के लिए
+समूह स्वास्थ्य बीमा (Samuh Swasthya Bima)।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 1: KEY DEFINITIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1.1 MASTER POLICYHOLDER: The employer who enters into this Group Policy with Swasthya.
+    Identified in the Schedule as the Proposer.
+
+1.2 INSURED MEMBER: An employee of the Master Policyholder who is enrolled under this
+    Group Policy. Includes confirmed permanent, contractual, and probationary employees
+    (as specified in the Group Policy Schedule).
+
+1.3 DEPENDANTS: Spouse (legally married; LGBTQ+ domestic partners accepted under
+    notarised cohabitation affidavit); dependent children (up to age 25 / financially
+    dependent); dependent parents (up to 2 sets — employee's and spouse's — optional).
+
+1.4 FLOATER SI: The Sum Insured is shared among the employee and enrolled dependants
+    in a policy year. In larger families (5+ members), an individual sub-limit per
+    member may be specified in the Schedule.
+
+1.5 ENDORSEMENT WINDOW: 30-day window each quarter during which the Master Policyholder
+    may add or remove employees via the HR Portal.
+
+1.6 MID-TERM ADDITION: New joinees may be added with immediate effect (no waiting
+    period reset) within the endorsement window.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 2: PLAN OPTIONS AND INDICATIVE PREMIUM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2.1 STANDARD PLAN TIERS (Family Floater — Employee + Spouse + 2 Children)
+
+    Plan        | Sum Insured  | Maternity SI  | OPD per Employee
+    ------------|--------------|---------------|------------------
+    CC-Basic    | ₹3 Lakhs    | ₹50,000       | ₹5,000/year
+    CC-Standard | ₹5 Lakhs    | ₹75,000       | ₹10,000/year
+    CC-Premium  | ₹10 Lakhs   | ₹1,00,000     | ₹15,000/year
+    CC-Elite    | ₹25 Lakhs   | ₹2,00,000     | ₹25,000/year
+
+2.2 INDICATIVE PREMIUM (per employee, including spouse + 2 children, mixed corporate
+    workforce, IT/BFSI sector, Age 25–45 mix, Zone A)
+
+    Plan        | Per Employee/Year | Per Employee/Month
+    ------------|-------------------|-----------------
+    CC-Basic    | ₹12,000           | ₹1,000
+    CC-Standard | ₹18,500           | ₹1,542
+    CC-Premium  | ₹28,000           | ₹2,333
+    CC-Elite    | ₹52,000           | ₹4,333
+
+    Note: Actual premiums are group-rated based on group size, age-gender distribution,
+    industry, prior claims experience, and ancillary covers selected. Indicative
+    premiums assume 200-employee IT company. Groups of 500+ receive 8–12% discount.
+
+2.3 PARENT COVER ADD-ON: ₹5,000–₹22,000 per parent pair/year (age and plan dependent).
+    This is the most common enhancement requested by IT/BFSI employers.
+
+2.4 ANNUAL RENEWAL PROCESS: Group loss ratio assessed annually. Groups with < 80%
+    loss ratio receive renewal discount of 5%. Groups with > 120% loss ratio are subject
+    to premium revision not exceeding 25%.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 3: SIGNATURE FEATURES — UNIQUE TO GROUP POLICIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3.1 PRE-EXISTING DISEASE WAIVER — DAY 1:
+    ALL pre-existing conditions are covered from Day 1 for all enrolled employees and
+    their dependants. No individual medical examination. No waiting period for PED.
+    This is a fundamental feature of group health insurance per IRDAI circular
+    IRDAI/HLT/REG/CIR/140/06/2015.
+
+3.2 MATERNITY BENEFIT — DAY 1:
+    Maternity is covered from the first day of enrolment under the group policy.
+    — Normal delivery: as per plan schedule (₹50K–₹2L)
+    — C-section: 150% of normal delivery limit
+    — Pre-natal OPD: ₹10,000 (all plans)
+    — Post-natal OPD: ₹10,000 (all plans)
+    — Newborn cover: From birth, Day 0, for 90 days (included in floater SI)
+    — NICU: Up to ₹1,00,000 per birth event
+    NOTE: No 9-month waiting for maternity. Available from enrolment date.
+
+3.3 MENTAL HEALTH COVERAGE — DAY 1:
+    In-patient and day-care psychiatric hospitalisation: Covered within SI, Day 1.
+    OPD mental health: ₹10,000/year per employee (8 therapy sessions at ₹1,250 each).
+    Telepsychiatry: Included in telemedicine benefit, not deducted from OPD limit.
+    Compliance with Mental Healthcare Act, 2017 (Section 21 — equality of treatment).
+
+3.4 COVID-19 AND EPIDEMIC COVER:
+    Hospitalisation arising from notified epidemic/pandemic — covered within SI.
+    Home quarantine treatment with positive RTPCR: ₹2,000/day × 14 days (fixed benefit).
+
+3.5 CORPORATE WELLNESS PROGRAMME:
+    — Annual health check-up: Comprehensive preventive package for all employees
+      (CBC, lipid, HbA1c, thyroid, urine, ECG, X-ray, BMI assessment)
+    — Mental health webinars: 12/year, delivered by Swasthya-empanelled psychologists
+    — Ergonomics assessment: For WFH/hybrid employees — posture and workstation review
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 4: STANDARD IN-PATIENT HOSPITALISATION COVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4.1 Room entitlement:
+    CC-Basic/Standard: Single occupancy standard room (no rent limit)
+    CC-Premium/Elite: Single AC private room
+
+4.2 Covered expenses: Room and board, nursing, surgeon, anaesthetist, O.T., ICU,
+    diagnostics, pharmacy, blood/oxygen, day-care (541 procedures), ambulance.
+4.3 Pre-hospitalisation: 60 days.
+4.4 Post-hospitalisation: 90 days.
+4.5 Domiciliary hospitalisation: Up to ₹50,000/year (CC-Standard and above).
+4.6 Restoration: 100% SI restored once per policy year (same or different illness).
+4.7 AYUSH: 25% of SI (CC-Standard); 50% of SI (CC-Premium/Elite).
+4.8 Road ambulance: ₹5,000 per event.
+4.9 Air ambulance: ₹2,00,000 per event (CC-Elite only).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 5: OPD BENEFIT AND TELECONSULTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5.1 OPD BENEFIT: As per plan schedule. Eligible expenses:
+    — GP and specialist consultations
+    — Diagnostics (pathology, radiology) with doctor's prescription
+    — Pharmacy (prescription drugs only)
+    — Physiotherapy (up to 12 sessions/year)
+
+5.2 TELECONSULTATION: Unlimited — via Swasthya app (24/7 GP; specialist within 4 hours).
+    Not charged against OPD limit.
+
+5.3 OPD CLAIMS PROCESS: Employee uploads prescription + invoice on Swasthya app.
+    Auto-reimbursement within 5 working days.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 6: HR PORTAL AND ADMINISTRATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6.1 SWASTHYA HR PORTAL (hrportal.swasthyahealth.in):
+    — Bulk employee onboarding via CSV upload (Aadhaar + DOB + dependant details)
+    — Real-time e-card generation (< 30 minutes of enrolment)
+    — Claims status dashboard (per employee, departmental, company-level)
+    — Utilisation analytics: top 10 diagnoses, top 5 hospitals, maternity tracker
+    — Endorsement management: additions, deletions, SI changes
+    — Policy document and e-card download
+
+6.2 DEDICATED RELATIONSHIP MANAGER: Named RM assigned to each corporate account.
+    Direct escalation line for HR teams. Monthly review call.
+
+6.3 EMPLOYEE SELF-SERVICE: Each employee receives Swasthya app access — claims
+    submission, telemedicine, cashless pre-authorisation, OPD reimbursements.
+
+6.4 API INTEGRATION: For HRMS systems (Darwinbox, SAP SuccessFactors, BambooHR,
+    Keka) — policy data synced directly. Auto-enrolment on joining; auto-offboarding
+    on exit.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 7: PORTABILITY AND CONTINUATION ON SEPARATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.1 CONTINUATION OF COVER: An employee leaving the organisation may port their group
+    cover to any Swasthya individual policy (SP001–SP009) within 30 days of separation,
+    WITHOUT fresh waiting periods for PED that were covered under the group policy.
+
+7.2 The departing employee is treated as having continuous cover for portability purposes.
+7.3 Swasthya sends automatic portability offer letter to the employee's registered email
+    upon HR-triggered offboarding.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 8: CLAIMS MANAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.1 CASHLESS: Pre-authorisation within 2 hours at 14,000 network hospitals.
+    Dedicated corporate helpline: 1800-123-7891 (24/7).
+8.2 REIMBURSEMENT: 10 working days from complete document submission.
+8.3 FRAUD CONTROL: Swasthya deploys AI-based claim anomaly detection. Individual
+    employee data is not shared with employer HR for GDPR/data privacy compliance —
+    only aggregate utilisation reports are shared.
+8.4 DIRECT BILLING: For premium hospitals (Apollo, Fortis, Max, Medanta, Kokilaben,
+    Narayana), direct billing is enabled — no physical pre-auth form required.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 9: EXCLUSIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9.1 Standard IRDAI exclusions apply (war, nuclear, cosmetic, self-inflicted injury).
+9.2 Treatments excluded unless rider purchased: Dental (elective), vision correction,
+    fertility/IVF (unless included in CC-Elite or by employer enhancement).
+9.3 Injuries sustained during non-standard occupational risk activities not disclosed
+    at group inception.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 10: OPTIONAL ENHANCEMENTS (RIDERS AVAILABLE TO EMPLOYER)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    Rider                           | Additional Premium (per employee/year)
+    --------------------------------|----------------------------------------
+    Parent Cover (Employee's)       | ₹8,000–₹22,000 (age/plan dependent)
+    Dental & Vision OPD Rider       | ₹2,500
+    IVF/ART Rider (up to ₹1L)      | ₹3,800
+    Critical Illness (₹5L lump sum) | ₹2,200
+    Personal Accident (₹25L CSI)   | ₹1,200
+    Hospital Daily Cash (₹1K/day)   | ₹800
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 11: REGULATORY NOTICES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+11.1 Governed by Insurance Act, 1938; IRDAI (Health Insurance) Regulations, 2016;
+     IRDAI Group Insurance Guidelines 2016.
+11.2 Employer premiums paid for employees are deductible as business expense (IT Act).
+11.3 Employee premiums (if cost-sharing) eligible for Section 80D deduction.
+11.4 Data privacy: All health data processed per PDPB 2023 framework.
+11.5 Free Look: 15 days from Master Policy receipt (employer's right).
+11.6 Grievance: corporate@swasthyahealth.in | IRDAI Bima Bharosa Portal.
+
+UIN: SWIHLIP24016V012024
+"Insurance is the subject matter of solicitation."
+BEWARE OF SPURIOUS PHONE CALLS — IRDAI never asks for premium payments over phone.

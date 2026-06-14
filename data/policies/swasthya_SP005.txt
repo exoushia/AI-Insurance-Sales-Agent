@@ -1,0 +1,213 @@
+================================================================================
+SWASTHYA HEALTH INSURANCE CO.
+IRDAI Registration No. 147 | CIN: U66010MH2020PLC345678
+================================================================================
+
+SWASTHYA MICRO BIMA
+Health Insurance Policy – Micro-Insurance for Underserved Populations
+IRDAI UIN: SWIHLIP24005V012024
+Policy Wording – Effective 01 April 2024
+
+SECTION 1: PRODUCT OVERVIEW
+Clause 1.1 – "Swasthya Micro Bima" (SP005), UIN SWIHLIP24005V012024.
+Clause 1.2 – Micro-insurance indemnity policy. Annual premium starting ₹799.
+    Instant issuance via Aadhaar eKYC. No agent or paperwork required.
+Clause 1.3 – Designed for India's uninsured lower-income population: gig
+    workers, domestic help, small traders, rural households, daily-wage earners.
+    Available in 11 Indian languages. Premium auto-debit via UPI mandate. Sum
+    Insured: ₹1 Lakh or ₹2 Lakh. Simplified terms, minimal exclusions.
+
+SECTION 2: DEFINITIONS
+Clause 2.1 – Accident: Sudden, unforeseen, involuntary external event causing injury.
+Clause 2.2 – Cashless Facility (कैशलेस): Company direct-pays empanelled hospitals.
+Clause 2.3 – Claim (दावा): Formal demand for covered medical expense reimbursement.
+Clause 2.4 – Co-payment (सह-भुगतान): Not applicable under this Policy.
+Clause 2.5 – Deductible (कटौती): Not applicable.
+Clause 2.6 – eKYC: Electronic Know Your Customer using Aadhaar-based biometric
+    or OTP authentication, enabling instant Policy issuance without physical documents.
+Clause 2.7 – Exclusion (बहिष्करण): Condition for which no benefit is payable.
+Clause 2.8 – Family: Self + Spouse + up to 2 Children (91 days–18 years).
+    Family Floater adds ₹300/year per additional member.
+Clause 2.9 – Hospitalisation (अस्पताल में भर्ती): Admission for minimum 24
+    consecutive hours in a registered hospital (including District Hospitals,
+    Government hospitals, and AYUSH hospitals).
+Clause 2.10 – Hospital: Any registered medical facility including District
+    Hospitals, Community Health Centres, Government Medical Colleges, and
+    IRDAI-compliant private hospitals. Minimum 5 beds acceptable for rural areas.
+Clause 2.11 – Illness: Sickness requiring medical treatment and hospitalisation.
+Clause 2.12 – Insured/Insured Person: Policyholder and covered family members.
+Clause 2.13 – Micro-Insurance: Insurance product with Sum Insured up to ₹2 Lakh,
+    regulated under IRDAI (Micro-Insurance) Regulations, 2005 as amended.
+Clause 2.14 – Pre-Existing Disease (पहले से मौजूद बीमारी): Condition diagnosed or
+    treated within 12 months prior to Policy inception (reduced waiting period
+    per micro-insurance framework).
+Clause 2.15 – Premium (प्रीमियम): Annual consideration starting ₹799 for SI ₹1L;
+    ₹1,199 for SI ₹2L. Exclusive of GST at 18%.
+Clause 2.16 – Sum Insured (बीमा राशि): ₹1,00,000 or ₹2,00,000 per Policy Year.
+Clause 2.17 – UPI Auto-Debit: Automated premium deduction via UPI mandate
+    from the Insured's bank account on the renewal date.
+Clause 2.18 – Waiting Period (प्रतीक्षा अवधि): Reduced per micro-insurance framework.
+Clause 2.19 – AYUSH Treatment: Treatment under Ayurveda, Yoga, Naturopathy,
+    Unani, Siddha, Homeopathy at registered AYUSH facilities.
+Clause 2.20 – Aadhaar eKYC: Aadhaar-based digital identity verification
+    compliant with UIDAI guidelines and IRDAI eKYC regulations.
+
+SECTION 3: ELIGIBILITY AND ENROLLMENT
+Clause 3.1 – Entry Age: 18–60 years (Proposer). Children: 91 days–18 years.
+Clause 3.2 – Eligible Family: Self + Spouse + up to 2 dependent children.
+Clause 3.3 – Enrollment Process: (a) Aadhaar OTP/biometric verification via
+    Company's mobile app, website, or CSP (Customer Service Point) kiosk;
+    (b) Simple 5-question health declaration; (c) UPI ID/bank account for
+    premium debit; (d) Policy issued instantly (within 5 minutes) as digital
+    certificate on registered mobile number.
+    Physical documents NOT required at enrollment. Documents may be required
+    only at claims stage.
+Clause 3.4 – Languages Available: Hindi, English, Marathi, Tamil, Telugu,
+    Kannada, Malayalam, Bengali, Gujarati, Odia, Punjabi.
+Clause 3.5 – Free-Look Period: 15 days from digital Policy delivery.
+    Cancellation via app or SMS "CANCEL" to 56789.
+
+SECTION 4: COVERAGE AND BENEFITS
+Clause 4.1 – In-patient Hospitalisation
+    Room, nursing, boarding (no sub-limit); ICU (no sub-limit); surgeon and
+    specialist fees; medicines and diagnostics; operation theatre charges.
+    Government and District Hospitals accepted (including zero-cost public beds —
+    claim restricted to actual charges).
+
+Clause 4.2 – Pre-Hospitalisation: 30 days prior to admission.
+Clause 4.3 – Post-Hospitalisation: 60 days from discharge.
+Clause 4.4 – Day Care: 50 procedures listed in Annexure I (simplified list
+    appropriate for common conditions: cataracts, dialysis, chemotherapy,
+    minor surgeries). Day Care at Government hospitals accepted.
+Clause 4.5 – AYUSH: In-patient AYUSH treatment at registered AYUSH hospitals.
+    Covered up to 100% of SI. Inclusion of Government AYUSH hospitals.
+Clause 4.6 – Ambulance: Road ambulance up to ₹1,000 per hospitalisation.
+Clause 4.7 – Accident Cover: Accidental injuries covered from Day 1.
+    Ambulatory accident treatment at hospital OPD (non-hospitalisation)
+    covered up to ₹5,000 per event if hospitalisation not required.
+Clause 4.8 – No Claim Bonus: 5% SI increase per claim-free year, maximum 25%.
+Clause 4.9 – Restoration: Not available. (SI ₹1L/₹2L limits are final per year.)
+Clause 4.10 – Newborn Coverage: Newborn automatically covered for 30 days post-
+    birth under Family Floater. Full enrollment thereafter with separate premium.
+Clause 4.11 – Government Scheme Coordination: If Insured is also covered under
+    PM-JAY/Ayushman Bharat, Swasthya Micro Bima shall pay for expenses not
+    covered or not reimbursed by PM-JAY, up to available SI.
+
+SECTION 5: SUM INSURED AND PREMIUM SCHEDULE
+Clause 5.1 – Sum Insured: ₹1,00,000 or ₹2,00,000.
+Clause 5.2 – Annual Premium (Exclusive of GST):
+    Individual: ₹1L = ₹799/year; ₹2L = ₹1,199/year.
+    Family Floater (Self+Spouse+2 Children): ₹1L = ₹1,299/year; ₹2L = ₹1,899/year.
+    Additional member (Spouse or Child): ₹300/year at ₹1L; ₹450/year at ₹2L.
+    GST: 18%. Example: ₹1L individual = ₹799 + ₹143.82 GST = ₹942.82/year.
+Clause 5.3 – Payment Modes: UPI auto-debit (recommended); UPI manual; NEFT;
+    cash at CSP kiosks and Bank Mitras; mobile banking. Monthly premium
+    option: ₹75/month (₹1L); ₹115/month (₹2L). Daily UPI debit: ₹3/day (₹1L);
+    ₹4/day (₹2L) — deducted from linked account.
+Clause 5.4 – GST: 18%. No Section 80D deduction available for micro-insurance
+    below ₹2,500 annual premium (income below taxable limit). For those paying
+    tax: 80D deduction applicable.
+Clause 5.5 – Renewal: Auto-renewed via UPI mandate. SMS reminder 15 days
+    before renewal. Cancel via app or SMS to opt out.
+
+SECTION 6: WAITING PERIODS
+Clause 6.1 – Initial: 15 days (reduced from 30 days per micro-insurance framework).
+    Accidents covered from Day 1.
+Clause 6.2 – Specific Disease: 12-month waiting for cataracts, hernia, piles.
+    All other specific disease waiting periods reduced to 12 months.
+Clause 6.3 – PED: 12-month continuous coverage required (reduced from 48 months).
+    This is the key micro-insurance advantage: PED covered after just 1 year.
+Clause 6.4 – Maternity: Not covered.
+
+SECTION 7: EXCLUSIONS (Simplified)
+Clause 7.1 – PED during 12-month waiting period.
+Clause 7.2 – Illness within 15 days of first Policy inception (not accident).
+Clause 7.3 – Cosmetic procedures.
+Clause 7.4 – Dental (unless accident requiring hospitalisation).
+Clause 7.5 – Self-inflicted injury.
+Clause 7.6 – Alcohol/drug-related conditions.
+Clause 7.7 – War, terrorism, nuclear, chemical, biological.
+Clause 7.8 – Maternity and reproductive treatments.
+Clause 7.9 – Treatment outside India.
+Clause 7.10 – Experimental/unproven treatments.
+Clause 7.11 – External Congenital Anomalies.
+Clause 7.12 – Gender reassignment.
+Clause 7.13 – Adventure sports (professional).
+Clause 7.14 – Obesity treatment.
+Clause 7.15 – Non-medical personal expenses during hospitalisation.
+
+SECTION 8: CLAIM PROCEDURE
+Clause 8.1 – Cashless: Call 1800-XXX-XXXX or WhatsApp +91-9X-XXXXX-XXXXX.
+    Pre-auth within 2 hours at 5,000+ empanelled hospitals including Government
+    District Hospitals.
+Clause 8.2 – Reimbursement: WhatsApp/app photo upload of bills + discharge
+    summary within 30 days of discharge. No physical document courier required.
+    Digital claims processed within 7 working days.
+Clause 8.3 – Documents (Simplified): (a) Discharge summary or prescription
+    (Government hospital stamp accepted); (b) Hospital bills (handwritten
+    bills from small clinics accepted with doctor stamp); (c) Aadhaar copy
+    of patient; (d) Bank account details.
+    FIR required only for criminal injury claims. Standard corporate claims
+    documents NOT required.
+Clause 8.4 – Settlement: 7 working days (digital claims); 15 days (physical).
+    Direct bank transfer via IMPS/NEFT.
+Clause 8.5 – Fraud: Claim forfeiture and blacklisting on Company's system.
+Clause 8.6 – Grievance: WhatsApp "COMPLAINT" to +91-9X-XXXXX-XXXXX or call
+    1800-XXX-XXXX. Resolution within 7 days.
+Clause 8.7 – Government Hospital Claims: Discharge summary bearing hospital
+    stamp and doctor signature is sufficient proof. Zero charges in Government
+    hospital: only ancillary expenses covered.
+Clause 8.8 – Beneficiary for Death Claims: Nominee registered at enrollment.
+    If no nominee: legal heir per succession laws.
+
+SECTION 9: RENEWAL, PORTABILITY, AND CANCELLATION
+Clause 9.1 – Auto-Renewal: Via UPI mandate. Policy reinstated automatically.
+Clause 9.2 – Grace Period: 30 days from expiry date.
+Clause 9.3 – Portability: Available to other micro-insurance products. Not
+    portable to standard health insurance products directly (different product class).
+Clause 9.4 – Cancellation: SMS "CANCEL" to 56789 or app. Refund within 7 days.
+    Refund: ≤1M: 75%; ≤3M: 50%; ≤6M: 25%; >6M: nil.
+Clause 9.5 – Upgrade: Insured may upgrade to SP001 (Swasthya Protect) at any
+    renewal with 12-month PED credit transferred.
+
+SECTION 10: GRIEVANCE REDRESSAL
+Clause 10.1 – WhatsApp: +91-9X-XXXXX-XXXXX | Toll-Free: 1800-XXX-XXXX
+Clause 10.2 – IRDAI IGMS: www.igms.irda.gov.in | 155255
+Clause 10.3 – Insurance Ombudsman: www.cioins.co.in
+
+SECTION 11: FAQs
+Q1. How do I enroll without visiting an office?
+A1. Download the Swasthya app, enter your Aadhaar number, verify via OTP, answer
+    5 health questions, link your UPI ID, and receive your digital Policy in under
+    5 minutes. No office visit, no documents needed at enrollment.
+
+Q2. क्या सरकारी अस्पताल में इलाज का खर्च मिलेगा?
+    (Will treatment expenses at Government hospitals be covered?)
+A2. हाँ। सरकारी और जिला अस्पतालों में इलाज पूरी तरह कवर है। अगर वहाँ शुल्क
+    शून्य है, तो आप दवाइयों, जाँच, और एम्बुलेंस जैसे खर्च का दावा कर सकते हैं।
+    (Yes, Government and District Hospitals are fully covered. Where treatment
+    is free, you can claim incidental expenses like medicines, diagnostics, ambulance.)
+
+Q3. What is the PED waiting period?
+A3. Only 12 months, compared to 48 months in standard policies. After just one
+    year of continuous coverage, pre-existing conditions like diabetes and
+    hypertension are covered for hospitalisation.
+
+Q4. Can I pay premium daily via UPI?
+A4. Yes. You can opt for daily micro-debit of ₹3/day (₹1L SI) or ₹4/day (₹2L SI)
+    from your UPI-linked account. Annual total remains ₹1,095 (₹3/day) — slightly
+    higher than the flat annual ₹799, with the convenience of micro-payments.
+
+Q5. Does this policy work alongside PM-JAY Ayushman Bharat?
+A5. Yes. If you are a PM-JAY beneficiary, Swasthya Micro Bima pays for expenses
+    not covered by PM-JAY (such as medicines, diagnostics, or treatments in
+    non-PM-JAY empanelled hospitals). The two policies complement each other.
+
+================================================================================
+REGULATORY DISCLAIMER
+================================================================================
+Issued under IRDAI (Micro-Insurance) Regulations, 2005 as amended.
+Insurance is the subject matter of solicitation. IRDAI Registration No. 147.
+Swasthya Health Insurance Co. Ltd. | CIN: U66010MH2020PLC345678
+UIN: SWIHLIP24005V012024 | Version 1.0 | Effective: 01 April 2024
+================================================================================

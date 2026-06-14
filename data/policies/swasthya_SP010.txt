@@ -1,0 +1,258 @@
+SWASTHYA HEALTH INSURANCE CO. LTD.
+Registered Office: Swasthya House, 14th Floor, Bandra Kurla Complex, Mumbai – 400 051
+IRDAI Registration No.: 147 | CIN: U66010MH2020PLC345678
+Toll-Free: 1800-123-7890 | Email: care@swasthyahealth.in | www.swasthyahealth.in
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SWASTHYA SUPER TOP-UP HEALTH INSURANCE POLICY
+Product Code: SP010 | UIN: SWIHLIP24010V012024
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRODUCT PHILOSOPHY
+Swasthya Super Top-Up is designed as an intelligent financial layer above your existing health
+insurance. Unlike a simple top-up (which activates per hospitalisation), Super Top-Up operates
+on an AGGREGATE DEDUCTIBLE basis — meaning the deductible threshold is measured across ALL
+hospitalisations in a policy year, not per event. This makes it significantly more cost-efficient
+for families with multiple or prolonged hospitalisations.
+
+Hindi: यह पॉलिसी "संचित कटौती" (Sanchit Katoti) के आधार पर काम करती है।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 1: DEFINITIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1.1 AGGREGATE DEDUCTIBLE (संचित कटौती): The cumulative total of all admissible medical
+    expenses paid by the Insured or their primary policy during a Policy Year, beyond which
+    this policy begins to pay. The Aggregate Deductible is NOT reset per hospitalisation —
+    it accumulates across the entire policy year.
+
+1.2 PRIMARY POLICY: Any existing health insurance policy, employer group cover, government
+    scheme (PM-JAY, CGHS, ECHS), or personal savings that the Insured uses to fund expenses
+    up to the deductible. Swasthya Super Top-Up does not require the Insured to hold a
+    specific primary policy.
+
+1.3 DEDUCTIBLE EXHAUSTION DATE: The date in a Policy Year on which cumulative admissible
+    expenses first equal or exceed the Aggregate Deductible amount.
+
+1.4 POLICY YEAR: 12 consecutive months from the Policy Commencement Date. Aggregate
+    Deductible resets to zero at the start of each new Policy Year.
+
+1.5 SUM INSURED (बीमित राशि): The maximum amount payable by this policy in a Policy Year,
+    above the Aggregate Deductible.
+
+1.6 HOSPITALISATION: Admission to a registered hospital for a minimum period of 24 consecutive
+    hours for medical treatment, except for specified day-care procedures.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 2: PLAN OPTIONS AND PREMIUM SCHEDULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2.1 PLAN MATRIX
+
+    Plan        | Sum Insured  | Deductible Options
+    ------------|--------------|-------------------------------------------
+    STU-Silver  | ₹25 Lakhs   | ₹2L / ₹3L / ₹5L / ₹10L
+    STU-Gold    | ₹50 Lakhs   | ₹3L / ₹5L / ₹10L / ₹15L
+    STU-Platinum| ₹1 Crore    | ₹5L / ₹10L / ₹15L / ₹25L
+
+2.2 ANNUAL PREMIUM (Individual, Age 35, Zone A — Delhi/Mumbai/Bengaluru/Chennai)
+
+    Deductible  | STU-Silver (₹25L) | STU-Gold (₹50L) | STU-Platinum (₹1Cr)
+    ------------|-------------------|-----------------|--------------------
+    ₹2 Lakhs   | ₹6,800            | N/A             | N/A
+    ₹3 Lakhs   | ₹5,100            | ₹9,200          | N/A
+    ₹5 Lakhs   | ₹3,600            | ₹6,700          | ₹12,400
+    ₹10 Lakhs  | ₹2,200            | ₹4,100          | ₹8,200
+    ₹15 Lakhs  | N/A               | ₹2,800          | ₹5,600
+    ₹25 Lakhs  | N/A               | N/A             | ₹3,400
+
+2.3 FAMILY FLOATER LOADING: Add 70% of individual premium for spouse + 15% per child
+    (max 3 children). Family floater shares one aggregate deductible across all members.
+
+2.4 ZONE ADJUSTMENT: Zone B (Tier-2 cities) — 10% discount. Zone C (rural/small towns) —
+    20% discount.
+
+2.5 STRATEGY NOTE: A family with SP001 (₹5L SI) + SP010-Gold (₹50L SI, ₹5L deductible)
+    effectively has ₹55L total coverage. The SP010 premium at ₹6,700/yr for ₹50L cover
+    above ₹5L is substantially more economical than upgrading the primary policy.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 3: HOW AGGREGATE DEDUCTIBLE WORKS — WORKED EXAMPLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The following examples assume STU-Gold (₹50L SI) with ₹5L Aggregate Deductible.
+Primary policy: SP001 Swasthya Protect (₹5L SI).
+
+─────────────────────────────────────────────────────────────────────────
+EXAMPLE A: SINGLE LARGE HOSPITALISATION — ₹8 LAKH BILL
+─────────────────────────────────────────────────────────────────────────
+  Scenario: Mr. Sharma (age 42) undergoes cardiac bypass surgery. Total bill: ₹8,00,000.
+
+  Step 1 — Primary policy (SP001) pays: ₹5,00,000 (full SI exhausted)
+  Step 2 — Aggregate Deductible status: ₹5,00,000 accumulated = Deductible EXHAUSTED
+  Step 3 — SP010 Super Top-Up pays: ₹3,00,000 (balance of ₹8L bill)
+  Step 4 — Out-of-pocket: ₹0
+
+  Summary:
+    Hospital Bill          : ₹8,00,000
+    Primary policy paid    : ₹5,00,000
+    SP010 paid             : ₹3,00,000
+    Insured's expense      : ₹0
+
+─────────────────────────────────────────────────────────────────────────
+EXAMPLE B: MULTIPLE SMALLER HOSPITALISATIONS — ₹15 LAKH TOTAL
+─────────────────────────────────────────────────────────────────────────
+  Scenario: Mrs. Sharma has three hospitalisations in one policy year.
+    Event 1 (January): Appendectomy — Bill ₹2,80,000
+    Event 2 (April):   Knee surgery — Bill ₹4,20,000
+    Event 3 (October): Dengue (ICU) — Bill ₹8,00,000
+
+  SIMPLE TOP-UP (per-event deductible, shown for comparison):
+    Event 1: Bill ₹2.8L < ₹5L deductible → SP010 pays ₹0 | Out-of-pocket: ₹2.8L
+    Event 2: Bill ₹4.2L < ₹5L deductible → SP010 pays ₹0 | Out-of-pocket: ₹4.2L
+    Event 3: Primary pays ₹5L; SP010 pays ₹3L | Out-of-pocket: ₹0
+    Total out-of-pocket with Simple Top-Up: ₹7,00,000
+
+  AGGREGATE TOP-UP (SP010 — how it actually works):
+    Event 1: Bill ₹2.8L — Primary (SP001 restored) pays ₹2.8L
+             Aggregate accumulated: ₹2,80,000
+    Event 2: Bill ₹4.2L — Primary pays ₹2.2L (uses remaining ₹2.2L of restored SI)
+             Aggregate accumulated: ₹2,80,000 + ₹2,20,000 = ₹5,00,000 → EXHAUSTED
+             Remaining ₹2L of Event 2 bill → SP010 pays ₹2,00,000
+    Event 3: Bill ₹8L — Primary SI exhausted. SP010 pays ₹8,00,000 (within ₹50L SI)
+    Total out-of-pocket with SP010 Aggregate: ₹0
+
+  SAVING vs. SIMPLE TOP-UP: ₹7,00,000
+
+─────────────────────────────────────────────────────────────────────────
+EXAMPLE C: CATASTROPHIC HOSPITALISATION — ₹30 LAKH BILL (ICU + ORGAN TRANSPLANT)
+─────────────────────────────────────────────────────────────────────────
+  Scenario: Mr. Verma (age 50) — liver transplant + 45-day ICU stay. Total: ₹30,00,000.
+
+    Primary policy (SP002 ₹10L SI) pays     : ₹10,00,000
+    Aggregate Deductible status             : ₹10L > ₹5L → EXHAUSTED in this event
+    SP010-Platinum (₹1Cr, ₹10L deductible) pays:
+      (₹10L primary already covers deductible of ₹10L → SP010 pays ₹20,00,000)
+    Out-of-pocket                           : ₹0
+
+    Total bill: ₹30,00,000 | Insured pays: ₹0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 4: SCOPE OF COVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4.1 COVERED EXPENSES (above aggregate deductible):
+    a) In-patient hospitalisation — room, board, nursing, surgeon, anaesthetist, O.T. charges
+    b) ICU charges — no daily cap
+    c) Day-care procedures (as per IRDAI standardised list, 541 procedures)
+    d) Pre-hospitalisation: 60 days
+    e) Post-hospitalisation: 90 days
+    f) Organ donor expenses (harvest surgery only)
+    g) AYUSH treatments in registered hospitals: up to 25% of SI per year
+    h) Road ambulance: up to ₹5,000 per hospitalisation
+    i) Domiciliary hospitalisation: up to ₹50,000 per year
+
+4.2 CASHLESS FACILITY: Available at 12,000+ Swasthya network hospitals. Cashless
+    requests must be pre-authorised. The deductible status is verified at the time of
+    pre-authorisation — if the deductible is not yet exhausted, cashless will be declined
+    and reimbursement process applies for the deductible portion.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 5: WAITING PERIODS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5.1 Initial Waiting Period        : 30 days (accidents exempt)
+5.2 Pre-Existing Diseases (PED)   : 36 months (reduced from standard 48 months —
+                                    credit granted for prior continuous insurance)
+5.3 Specific Diseases             : 24 months (hernia, cataract, joint replacement,
+                                    kidney stones, piles, sinusitis)
+5.4 PORTABILITY BENEFIT: If porting from another insurer with continuous cover,
+    waiting periods are waived proportionally per IRDAI portability guidelines.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 6: EXCLUSIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6.1 Standard exclusions per IRDAI Health Insurance Regulations 2016 apply.
+6.2 Expenses below the Aggregate Deductible in any policy year.
+6.3 OPD treatment (unless admitted as in-patient).
+6.4 Cosmetic, aesthetic, or weight management procedures.
+6.5 Experimental or unproven treatments not approved by MCI/NMC.
+6.6 Self-inflicted injuries, substance abuse, criminal acts.
+6.7 War, terrorism, nuclear/chemical/biological contamination.
+6.8 Dental treatment (unless arising from accident requiring hospitalisation).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 7: DEDUCTIBLE PROOF AND CLAIMS PROCEDURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.1 TO ESTABLISH DEDUCTIBLE EXHAUSTION, the Insured must submit:
+    a) Original/attested discharge summaries and itemised bills for ALL hospitalisations
+       in the policy year contributing to the deductible
+    b) Settlement receipts/letters from primary policy or proof of personal payment
+    c) Bank statements or payment receipts if self-funded
+
+7.2 DEDUCTIBLE TRACKER: The Swasthya mobile app provides a real-time Aggregate
+    Deductible Tracker. Insured may upload expense proofs progressively through the year.
+    Once the tracker confirms deductible exhaustion, a "Deductible Exhaustion Certificate"
+    is issued digitally — this simplifies subsequent claims in the same policy year.
+
+7.3 CLAIM INTIMATION: Within 48 hours of hospitalisation (planned) or 24 hours
+    (emergency). Claims must be filed within 30 days of discharge.
+
+7.4 SETTLEMENT TAT: Cashless — 2 hours pre-auth; Reimbursement — 15 working days
+    from receipt of complete documents.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 8: RENEWAL AND NO-CLAIM BENEFIT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.1 LIFELONG RENEWABILITY: Guaranteed, subject to timely premium payment.
+8.2 NCB (No Claim Bonus): 5% cumulative discount on premium per claim-free year,
+    max 30%. NCB does not increase Sum Insured (unlike indemnity products).
+8.3 DEDUCTIBLE FLEXIBILITY AT RENEWAL: Insured may increase or decrease the
+    Aggregate Deductible at renewal. Decreasing deductible is subject to fresh
+    underwriting for the difference.
+8.4 GRACE PERIOD: 30 days post renewal due date; no cover during grace period.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 9: SMART PAIRING RECOMMENDATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Swasthya recommends the following pairings for optimal coverage efficiency:
+
+    Primary Policy       | Recommended SP010 Plan | Combined Cover  | Est. Total Premium
+    ---------------------|------------------------|-----------------|-------------------
+    SP001 (₹5L)          | STU-Gold, ₹5L ded.     | ₹55L effective  | ₹6,200 + ₹6,700 = ₹12,900
+    SP002 (₹10L)         | STU-Gold, ₹10L ded.    | ₹60L effective  | ₹9,800 + ₹4,100 = ₹13,900
+    Employer cover (₹3L) | STU-Silver, ₹3L ded.   | ₹28L effective  | ₹0 + ₹5,100 = ₹5,100
+    PM-JAY (₹5L govt.)   | STU-Gold, ₹5L ded.     | ₹55L effective  | ₹0 + ₹6,700 = ₹6,700
+
+    Note: Employer group cover ceases on job change. Swasthya recommends an individual
+    base policy alongside employer cover for continuity.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 10: ELIGIBILITY AND UNDERWRITING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10.1 ENTRY AGE: 18 to 65 years (individual); lifelong renewal thereafter.
+10.2 CHILDREN: 91 days to 25 years (if financially dependent).
+10.3 MEDICAL EXAMINATION: Required for entry age 55+ or Sum Insured ₹50L+.
+10.4 The existence of a primary policy is NOT mandatory to purchase SP010; the
+     Insured may self-fund the deductible from personal resources.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 11: REGULATORY AND STATUTORY INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+11.1 This policy is governed by the Insurance Act, 1938 (as amended), IRDAI Health
+     Insurance Regulations, 2016, and all applicable IRDAI circulars.
+11.2 Tax Benefit: Premium paid is eligible for deduction under Section 80D of the
+     Income Tax Act, 1961 — up to ₹25,000 (self/family below 60 years).
+11.3 FREE LOOK PERIOD: 15 days from receipt of policy document.
+11.4 GRIEVANCE REDRESSAL: complaints@swasthyahealth.in | IRDAI Bima Bharosa Portal.
+11.5 OMBUDSMAN: Available in 17 cities per IRDAI (Insurance Ombudsman) Rules, 2017.
+
+UIN: SWIHLIP24010V012024
+"Insurance is the subject matter of solicitation."
+BEWARE OF SPURIOUS PHONE CALLS — IRDAI never asks for premium payments over phone.

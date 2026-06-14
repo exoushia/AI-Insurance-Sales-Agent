@@ -1,0 +1,25 @@
+TREATMENT_COSTS = {
+    "hospitalization_per_day": {
+        "government_general_ward": {"min": 500, "max": 2000},
+        "private_general_ward": {"min": 3000, "max": 8000},
+        "private_single_ac": {"min": 6000, "max": 15000},
+        "private_icu": {"min": 25000, "max": 80000}
+    },
+    "common_procedures": {
+        "appendectomy": {"govt": 15000, "private": 80000, "metro_private": 150000},
+        "c_section_delivery": {"govt": 10000, "private": 60000, "metro_private": 150000},
+        "normal_delivery": {"govt": 5000, "private": 30000, "metro_private": 80000},
+        "angioplasty_single_stent": {"govt": 30000, "private": 200000, "metro_private": 400000},
+        "bypass_surgery_cabg": {"govt": 100000, "private": 350000, "metro_private": 700000},
+        "knee_replacement_single": {"govt": 50000, "private": 250000, "metro_private": 500000},
+        "cataract_surgery_per_eye": {"govt": 5000, "private": 30000, "metro_private": 60000},
+        "cancer_chemotherapy_per_cycle": {"govt": 5000, "private": 30000, "metro_private": 80000},
+        "dialysis_per_session": {"govt": 1500, "private": 3000, "metro_private": 5000},
+        "covid_moderate_10days": {"govt": 0, "private": 200000, "metro_private": 500000}
+    },
+    "annual_chronic_management": {
+        "diabetes_type2": {"medicines": 12000, "tests": 8000, "consults": 6000, "total": 26000},
+        "hypertension": {"medicines": 8000, "tests": 5000, "consults": 4000, "total": 17000},
+        "asthma": {"medicines": 15000, "tests": 6000, "consults": 5000, "total": 26000}
+    }
+}

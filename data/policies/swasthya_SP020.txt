@@ -1,0 +1,271 @@
+SWASTHYA HEALTH INSURANCE CO. LTD.
+Registered Office: Swasthya House, 14th Floor, Bandra Kurla Complex, Mumbai – 400 051
+IRDAI Registration No.: 147 | CIN: U66010MH2020PLC345678
+Toll-Free: 1800-123-7890 | Email: care@swasthyahealth.in | www.swasthyahealth.in
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SWASTHYA FAMILY LEGACY — MULTI-GENERATIONAL HEALTH INSURANCE
+Product Code: SP020 | UIN: SWIHLIP24020V012024
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRODUCT PHILOSOPHY
+India's joint family is not just a social unit — it is an economic unit where health
+expenditure can cascade across three generations simultaneously. An elderly parent's
+surgery, a working-age child's cardiac event, and a grandchild's accident can each
+strike in the same year.
+
+SP020 Family Legacy is India's first three-generation health insurance — a single
+policy covering up to 8 family members across grandparents, parents, and children.
+It combines INDIVIDUAL SUM INSURED (each member has their own SI) with a SHARED
+FAMILY POOL (an additional buffer accessible by any member after individual SI is
+exhausted) — giving each family member financial independence while preserving a
+collective safety net.
+
+Hindi: "पारिवारिक विरासत बीमा" (Parivarik Virasat Bima) — तीन पीढ़ियों की एक साथ
+सुरक्षा — व्यक्तिगत बीमा + साझा परिवार कोष।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 1: KEY DEFINITIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1.1 PROPOSER (प्रस्तावक): The primary applicant who applies for and manages this policy.
+    Must be aged 25–55 years at inception.
+
+1.2 ELIGIBLE FAMILY MEMBERS: Any combination of up to 8 members from the following
+    three generations:
+    Generation 1 (G1): Proposer's parents and/or parents-in-law (maximum 4 members)
+    Generation 2 (G2): Proposer and/or spouse (maximum 2 members)
+    Generation 3 (G3): Proposer's dependent children (maximum 4 members, up to age 25)
+
+    Minimum composition: At least 2 members from at least 2 different generations.
+
+1.3 INDIVIDUAL SUM INSURED (ISI / व्यक्तिगत बीमित राशि): A dedicated sum insured
+    assigned to each enrolled member, specified in the Policy Schedule.
+
+1.4 SHARED FAMILY POOL (SFP / साझा पारिवारिक कोष): An additional combined buffer
+    available to ALL enrolled members after their individual ISI is exhausted in a policy
+    year. The SFP is replenished in full at the start of each new policy year.
+
+1.5 AUTO SI INCREASE (ASI): An automatic annual increase in ISI for each member, without
+    fresh underwriting, at a specified percentage, subject to the caps in Clause 3.3.
+
+1.6 GENERATION PREMIUM WEIGHTING: Each generation attracts a different premium rate per
+    rupee of ISI, reflecting age and risk profile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 2: PLAN OPTIONS AND STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2.1 STANDARD PLAN CONFIGURATIONS
+
+    Plan           | ISI per G2 member | ISI per G3 member | ISI per G1 member | Shared Pool
+    ---------------|-------------------|-------------------|-------------------|------------
+    FL-Essential   | ₹5 Lakhs         | ₹5 Lakhs          | ₹3 Lakhs          | ₹15 Lakhs
+    FL-Comfort     | ₹10 Lakhs        | ₹5 Lakhs          | ₹5 Lakhs          | ₹25 Lakhs
+    FL-Premium     | ₹25 Lakhs        | ₹10 Lakhs         | ₹10 Lakhs         | ₹50 Lakhs
+    FL-Legacy      | ₹50 Lakhs        | ₹25 Lakhs         | ₹25 Lakhs         | ₹1 Crore
+
+    Custom configurations available on request (proposer specifies ISI per member).
+
+2.2 HOW THE TWO LAYERS WORK (Illustration):
+
+    Scenario: Mrs. Sharma (G1, age 68) has a hospitalisation costing ₹9 Lakhs.
+    Mrs. Sharma's ISI (FL-Comfort) = ₹5 Lakhs.
+    — Step 1: ISI pays ₹5,00,000 (exhausted).
+    — Step 2: Shared Pool (₹25L) pays the remaining ₹4,00,000.
+    — Step 3: Shared Pool remaining balance = ₹21,00,000 (available to any member).
+    — Mrs. Sharma's ISI restored at next year's renewal to ₹5 Lakhs.
+    — Other family members' ISIs are UNAFFECTED.
+
+    Key contrast with a simple floater: In a floater, Mrs. Sharma's ₹9L claim would
+    have consumed ₹9L from a shared SI, leaving little for others. With FL-Comfort,
+    each member is ring-fenced until their ISI is exhausted.
+
+2.3 INDICATIVE ANNUAL PREMIUM (6-member family: 2 G1 parents aged 65–68, G2 couple
+    aged 38–40, 2 G3 children aged 10–14; FL-Comfort plan; Zone A)
+
+    G1 premiums (2 × ₹5L ISI, age 65–68)      : ₹38,000 × 2 = ₹76,000
+    G2 premiums (2 × ₹10L ISI, age 38–40)     : ₹9,800 × 2  = ₹19,600
+    G3 premiums (2 × ₹5L ISI, children)        : ₹3,200 × 2  = ₹6,400
+    Shared Pool (₹25L)                         : ₹18,000
+    Multi-member policy discount (8%)           : −₹9,600
+    ─────────────────────────────────────────────────────────────────
+    TOTAL ANNUAL PREMIUM                        : ₹1,10,400 / year
+
+    Note: G1 (parent) premiums may be paid by G2 proposer — Section 80D benefit
+    applies (up to ₹50,000 for senior parents).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 3: AUTO SUM INSURED INCREASE (ASI)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3.1 AUTOMATIC INCREASE: At each annual renewal, the ISI of every member automatically
+    increases by 5% — without fresh medical examination, without underwriting review.
+
+3.2 INFLATION PROTECTION PURPOSE: Medical inflation in India runs at 8–12% per annum.
+    ASI ensures the ISI does not lose real purchasing power over the policy's lifetime.
+
+3.3 AUTO INCREASE CAPS (to prevent unlimited accumulation):
+
+    Member Generation | Maximum ISI Cap (ASI stops at)
+    ------------------|------------------------------
+    G3 (Children)     | ₹25 Lakhs (ISI); transitions to independent policy at age 25
+    G2 (Working-age)  | ₹1 Crore (ISI)
+    G1 (Parents/seniors)| ₹50 Lakhs (ISI)
+
+3.4 ENHANCED AUTO INCREASE: Proposer may opt for a 10% ASI (at +₹2,000/year additional
+    premium) to match higher medical inflation scenarios.
+
+3.5 CLAIM-YEAR SUSPENSION: In any year where the individual ISI is fully claimed, the
+    ASI does not increase that member's ISI the following year (frozen at current level
+    for one year; resumes thereafter).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 4: IN-PATIENT HOSPITALISATION — SCOPE OF COVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4.1 ROOM: No room rent cap for G2 members (ISI ₹10L+). Single-occupancy standard room
+    for G1 and G3 members (no daily cap; actual charges covered).
+
+4.2 COVERED IN-PATIENT EXPENSES (all members):
+    a) Room, board, nursing, surgeon, anaesthetist, O.T., ICU
+    b) Specialist fees, diagnostics in-hospital, pharmacy
+    c) Organ donor expenses
+    d) Blood, oxygen, medical consumables
+    e) Road ambulance: ₹5,000 per event
+    f) Air ambulance: ₹3,00,000 per event (FL-Premium and FL-Legacy)
+
+4.3 PRE-HOSPITALISATION: 60 days (G2 and G3); 30 days (G1).
+4.4 POST-HOSPITALISATION: 120 days (G2 and G3); 90 days (G1 — recognising extended
+    recovery needs for seniors).
+4.5 DAY-CARE: 541 IRDAI procedures for all members.
+4.6 DOMICILIARY: ₹50,000/year per member (G1 — given mobility constraints of seniors).
+4.7 AYUSH: 50% of ISI per member.
+4.8 RESTORATION: ISI restores 100% once per year per member (different illness).
+    Shared Pool restores fully at each annual renewal.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 5: OPD AND PREVENTIVE CARE (PER MEMBER)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5.1 OPD BENEFIT (annual, per member):
+    FL-Essential: ₹10,000/member/year
+    FL-Comfort  : ₹15,000/member/year
+    FL-Premium  : ₹25,000/member/year
+    FL-Legacy   : ₹40,000/member/year
+
+5.2 ANNUAL HEALTH CHECK-UP: One comprehensive annual check-up per member per year,
+    at empanelled diagnostic centres — covered fully, not charged against OPD limit.
+    G1 members: Extended senior panel (additional cardiac, renal, cognitive screening).
+    G3 members: Paediatric/adolescent development and growth screening.
+
+5.3 TELEMEDICINE: Unlimited, across all members, all plans.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 6: GENERATION-SPECIFIC BENEFITS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6.1 G1 SENIOR CARE BENEFITS:
+    a) Domiciliary hospitalisation: ₹50,000/year (home-to-hospital transition support)
+    b) 10% co-pay for G1 members aged 60–69; 20% co-pay for age 70+
+       (In-line with IRDAI senior insurance guidelines 2024; waived if G1 enrolled under
+       age 60 and continuous coverage maintained)
+    c) PED waiting period for G1 parents: 12 months (vs standard 36 months, in recognition
+       of the difficulty of insuring parents without this concession)
+    d) Chronic Disease Management Programme (CDMP) enrolment: All G1 members receive
+       free CDMP care coordinator support.
+    e) Annual home health assessment (FL-Premium and Legacy): Nurse visit to G1 member's
+       home annually — vitals, medication review, functional assessment.
+
+6.2 G2 WORKING-ADULT BENEFITS:
+    a) No co-pay, no room rent cap, no disease sub-limits.
+    b) Critical illness lump-sum acceleration (optional rider): Upon diagnosis of any of
+       the 10 critical illnesses listed in Schedule B, up to 25% of ISI paid as lump sum.
+    c) Maternity: ₹75,000 (normal); ₹1,12,500 (C-section); Newborn from Day 0;
+       9-month waiting for maternity applies.
+    d) Mental health in-patient: Covered within ISI (Mental Healthcare Act, 2017).
+    e) OPD mental health: ₹15,000/year (8 therapy sessions).
+
+6.3 G3 CHILDREN'S BENEFITS:
+    a) No co-pay, no room rent cap for children.
+    b) Vaccination: All UCHM-recommended vaccines covered up to age 12 — ₹5,000/year
+       per child (optional vaccination rider; ₹500/child/year additional premium).
+    c) Mental health (adolescent): OPD mental health sessions included in OPD limit.
+    d) Sports injuries: Day 1 (school/college sports activities).
+    e) Transition at age 25: G3 member transitions automatically to an SP001/SP002
+       individual policy with all accumulated waiting period credits. No new waiting
+       period imposed.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 7: WAITING PERIODS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.1 G2 and G3 members: Initial 30 days; PED 36 months; Specific disease 24 months.
+7.2 G1 members: Initial 30 days; PED 12 months; Specific disease 12 months.
+7.3 Accidents: Day 1 for all members, all generations.
+7.4 Maternity (G2): 9 months.
+7.5 PORTING CREDIT: Prior continuous cover credited per IRDAI portability guidelines.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 8: CASHLESS AND CLAIMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.1 CASHLESS NETWORK: 14,000 hospitals across India.
+8.2 DEDICATED FAMILY HEALTH MANAGER: Each FL-Legacy and FL-Premium family has a
+    named health manager — single point of contact for cashless pre-auth, OPD claims,
+    health check-up scheduling, and CDMP for G1 members.
+8.3 FAMILY CLAIMS PORTAL: Proposer can view claim status of all enrolled members
+    (with individual member's consent) via the Swasthya app.
+8.4 CLAIM SETTLEMENT TAT: Cashless — 2 hours pre-auth; Reimbursement — 15 working days.
+8.5 CSR: 96.5% (Swasthya family products, 2023–24).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 9: ADDING AND REMOVING MEMBERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9.1 NEW ADDITIONS MID-TERM:
+    — Newborn child: Added within 30 days of birth; covered from Day 1 of life.
+    — New spouse (marriage): Added within 60 days; no waiting period reset for
+      new spouse's pre-existing conditions, subject to declaration.
+    — New G1 parent (hitherto not enrolled): Additional premium; standard waiting
+      periods apply from addition date.
+
+9.2 REMOVAL:
+    — Child turning 25: Automatic transition to individual Swasthya policy.
+    — Divorce: Spouse removed at renewal; no refund of pro-rated premium.
+    — Death of member: Policy continues for remaining members; premium revised.
+
+9.3 MAXIMUM MEMBER LIMIT: 8 members at any time. Additional members require
+    upgrade to a bespoke family scheme (Swasthya Bespoke — available on application).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 10: NCB AND RENEWAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10.1 NCB (No Claim Bonus): Applied PER MEMBER — each member's premium component
+     receives 10% ISI increase per claim-free year (not premium discount), max 50% ISI
+     increase on that member's component.
+10.2 NCB ISI increase is IN ADDITION to the 5% ASI (Clause 3). Total ISI can grow
+     through both channels.
+10.3 NCB reset: Only the claiming member's NCB resets; other members' NCBs unaffected.
+10.4 LIFELONG RENEWABILITY: Guaranteed for all enrolled members.
+10.5 GRACE PERIOD: 30 days.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLAUSE 11: REGULATORY NOTICES AND TAX
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+11.1 Section 80D Tax Benefit:
+     — G2 members (self and family): Up to ₹25,000 per year.
+     — G1 members (senior parents): Up to ₹50,000 per year (if G1 members are aged 60+).
+     — TOTAL MAXIMUM DEDUCTION: ₹25,000 + ₹50,000 = ₹75,000 per year.
+     — All premiums under one SP020 policy may be claimed together by the Proposer.
+11.2 Governed by: Insurance Act, 1938; IRDAI Health Insurance Regulations, 2016;
+     IRDAI Circular on Family Floater Policies.
+11.3 Free Look Period: 15 days.
+11.4 Grievance: family@swasthyahealth.in | IRDAI Bima Bharosa Portal.
+11.5 Insurance Ombudsman: 17 cities across India.
+
+UIN: SWIHLIP24020V012024
+"Insurance is the subject matter of solicitation."
+BEWARE OF SPURIOUS PHONE CALLS — IRDAI never asks for premium payments over phone.

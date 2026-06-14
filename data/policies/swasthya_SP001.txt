@@ -1,0 +1,769 @@
+================================================================================
+SWASTHYA HEALTH INSURANCE CO.
+IRDAI Registration No. 147 | CIN: U66010MH2020PLC345678
+Head Office: Swasthya House, 14th Floor, Bandra Kurla Complex, Mumbai – 400 051
+================================================================================
+
+SWASTHYA PROTECT
+Health Insurance Policy – Individual and Family Floater
+IRDAI UIN: SWIHLIP24001V012024
+Policy Wording – Effective 01 April 2024
+
+================================================================================
+SECTION 1: PRODUCT OVERVIEW
+================================================================================
+
+Clause 1.1 – Product Name and Identity
+This Policy is issued under the product name "Swasthya Protect" (hereinafter
+referred to as "the Policy" or "SP001"). It is a health indemnity insurance
+product offered by Swasthya Health Insurance Co. Limited (hereinafter referred
+to as "the Company," "We," "Us," or "Our"), registered with the Insurance
+Regulatory and Development Authority of India (IRDAI), bearing Registration
+No. 147. The Unique Identification Number (UIN) assigned by IRDAI for this
+product is SWIHLIP24001V012024.
+
+Clause 1.2 – Product Type and Structure
+Swasthya Protect is an indemnity-based health insurance policy available on
+both Individual and Family Floater basis. Under the Individual basis, the Sum
+Insured (बीमा राशि) is available exclusively to the named Insured Person.
+Under the Family Floater basis, the Sum Insured is shared among all enrolled
+family members in aggregate during the Policy Year. This Policy is renewable
+on an annual basis and confers lifelong renewability subject to the terms
+and conditions herein.
+
+Clause 1.3 – Target Audience and Summary
+Swasthya Protect is designed for first-time health insurance buyers, young
+professionals, and nuclear families seeking affordable, foundational
+hospitalisation coverage in India. The Policy provides coverage against
+reasonable and customary medical expenses arising from Illness or Accidental
+Bodily Injury requiring Hospitalisation. Room rent sub-limits apply at the
+₹3 Lakh and ₹5 Lakh Sum Insured tiers. A basic Restoration Benefit is
+included. The Policy prioritises simplicity, affordability, and accessibility
+while complying fully with IRDAI (Health Insurance) Regulations, 2016 and
+all applicable IRDAI circulars.
+
+================================================================================
+SECTION 2: DEFINITIONS
+================================================================================
+
+Clause 2.1 – Accident
+"Accident" means a sudden, unforeseen, and involuntary event caused by
+external, visible, and violent means, resulting in Bodily Injury to the
+Insured Person.
+
+Clause 2.2 – Cashless Facility (कैशलेस)
+"Cashless Facility" means a facility extended by the Company, through its
+Third Party Administrator (TPA), to the Insured Person, whereby costs of
+treatment undergone at a Network Hospital are directly settled by the Company
+with the hospital to the extent of pre-authorisation approval, subject to
+policy terms and applicable sub-limits.
+
+Clause 2.3 – Claim (दावा)
+"Claim" means a formal request made by the Insured or Insured Person to the
+Company for payment of benefits arising from a covered event under this Policy.
+
+Clause 2.4 – Co-payment (सह-भुगतान)
+"Co-payment" means a cost-sharing requirement whereby the Insured Person
+bears a specified percentage of the admissible claim amount. Co-payment is
+not applicable under the standard Swasthya Protect plan unless selected as
+an optional feature at inception.
+
+Clause 2.5 – Deductible (कटौती)
+"Deductible" means a fixed amount which the Insured Person shall bear from
+each admissible claim before the Company's liability commences. No deductible
+applies under this Policy unless specifically endorsed.
+
+Clause 2.6 – Day Care Treatment
+"Day Care Treatment" means medical treatment or a surgical procedure that,
+owing to technological advancement, is undertaken under general or local
+anaesthesia in a Hospital or Day Care Centre in less than 24 consecutive
+hours and which would have otherwise required Hospitalisation for more than
+24 hours. Treatment normally taken on an outpatient basis is not included.
+
+Clause 2.7 – Exclusion (बहिष्करण)
+"Exclusion" means any condition, disease, treatment, circumstance, or expense
+expressly listed in Section 7 of this Policy for which the Company shall not
+be liable to make any payment, whether in whole or in part.
+
+Clause 2.8 – Family
+"Family" means the Insured, his/her legally wedded Spouse, dependent
+Children (natural, adopted, or step-children) between 91 days and 25 years
+of age, and dependent Parents and Parents-in-Law. A maximum of two adults and
+four children may be enrolled under a single Family Floater Policy.
+
+Clause 2.9 – Hospitalisation (अस्पताल में भर्ती)
+"Hospitalisation" means admission in a Hospital for a minimum period of
+24 consecutive hours for In-patient Care, except for specified Day Care
+Treatments as listed in Annexure I, where such admission may be for a
+period of less than 24 consecutive hours.
+
+Clause 2.10 – Hospital
+"Hospital" means any institution established for In-patient Care and Day
+Care Treatment of illness and/or injuries that has been registered as a
+Hospital with the local authorities under the Clinical Establishments
+(Registration and Regulation) Act, 2010, or complies with all minimum
+criteria as defined under IRDAI regulations, including: at least 10 in-patient
+beds in towns with population below 10,00,000 and at least 15 in-patient beds
+elsewhere; qualified nursing staff round the clock; qualified Medical
+Practitioner(s) in charge round the clock; a fully equipped operation theatre;
+and maintenance of daily patient records.
+
+Clause 2.11 – Illness
+"Illness" means a sickness, disease, or pathological condition leading to
+impairment of normal physiological function and requiring medical treatment.
+This includes acute conditions (likely to respond quickly to treatment) and
+chronic conditions (requiring long-term management).
+
+Clause 2.12 – Insured / Insured Person
+"Insured" means the Proposer named in the Policy Schedule who has entered
+into this insurance contract with the Company. "Insured Person" means any
+person named in the Policy Schedule for whom insurance cover has been
+accepted and premium received by the Company.
+
+Clause 2.13 – Network Hospital
+"Network Hospital" means a Hospital empanelled by the Company or its TPA to
+provide cashless treatment services to Insured Persons, as updated from time
+to time. The current list is available at www.swasthyainsurance.in and with
+the TPA's 24-hour helpline.
+
+Clause 2.14 – No Claim Bonus (NCB)
+"No Claim Bonus" means the cumulative increase in Sum Insured (बीमा राशि)
+granted by the Company upon renewal of the Policy without any admissible
+claim having been made or paid during the preceding Policy Year.
+
+Clause 2.15 – Pre-Existing Disease (पहले से मौजूद बीमारी)
+"Pre-Existing Disease" means any condition, ailment, injury, or disease
+that is/was diagnosed by a physician within 48 months prior to the issuance
+of the first Policy by the Company; or for which medical advice or treatment
+was recommended by, or received from, a physician within 48 months prior to
+the date of commencement of the first Policy.
+
+Clause 2.16 – Premium (प्रीमियम)
+"Premium" means the amount payable by the Insured to the Company for the
+insurance cover provided under this Policy for the Policy Year, as specified
+in the Policy Schedule, exclusive of applicable Goods and Services Tax (GST)
+and other statutory levies.
+
+Clause 2.17 – Sum Insured (बीमा राशि)
+"Sum Insured" means the maximum aggregate liability of the Company in respect
+of all admissible claims during a Policy Year, as specified in the Policy
+Schedule. Under a Family Floater Policy, the Sum Insured is the combined
+maximum for all Insured Persons collectively.
+
+Clause 2.18 – Third Party Administrator (TPA)
+"TPA" means a Company registered with IRDAI engaged by the Company to provide
+claims facilitation and health management services to Insured Persons.
+
+Clause 2.19 – Waiting Period (प्रतीक्षा अवधि)
+"Waiting Period" means a period from the inception of this Policy during which
+specified diseases and/or treatments are not covered by the Company. Upon
+completion of the applicable Waiting Period, coverage commences subject to
+continuous and uninterrupted renewal of the Policy.
+
+Clause 2.20 – Restoration Benefit
+"Restoration Benefit" means the reinstatement of the Sum Insured by the
+Company, once fully exhausted during a Policy Year, as specified in Clause 4.12.
+
+================================================================================
+SECTION 3: ELIGIBILITY AND ENROLLMENT
+================================================================================
+
+Clause 3.1 – Entry Age
+The minimum entry age for the Insured (Proposer) and adult Insured Persons
+is 18 years. The maximum entry age is 65 years. Dependent children may be
+enrolled from a minimum age of 91 days. Dependent children remain covered
+under a Family Floater Policy until they attain the age of 25 years or
+become financially independent, whichever is earlier.
+
+Clause 3.2 – Eligible Relationships
+The following relationships are eligible for enrollment under a single Policy:
+(a) Self (Insured/Proposer); (b) Legally wedded Spouse; (c) Dependent
+Children (natural, adopted, or legally recognised step-children aged 91 days
+to 25 years); (d) Parents (biological or legally adopted); (e) Parents-in-Law.
+A maximum of two adults and up to four dependent children are permitted under
+one Family Floater Policy. Parents and Parents-in-Law may be added as
+separate members on a Family Floater basis subject to applicable premium.
+
+Clause 3.3 – Medical Examination
+Proposal for insurance up to 45 years of age and Sum Insured up to ₹10
+Lakh does not require a pre-acceptance medical examination, subject to
+satisfactory completion of the Health Declaration Form. Persons above 45
+years of age or seeking Sum Insured above ₹10 Lakh shall be required to
+undergo medical examination at Company-empanelled diagnostic centres, the
+cost of which shall be borne by the Company if the Proposal is accepted.
+
+Clause 3.4 – Enrollment Process
+The Proposer shall submit a duly completed Proposal Form (available at
+www.swasthyainsurance.in or through licensed intermediaries), accompanied
+by the following documents: (a) Self-attested copy of Proof of Identity
+(Aadhaar Card, PAN Card, Passport, or Voter ID); (b) Self-attested copy of
+Proof of Age; (c) Self-attested copy of Proof of Address; (d) Completed
+Health Declaration Form; and (e) Recent passport-size photographs.
+The Policy shall be issued within 48 hours of receipt of complete documentation
+and realisation of premium.
+
+Clause 3.5 – Free-Look Period
+The Insured shall be entitled to a free-look period of 15 days from the date
+of receipt of the Policy document to review the terms and conditions. If the
+Insured finds the terms unacceptable, the Policy may be returned with written
+notice to the Company for cancellation and full premium refund, less stamp
+duty charges and proportionate premium for the period of cover, provided no
+claim has been made or is pending.
+
+================================================================================
+SECTION 4: COVERAGE AND BENEFITS
+================================================================================
+
+Clause 4.1 – In-patient Hospitalisation
+The Company shall indemnify the Insured Person for Reasonable and Customary
+Medical Expenses incurred during Hospitalisation for medically necessary
+treatment of an Illness or Accidental Bodily Injury, including:
+(a) Room, boarding, and nursing charges; (b) ICU/ICCU charges;
+(c) Medical Practitioner's, Surgeon's, and Specialist's fees;
+(d) Anesthesia, blood, oxygen, operation theatre charges;
+(e) Medicines, drugs, and consumables; (f) Diagnostic procedures and tests;
+(g) Cost of prosthetic implants if used during surgery.
+
+Clause 4.2 – Room Rent Sub-Limits
+Room rent limits apply as follows:
+- Sum Insured ₹3 Lakh: Room Rent limited to ₹2,500 per day; ICU up to ₹5,000
+  per day. In case the Insured Person occupies a room with rent exceeding the
+  applicable limit, all associated charges (surgeon fees, specialist fees,
+  nursing charges) shall be proportionately reduced.
+- Sum Insured ₹5 Lakh: Room Rent limited to ₹4,000 per day; ICU up to ₹8,000
+  per day. Proportionate deduction applies as above.
+- Sum Insured ₹10 Lakh: No room rent sub-limit. Actual charges payable subject
+  to Reasonable and Customary Charges.
+
+Clause 4.3 – Pre-Hospitalisation Expenses
+Medical expenses incurred up to 60 days prior to the date of Hospitalisation
+for the same condition for which Hospitalisation was required shall be covered,
+subject to the admissibility of the In-patient claim.
+
+Clause 4.4 – Post-Hospitalisation Expenses
+Medical expenses incurred up to 90 days following the date of discharge from
+Hospital for the same condition for which Hospitalisation was undertaken shall
+be covered, subject to the admissibility of the In-patient claim.
+
+Clause 4.5 – Day Care Treatments
+The Policy covers Day Care Treatments as listed in Annexure I (comprising 540
+procedures), including but not limited to: cataract surgery, chemotherapy,
+radiotherapy, lithotripsy, dialysis, coronary angiography, and laparoscopic
+cholecystectomy. Day Care claims do not require overnight Hospitalisation.
+
+Clause 4.6 – Domiciliary Hospitalisation
+Treatment taken at the Insured Person's residence for a condition that would
+have ordinarily required Hospitalisation, where Hospitalisation was not
+undertaken due to the patient's inability to be moved or lack of hospital
+accommodation, shall be covered for a maximum period of 15 days per illness
+episode, subject to a sub-limit of ₹50,000 per Policy Year.
+
+Clause 4.7 – Ambulance Charges
+Emergency road ambulance charges shall be covered up to ₹2,000 per
+Hospitalisation, for transportation to the nearest appropriate Hospital.
+Air ambulance is not covered under this plan; refer to SP003 for air
+ambulance coverage.
+
+Clause 4.8 – AYUSH Treatment
+In-patient treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha,
+or Homeopathy (AYUSH) systems of medicine shall be covered up to 25% of the
+Sum Insured per Policy Year, provided treatment is undertaken at a recognised
+AYUSH Hospital as defined under applicable IRDAI guidelines.
+
+Clause 4.9 – Organ Donor Expenses
+Medical expenses incurred for harvesting an organ from a donor for transplant
+to the Insured Person shall be covered up to the available Sum Insured,
+subject to the Company accepting the Insured Person's In-patient claim for
+the transplant procedure.
+
+Clause 4.10 – Cataract Treatment
+Cataract treatment shall be covered after completion of the 24-month specific
+waiting period as specified in Clause 6.2(b), subject to a sub-limit of
+₹40,000 per eye per Policy Year.
+
+Clause 4.11 – Mental Health Coverage
+In-patient psychiatric treatment shall be covered on par with physical illness,
+as mandated by IRDAI Circular No. IRDAI/HLT/REG/CIR/044/02/2020, subject to
+a sub-limit of ₹1,50,000 per Policy Year. OPD psychiatric consultations are
+not covered under this plan.
+
+Clause 4.12 – Restoration Benefit
+Upon exhaustion of the entire Sum Insured (including NCB, if any) during a
+Policy Year due to admissible claims, the Company shall restore 100% of the
+Base Sum Insured once per Policy Year. The Restored Sum Insured shall be
+available for Hospitalisation arising from any illness or injury different
+from that for which the Sum Insured was exhausted. The Restored Sum Insured
+shall not be carried forward to the next Policy Year and cannot be utilised
+for the same illness/injury that caused exhaustion.
+
+Clause 4.13 – No Claim Bonus (NCB)
+Upon renewal of the Policy without any admissible claim during the preceding
+Policy Year, the Company shall increase the Sum Insured by 10% of the Base
+Sum Insured at no additional premium, subject to a maximum cumulative NCB
+of 50% of the Base Sum Insured. In the event of a claim during any Policy
+Year, the accumulated NCB shall reduce by 10% at the time of renewal.
+NCB does not apply to the Restored Sum Insured.
+
+Clause 4.14 – Consumables Coverage
+Standard non-payable consumables as per IRDAI's Gazette Notification dated
+14 July 2020 (circular reference IRDAI/HLT/CIR/MISC/151/08/2019) shall not
+be covered under this Policy. Medically implanted devices and prosthetics
+used during a covered surgical procedure shall be covered.
+
+Clause 4.15 – Maternity and Newborn Coverage
+Maternity coverage is not included as a standard benefit under this Policy.
+A Maternity Rider (MR-001) is available as an optional add-on, subject to
+separate terms, conditions, and a 12-month waiting period from rider
+inception. Refer to the Maternity Rider endorsement document for details.
+
+================================================================================
+SECTION 5: SUM INSURED AND PREMIUM SCHEDULE
+================================================================================
+
+Clause 5.1 – Available Sum Insured Options
+Swasthya Protect is available at the following Sum Insured options:
+₹3,00,000 (Three Lakh); ₹5,00,000 (Five Lakh); ₹10,00,000 (Ten Lakh).
+
+Clause 5.2 – Indicative Annual Premium Schedule (Exclusive of GST at 18%)
+
+INDIVIDUAL POLICY – ZONE A (Mumbai, Delhi, Bengaluru, Chennai, Kolkata,
+Hyderabad, Pune, Ahmedabad):
+
+Age Band          SI ₹3L    SI ₹5L    SI ₹10L
+18–25 years       ₹3,800    ₹6,200    ₹10,800
+26–35 years       ₹4,400    ₹7,100    ₹12,500
+36–45 years       ₹6,200    ₹9,800    ₹17,200
+46–55 years       ₹9,500    ₹14,600   ₹25,400
+56–65 years       ₹14,200   ₹21,800   ₹37,500
+
+INDIVIDUAL POLICY – ZONE B (All other cities and towns):
+Premiums as above less 10% Zone B discount.
+
+FAMILY FLOATER POLICY (Premium based on eldest member's age; up to 2A+2C):
+Age of Eldest     SI ₹3L    SI ₹5L    SI ₹10L
+25 years          ₹7,200    ₹11,400   ₹19,800
+35 years          ₹9,600    ₹15,200   ₹26,500
+45 years          ₹13,800   ₹21,600   ₹37,800
+55 years          ₹19,200   ₹29,800   ₹52,000
+
+Additional Child Premium (per child beyond 2): ₹800/year at ₹3L;
+₹1,100/year at ₹5L; ₹1,800/year at ₹10L.
+Addition of Parents (per parent, separate floater): Zone A premiums apply
+based on parent's age band as per Individual Policy schedule above.
+
+Clause 5.3 – Premium Calculation Factors
+Premium is calculated based on: (a) Age of the Insured Person or eldest
+Insured Person (Family Floater); (b) Geographic Zone; (c) Sum Insured;
+(d) Policy basis (Individual/Family Floater); (e) Applicable NCB; (f)
+Any applicable loading based on medical underwriting; (g) Applicable
+discounts for online purchase (5%), multi-year policy (7.5% for 2-year;
+12% for 3-year), or corporate affinity group (variable).
+
+Clause 5.4 – GST and Statutory Levies
+All premiums stated in Clause 5.2 are exclusive of GST at the applicable
+rate (currently 18%) and any other statutory levies as may be notified by
+the Government of India from time to time. Premium paid towards this Policy
+is eligible for deduction under Section 80D of the Income Tax Act, 1961,
+subject to applicable limits and conditions.
+
+Clause 5.5 – Premium Revision
+The Company reserves the right to revise premium rates with prior approval
+of IRDAI. The Insured shall be notified of any revision at least 90 days
+prior to the renewal date. Premium rates shall not be revised for an
+individual Insured Person based solely on their individual claims history.
+
+================================================================================
+SECTION 6: WAITING PERIODS
+================================================================================
+
+Clause 6.1 – Initial Waiting Period
+No claim shall be payable for any illness (other than those arising from
+Accidental Bodily Injury) occurring within 30 days of the Policy commencement
+date for a new Policy. This waiting period shall not apply upon continuous
+and uninterrupted renewal of the Policy. Claims arising from Accidental
+Bodily Injury are covered from the Policy commencement date.
+
+Clause 6.2 – Specific Disease Waiting Periods
+The following conditions and treatments shall not be covered during the
+initial periods specified below from the Policy commencement date:
+(a) 24-month waiting period: Cataracts; benign prostatic hypertrophy;
+    hysterectomy for non-malignant conditions; all types of hernia; hydrocele;
+    fistula-in-ano and piles (haemorrhoids); sinusitis and related disorders;
+    calculus diseases (kidney, gall bladder, urinary tract); non-infective
+    arthritis; treatment for joint replacement due to degenerative conditions
+    (36-month period for joint replacement).
+(b) 36-month waiting period: Joint replacement surgery (unless necessitated
+    by Accidental Bodily Injury).
+These waiting periods shall be progressively reduced upon portability from
+another insurer in accordance with IRDAI portability guidelines.
+
+Clause 6.3 – Pre-Existing Disease (PED) Waiting Period
+Any Pre-Existing Disease (पहले से मौजूद बीमारी) as defined in Clause 2.15
+shall not be covered until the completion of 48 consecutive months of
+continuous coverage from the date of inception of the first Policy issued
+by the Company covering such Pre-Existing Disease. Portability credits shall
+apply as per IRDAI guidelines.
+
+Clause 6.4 – Maternity Waiting Period
+Maternity coverage under the optional Maternity Rider (MR-001) is subject
+to a 12-month waiting period from the date of rider inception. No waiting
+period applies for treatment of life-threatening complications of pregnancy.
+
+================================================================================
+SECTION 7: EXCLUSIONS
+================================================================================
+
+The Company shall not be liable to make any payment under this Policy in
+respect of expenses directly or indirectly incurred in connection with or
+arising out of the following:
+
+Clause 7.1 – Pre-Existing Diseases During Waiting Period
+Any Pre-Existing Disease and its direct complications during the applicable
+waiting period as specified in Clause 6.3.
+
+Clause 7.2 – Initial Waiting Period Illnesses
+Any illness contracted within the first 30 days of the Policy commencement
+date, except Accidental Bodily Injury as per Clause 6.1.
+
+Clause 7.3 – Cosmetic and Aesthetic Treatments
+Any treatment, surgical or otherwise, undertaken solely for cosmetic,
+aesthetic, or beauty enhancement purposes, including but not limited to
+rhinoplasty, liposuction, breast augmentation, and skin lightening procedures,
+unless necessitated by Accidental Bodily Injury or Cancer treatment.
+
+Clause 7.4 – Dental Treatment
+Dental treatment or surgery of any kind, including tooth extraction, dental
+implants, orthodontic treatment, and periodontal surgery, unless necessitated
+by Accidental Bodily Injury to natural teeth requiring Hospitalisation.
+
+Clause 7.5 – Self-Inflicted Injury
+Treatment arising from intentional self-inflicted injury, attempted suicide,
+or deliberate self-harm, irrespective of the mental health status of the
+Insured Person at the time of the act.
+
+Clause 7.6 – Substance Abuse and Addiction
+Treatment for alcoholism, drug addiction, substance abuse, or any condition
+directly arising from chronic use of alcohol, narcotics, tobacco, or
+psychoactive substances. De-addiction treatment is excluded.
+
+Clause 7.7 – War, Terrorism, and Nuclear Risks
+Any claim arising directly or indirectly from war (declared or undeclared),
+invasion, acts of foreign enemies, civil war, rebellion, revolution,
+insurrection, military or usurped power, nuclear contamination, radioactive
+fallout, chemical warfare, or biological attack.
+
+Clause 7.8 – Maternity and Reproductive Treatments (Standard Exclusion)
+Normal pregnancy and childbirth, miscarriage, abortion, or any complications
+thereof, unless covered under the optional Maternity Rider (MR-001).
+Assisted reproductive technologies (IVF, IUI, ICSI, GIFT, ZIFT) and
+gestational surrogacy are excluded under the standard Policy.
+
+Clause 7.9 – Infertility and Sterility
+Treatment for infertility, sub-fertility, impotence, or sexual dysfunction,
+including but not limited to hormonal therapy for fertility purposes and
+surgical correction for infertility.
+
+Clause 7.10 – Experimental and Unproven Treatments
+Any treatment, procedure, or technology that lacks established medical
+evidence of efficacy as per the standards of the medical community in India
+or internationally recognised medical practice, including experimental drugs
+not approved by the Central Drugs Standard Control Organisation (CDSCO).
+
+Clause 7.11 – Congenital Anomalies
+Treatment for any External Congenital Anomaly (conditions present since birth
+that are visible and accessible). Internal Congenital Anomalies are covered
+after completion of the applicable waiting period under Clause 6.3.
+
+Clause 7.12 – Treatments Abroad
+Any medical treatment undertaken outside the geographical territory of India.
+Refer to SP003 (Swasthya Protect Global) for international coverage.
+
+Clause 7.13 – OPD and Non-Hospitalisation Treatments
+Expenses incurred on outpatient consultations, OPD diagnostics, pharmacy
+purchases for non-hospitalised conditions, and home nursing care, unless
+specifically covered under Clause 4.6 (Domiciliary Hospitalisation).
+
+Clause 7.14 – Preventive Care and Vaccinations
+Health check-ups, preventive medical examinations, vaccinations, inoculations,
+and immunisations, except where expressly included as a covered benefit.
+
+Clause 7.15 – Change of Gender Treatment
+Any treatment, surgical or medical, for the purpose of gender reassignment
+or sexual transformation.
+
+Clause 7.16 – Refractive Errors
+Expenses for treatment of refractive errors of the eye (spectacles, contact
+lenses, laser refractive surgery such as LASIK/LASEK) unless the refractive
+error exceeds 7.5 dioptres.
+
+Clause 7.17 – Non-Medical Expenses
+Expenses of a personal nature incurred during Hospitalisation, including but
+not limited to attendant charges, television rental, telephone charges,
+laundry, personal hygiene items, food for family members, and administrative
+charges, as per IRDAI's non-payables list (Gazette Notification 2020).
+
+Clause 7.18 – Obesity and Weight Management
+Treatment for obesity, morbid obesity, weight reduction, or weight management,
+including bariatric surgery, unless the patient meets all criteria specified
+in IRDAI guidelines for medically necessary obesity surgery.
+
+Clause 7.19 – Hearing Aids and External Devices
+Cost of hearing aids, spectacles, contact lenses, crutches, wheelchairs,
+artificial limbs, dentures, artificial teeth, and other external aids or
+appliances, unless used as part of a covered surgical procedure.
+
+Clause 7.20 – Epidemics and Government-Declared Disasters
+Treatment for any epidemic, pandemic, or public health emergency as declared
+by the World Health Organisation (WHO) or the Government of India, unless
+specifically covered by an endorsement or IRDAI direction.
+
+Clause 7.21 – Adventure Sports and Hazardous Activities
+Treatment necessitated by participation as a professional in adventure sports
+or hazardous activities, including but not limited to bungee jumping, skydiving,
+mountaineering, motor racing, or deep-sea diving.
+
+Clause 7.22 – Circumcision
+Circumcision, unless medically necessary for the treatment of a covered
+illness or as a result of Accidental Bodily Injury.
+
+Clause 7.23 – Excluded Hospitals and Providers
+Treatment at any hospital or by any medical practitioner specifically excluded
+by the Company and notified on the Company's website, except in life-threatening
+emergencies where expenses up to the point of stabilisation shall be payable.
+
+Clause 7.24 – Genetic Testing and Treatment
+Genetic testing, counselling, or treatment arising from genetic or hereditary
+conditions, including prophylactic surgery based on genetic predisposition.
+
+Clause 7.25 – Domiciliary Hospitalisation Specific Exclusions
+Under Clause 4.6, Domiciliary Hospitalisation shall not cover: pre- and
+post-domiciliary expenses; treatment for asthma, bronchitis, chronic nephritis,
+diarrhoea, diabetes mellitus and insipidus, epilepsy, hypertension, influenza,
+all psychiatric or psychosomatic disorders, tonsillitis, and arthritis/gout/
+rheumatism during domiciliary treatment.
+
+================================================================================
+SECTION 8: CLAIM PROCEDURE
+================================================================================
+
+Clause 8.1 – General Conditions Precedent
+The due observance and fulfilment of the terms and conditions of this Policy
+by the Insured and Insured Person, including timely notification of claims,
+submission of complete documentation, and co-operation with the Company's
+investigation, shall be conditions precedent to any liability of the Company
+under this Policy.
+
+Clause 8.2 – Cashless Claim Procedure (Network Hospitals)
+(a) For planned Hospitalisation: The Insured Person or hospital shall intimate
+    the Company's TPA at least 48 hours prior to admission through the
+    Cashless Desk at the Network Hospital or by calling the 24-hour TPA
+    helpline (1800-XXX-XXXX, toll-free).
+(b) For emergency Hospitalisation: Intimation shall be provided within
+    6 hours of admission.
+(c) The TPA shall issue initial pre-authorisation within 1 hour of receipt
+    of complete pre-authorisation request form.
+(d) Final pre-authorisation (enhancement, if required) shall be issued
+    within 6 hours of receipt of request during Hospitalisation.
+(e) Documents required for pre-authorisation: Completed pre-authorisation
+    form (available at Network Hospital); copy of health card/policy number;
+    treating doctor's certificate of medical necessity; preliminary diagnosis
+    and proposed treatment plan; KYC documents of Insured Person.
+(f) The Company or TPA may deny or partially approve Cashless Facility for
+    non-covered conditions. The Insured Person may proceed with treatment and
+    file a reimbursement claim.
+
+Clause 8.3 – Reimbursement Claim Procedure (Non-Network Hospitals and
+             Post-Cashless Denied Claims)
+(a) The Insured Person shall intimate the claim to the Company/TPA within
+    48 hours of Hospitalisation (24 hours for emergency).
+(b) Claim documents shall be submitted to the TPA within 15 days of
+    discharge from Hospital.
+(c) For post-hospitalisation claims, documents shall be submitted within
+    15 days of completion of post-hospitalisation treatment, subject to a
+    maximum of 75 days from the date of discharge.
+(d) The Company shall settle or reject the claim within 30 days of receipt
+    of complete documentation. In case of investigation, settlement shall
+    occur within 45 days.
+
+Clause 8.4 – Mandatory Claim Documents
+The following documents must be submitted with every claim:
+(i) Duly completed and signed Claim Form (Part A: Insured's Declaration;
+    Part B: Doctor's Certificate);
+(ii) Original/attested copies of hospital bills and receipts (itemised);
+(iii) Original discharge summary (detailed, signed by treating doctor);
+(iv) Original investigation reports, X-rays, scans, ECG, biopsy reports;
+(v) Original pharmacy bills with prescriptions;
+(vi) Attending doctor's prescription advising hospitalisation;
+(vii) Copy of FIR/MLC (for accidental claims);
+(viii) Copy of Policy document and health card;
+(ix) Cancelled cheque with pre-printed account name (for NEFT);
+(x) CKYC number or duly completed KYC form.
+
+Clause 8.5 – Additional Documents (if required by TPA)
+(i) Indoor case papers (nurse's notes, OT notes, anaesthetist's notes);
+(ii) Pre-authorisation correspondence;
+(iii) Certificate from previous insurer (for portability claims);
+(iv) Legal heir certificate (for claims on deceased policyholder).
+
+Clause 8.6 – Claim Settlement Timeline
+The Company shall settle valid claims within 30 days of receipt of all
+required documents. In the event of delay beyond 30 days, interest at 2%
+per annum above the prevailing bank rate of the Reserve Bank of India (RBI)
+shall be payable on the claim amount from the date of receipt of last
+document to the date of actual payment.
+
+Clause 8.7 – Claim Investigation
+Where circumstances warrant investigation, the Company shall initiate and
+complete investigation within 30 days of claim intimation. If investigation
+cannot be completed within 30 days, the Company shall communicate the
+reasons in writing to the Insured.
+
+Clause 8.8 – Penal Provisions for Fraudulent Claims
+If any claim is found to be fraudulent, all benefits under the Policy shall
+be forfeited and the Company shall have the right to cancel the Policy and
+recover any amounts already paid. The Company shall report such cases to
+the Insurance Information Bureau of India (IIB) as per applicable regulations.
+
+================================================================================
+SECTION 9: RENEWAL, PORTABILITY, AND CANCELLATION
+================================================================================
+
+Clause 9.1 – Renewal
+This Policy is renewable annually on a lifelong basis. The Company shall not
+decline renewal on the basis of claims history, health deterioration, or any
+change in risk profile, except in cases of fraud, moral hazard, or established
+misrepresentation. The Company shall provide renewal notice at least 45 days
+before the Policy expiry date.
+
+Clause 9.2 – Grace Period
+A grace period of 30 days from the Policy expiry date is available for premium
+payment without loss of continuity benefits (NCB, waiting period credits). No
+coverage shall be available for the period of the lapse for which no premium
+has been received.
+
+Clause 9.3 – Portability
+The Insured Person has the right to port this Policy to another insurer
+in accordance with IRDAI (Health Insurance) Regulations, 2016, retaining
+credit for accumulated waiting period coverage. Portability request must
+be submitted to the new insurer at least 45 days before the renewal date.
+The Company shall provide all required portability documentation within
+5 working days of request.
+
+Clause 9.4 – Cancellation by Insured
+The Insured may cancel this Policy at any time by providing 15 days' written
+notice. Refund of premium for the unexpired Policy period shall be provided
+on a short-period rate basis:
+- Up to 1 month risk: 75% of annual premium refunded
+- Up to 3 months risk: 50% of annual premium refunded
+- Up to 6 months risk: 25% of annual premium refunded
+- Beyond 6 months risk: No refund
+No refund shall be made if any claim has been admitted or paid during the
+Policy Year.
+
+Clause 9.5 – Cancellation by Company
+The Company may cancel this Policy by providing 30 days' written notice in
+cases of fraud, misrepresentation, non-disclosure of material facts, or moral
+hazard. In such cases, premium shall be refunded on a pro-rata basis for the
+unexpired period, except where fraud has been established.
+
+================================================================================
+SECTION 10: GRIEVANCE REDRESSAL
+================================================================================
+
+Clause 10.1 – Company Grievance Mechanism
+Any grievance regarding this Policy may be addressed to:
+Customer Service, Swasthya Health Insurance Co. Ltd.
+Swasthya House, 14th Floor, Bandra Kurla Complex, Mumbai – 400 051
+Toll-Free: 1800-XXX-XXXX | Email: grievance@swasthyainsurance.in
+Website: www.swasthyainsurance.in | Working Hours: Mon–Sat, 9 AM–7 PM
+The Company shall respond to all grievances within 14 days of receipt.
+
+Clause 10.2 – IRDAI Integrated Grievance Management System (IGMS)
+If not satisfied with the Company's response, the Insured may register a
+complaint through the IRDAI IGMS portal: www.igms.irda.gov.in or call
+IRDAI's Consumer Affairs Department at 155255 (toll-free).
+
+Clause 10.3 – Insurance Ombudsman
+For disputes involving claims settlement, partial/total repudiation, or
+policy terms, the Insured may approach the Insurance Ombudsman having
+jurisdiction over the Insured's place of residence, in accordance with
+the Insurance Ombudsman Rules, 2017 (as amended). A list of Ombudsman
+offices is available at www.cioins.co.in.
+
+================================================================================
+SECTION 11: FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q1. What is the minimum and maximum Sum Insured available under
+    Swasthya Protect?
+A1. Swasthya Protect is available at three Sum Insured options: ₹3 Lakh,
+    ₹5 Lakh, and ₹10 Lakh. For higher Sum Insured options, please refer to
+    Swasthya Protect Plus (SP002) or Swasthya Protect Global (SP003).
+
+Q2. क्या मेरी पहले से मौजूद बीमारी (Pre-Existing Disease) इस पॉलिसी में
+    कवर होगी?
+    (Will my Pre-Existing Disease be covered under this Policy?)
+A2. हाँ, लेकिन पहले से मौजूद बीमारियाँ पॉलिसी शुरू होने की तारीख से 48
+    महीने की निरंतर कवरेज के बाद कवर की जाएंगी। यदि आपने पहले किसी अन्य
+    बीमा कंपनी से स्वास्थ्य बीमा लिया हुआ है और उसे पोर्ट कर रहे हैं,
+    तो IRDAI के नियमानुसार आपकी प्रतीक्षा अवधि में कमी हो सकती है।
+    (Yes, Pre-Existing Diseases are covered after 48 months of continuous
+    coverage from policy inception. If porting from another insurer, waiting
+    period credit is available as per IRDAI portability guidelines.)
+
+Q3. If my entire Sum Insured is exhausted in one hospitalisation, am
+    I still covered for the rest of the year?
+A3. Yes. Under Clause 4.12 (Restoration Benefit), the Company will reinstate
+    100% of your Base Sum Insured once per Policy Year after it is fully
+    exhausted. However, the restored amount cannot be used for the same
+    illness or injury that caused the exhaustion.
+
+Q4. Does the room rent limit affect other hospital charges?
+A4. Yes. For Sum Insured of ₹3 Lakh and ₹5 Lakh, if you occupy a room with
+    rent exceeding the applicable daily limit (₹2,500/day for ₹3L; ₹4,000/day
+    for ₹5L), all associated hospital charges—including surgeon's fees,
+    specialist fees, and nursing charges—will be proportionately reduced.
+    To avoid this, we recommend selecting a room within the entitled category.
+    There is no room rent restriction at the ₹10 Lakh Sum Insured level.
+
+Q5. प्रीमियम का भुगतान करने के लिए कितने तरीके उपलब्ध हैं?
+    (What modes of premium payment are available?)
+A5. प्रीमियम का भुगतान नेट बैंकिंग, UPI, क्रेडिट/डेबिट कार्ड, NEFT/RTGS,
+    या चेक के माध्यम से किया जा सकता है। वार्षिक, अर्धवार्षिक, और
+    त्रैमासिक किश्तों में भुगतान का विकल्प उपलब्ध है।
+    (Premium can be paid via net banking, UPI, credit/debit card, NEFT/RTGS,
+    or cheque. Annual, half-yearly, and quarterly instalment options are
+    available.)
+
+Q6. How does No Claim Bonus work?
+A6. For every claim-free Policy Year, your Sum Insured increases by 10% of
+    the Base Sum Insured at renewal, at no extra premium. This bonus can
+    accumulate up to a maximum of 50% of the Base Sum Insured. For example,
+    if your Base Sum Insured is ₹5 Lakh and you have 5 claim-free years,
+    your effective Sum Insured becomes ₹7.5 Lakh. If a claim occurs, the NCB
+    reduces by 10% at the next renewal. NCB cannot increase the Sum Insured
+    beyond 150% of the Base Sum Insured.
+
+Q7. Can I add my parents to my Family Floater Policy?
+A7. Parents and parents-in-law can be added to the Family Floater Policy.
+    However, please note that their premium will be based on their individual
+    age bands and may significantly increase the total premium. It may be more
+    cost-effective to purchase a separate Senior Citizen plan (Swasthya Senior
+    Shield SP006) for parents aged 60 and above. Please consult our advisor
+    for a premium comparison.
+
+================================================================================
+REGULATORY DISCLAIMER
+================================================================================
+
+Insurance is the subject matter of solicitation. IRDAI Registration No. 147.
+This Policy document is subject to IRDAI (Health Insurance) Regulations, 2016,
+IRDAI (Insurance Products) Regulations, 2024, and all applicable circulars and
+guidelines issued by IRDAI from time to time. The terms and conditions stated
+herein shall be subject to change with prior approval of IRDAI. Tax benefits
+under Section 80D of the Income Tax Act, 1961, are subject to prevailing tax
+laws and individual tax status. For complete terms, conditions, and exclusions,
+please read the Policy document carefully before purchasing.
+Swasthya Health Insurance Co. Ltd. | CIN: U66010MH2020PLC345678
+UIN: SWIHLIP24001V012024 | Version 1.0 | Effective: 01 April 2024
+================================================================================
