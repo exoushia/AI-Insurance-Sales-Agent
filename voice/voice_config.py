@@ -5,8 +5,8 @@ Every Pipecat / Sarvam parameter for the voice layer lives here so the demo can
 be tuned in one place. Nothing else in voice/ hard-codes a model name, voice,
 language, sample rate, or threshold.
 
-STT  = Sarvam Saaras  (saaras:v3)   — speech → text, language-preserving.
-TTS  = Sarvam Bulbul  (bulbul:v3)   — text → speech, voice "shreya".
+STT  = Sarvam Saaras  (saaras:v3)   — speech → text, auto-detect + code-mix.
+TTS  = Sarvam Bulbul  (bulbul:v3)   — text → speech, voice "priya".
 Transport = SmallWebRTCTransport    — browser mic/speaker at localhost:7860.
 VAD  = Silero (Pipecat local)       — turn-taking / barge-in.
 """
@@ -24,12 +24,14 @@ from pipecat.transcriptions.language import Language
 class STTConfig:
     model: str = "saaras:v3"
     # saaras:v3 modes: transcribe | translate | verbatim | translit | codemix.
-    # "transcribe" keeps the user's original language + numbers + code-mixing,
-    # which is what our multilingual LLM + M_10 output pipeline expects.
-    mode: str = "transcribe"
-    # Default recognition language. With Silero (local) VAD we leave server-side
-    # VAD off; Saaras still auto-handles Hindi/English/Hinglish within a turn.
-    language: Language = Language.EN_IN
+    # "codemix" returns natural code-mixed text in Roman script ("mujhe cover
+    # chahiye" stays Roman, not Devanagari) — exactly how a Hinglish insurance
+    # call sounds, and what our LLM + M_10/M_11 text pipeline reads most cleanly.
+    mode: str = "codemix"
+    # language=None → saaras:v3 auto-detects the spoken language per utterance
+    # (Hindi / English / Hinglish) instead of biasing toward one. Local Silero
+    # VAD handles turn-taking, so server-side VAD stays off.
+    language: Language | None = None
     vad_signals: bool = False          # rely on Pipecat's local Silero VAD
     high_vad_sensitivity: bool = False
 
@@ -38,7 +40,12 @@ class STTConfig:
 @dataclass
 class TTSConfig:
     model: str = "bulbul:v3"           # v3 → temperature control, 24000 Hz
-    voice: str = "shreya"              # locked demo voice (v3 female speaker)
+    # "priya" is one of Sarvam's recommended v3 female voices (low character
+    # error rate across Hindi/English), which matters for spoken ₹ amounts.
+    voice: str = "priya"               # locked demo voice (v3 female speaker)
+    # Default for the (English) greeting only — OrchestratorProcessor overrides
+    # this per turn via TTSUpdateSettingsFrame using tts_language_for(), so Hindi
+    # / Hinglish turns are normalised and voiced in hi-IN automatically.
     language: Language = Language.EN_IN
     sample_rate: int = 24000           # bulbul:v3 native rate
     # bulbul:v3 ranges: pace 0.5–2.0, temperature 0.01–1.0. v3 does NOT support
@@ -63,6 +70,9 @@ class VADConfig:
     agent is looping. 0.8s lets a normal speaker finish a thought before we
     treat the turn as over, merging paused phrases into one coherent utterance.
     Barge-in still works (start_secs is short), so the user can interrupt.
+
+    (saaras:v3 also exposes server-side frame-level VAD params for finer tuning,
+    but we keep VAD local in Silero for deterministic, offline turn-taking.)
     """
     confidence: float = 0.7   # Silero speech-probability threshold (default)
     start_secs: float = 0.2   # speech must persist this long to start a turn

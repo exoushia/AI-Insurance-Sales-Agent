@@ -19,7 +19,13 @@ Scenarios (the demo types):
   3. general_qa      — general health-insurance / IRDAI question answered via
                        answer_general_question (regulations RAG).
   4. hinglish        — Hindi/Hinglish discovery; proves language detection and
-                       code-mixed replies through the same agentic brain.
+                       code-mixed replies through the same agentic brain, and
+                       closes the sale in Hinglish.
+  5. low_budget_niche — budget-constrained gig worker; agent matches a niche
+                       low-cost product (e.g. Hospital Daily Cash) within budget
+                       and closes the sale.
+  6. off_topic       — customer asks unrelated questions; agent stays polite,
+                       declines off-topic asks and ends the call gracefully.
 
 Each turn prints the spoken reply plus the tools the model called and the
 detected language, so you can see the agentic reasoning trace (also visible in
@@ -66,9 +72,23 @@ SCENARIOS: dict[str, list[str]] = {
     ],
     "hinglish": [
         "Hello, mujhe apne liye ek health insurance chahiye, main 30 saal ka hoon.",
-        "Mainly hospitalisation ke liye, agar kabhi admit hona pade.",
-        "Iska premium kitna hoga ek saal ka?",
+        "Mainly hospitalisation ke liye, sirf mere liye, koi pre-existing bimari nahi hai.",
+        "Mera budget around 10,000 rupees saal ka hai. Iska premium kitna hoga?",
         "Theek hai, recommended plan le lete hain.",
+        "Haan, please ise abhi finalize kar dijiye.",
+    ],
+    "low_budget_niche": [
+        "Hi, I'm a delivery rider, 27. Money's tight but I want some cover, just for me.",
+        "I won't have a regular salary, so I just want cash if I'm hospitalised.",
+        "Honestly I can't afford much — maybe two, three thousand a year at most.",
+        "Okay, show me the best plan you've got for me and what it costs.",
+        "That sounds doable. Let's go ahead and finalize it.",
+    ],
+    "off_topic": [
+        "Hey, quick one — who do you think wins the cricket world cup this year?",
+        "Haha fair. Also what's the weather like in Mumbai today?",
+        "Got it. Can you also recommend a good biryani place near me?",
+        "Alright, no insurance for me today. Thanks for your help, bye!",
     ],
 }
 

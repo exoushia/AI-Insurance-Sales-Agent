@@ -140,7 +140,11 @@ def tool_schema_openai() -> list[dict]:
                     "Rank the 20 Swasthya products for the current customer profile. "
                     "Call once you know who's covered, their age, and their main need. "
                     "If the result includes a probe_question, ask it before describing "
-                    "any product. Returns ranked candidates with product_id and score."
+                    "any product. If no_exact_match is true, no product fits every "
+                    "preference — recommend the top candidate as the closest fit and "
+                    "briefly acknowledge the trade-off (relaxed_constraints says what "
+                    "couldn't be met), then keep moving toward plans; do not loop. "
+                    "Returns ranked candidates with product_id and score."
                 ),
                 "parameters": {"type": "object", "properties": {}},
             },

@@ -14,8 +14,11 @@ TTS normalisation (Bulbul reads the raw string literally):
     (e.g. "IRDAI" → "I R D A I");
   - bracketed asides / clause citations are dropped whole (never spoken);
   - markdown / section symbols stripped;
-  - long bare integers get thousands separators (Bulbul reads "10,000" as a
-    whole number, "10000" digit-by-digit);
+  - long bare integers get INDIAN-format separators (Bulbul reads "3,00,000"
+    as a whole number, "300000" digit-by-digit);
+  - the final string is capped at the Bulbul v3 REST limit (2,500 chars),
+    trimmed at a sentence boundary so a long policy explanation is never cut
+    mid-word;
   - English-only: a stray "hai" token is corrected to "hi" (skipped for
     Hindi/Hinglish where "hai"/है is a legitimate, common word).
 
@@ -76,6 +79,31 @@ _HAI_RE = re.compile(r"\b([Hh])ai\b")
 
 _ENGLISH_LANGS = {"english", "en", "en-in", "en_in", ""}
 
+# Bulbul v3 REST API processes at most 2,500 characters per request.
+_TTS_CHAR_CAP = 2500
+
+
+def _indian_group(n: int) -> str:
+    """Group an integer in the Indian numbering system (3,00,000 not 300,000)."""
+    s = str(n)
+    if len(s) <= 3:
+        return s
+    last3, rest = s[-3:], s[:-3]
+    rest = re.sub(r"(?<=\d)(?=(?:\d\d)+$)", ",", rest)
+    return f"{rest},{last3}"
+
+
+def _cap_for_tts(text: str, limit: int = _TTS_CHAR_CAP) -> str:
+    """Keep the spoken string within Bulbul's per-request char limit, cutting at
+    the last sentence boundary that fits (falling back to a word boundary)."""
+    if len(text) <= limit:
+        return text
+    window = text[:limit]
+    cut = max(window.rfind(". "), window.rfind("! "), window.rfind("? "))
+    if cut == -1:
+        cut = window.rfind(" ")
+    return (window[: cut + 1] if cut != -1 else window).strip()
+
 
 class ResponseQueue:
     agent_id = AgentID.RESPONSE_QUEUE
@@ -121,7 +149,7 @@ class ResponseQueue:
         for rx, repl in _ACRONYM_RES:
             out = rx.sub(repl, out)
 
-        out = _BIGNUM_RE.sub(lambda m: format(int(m.group(0)), ","), out)
+        out = _BIGNUM_RE.sub(lambda m: _indian_group(int(m.group(0))), out)
 
         lang = (language or "english").strip().lower()
         if lang in _ENGLISH_LANGS:
@@ -129,7 +157,7 @@ class ResponseQueue:
 
         out = _WS_RE.sub(" ", out).strip()
         out = _SPACE_PUNCT_RE.sub(r"\1", out)
-        return out
+        return _cap_for_tts(out)
 
 
 # ---------------------------------------------------------------------------
@@ -172,9 +200,11 @@ if __name__ == "__main__":
     assert norm("Clause 8.1 – Cashless is supported.") == "Cashless is supported.", \
         norm("Clause 8.1 – Cashless is supported.")
 
-    # Markdown stripped; long numbers grouped.
-    assert norm("**Premium** is 300000 rupees") == "Premium is 300,000 rupees", \
+    # Markdown stripped; long numbers grouped in Indian format (3,00,000).
+    assert norm("**Premium** is 300000 rupees") == "Premium is 3,00,000 rupees", \
         norm("**Premium** is 300000 rupees")
+    assert norm("Sum insured 1234567 rupees") == "Sum insured 12,34,567 rupees", \
+        norm("Sum insured 1234567 rupees")
     # Already-grouped numbers and 4-digit years untouched.
     assert norm("In 2024 the cap is 1,50,000") == "In 2024 the cap is 1,50,000", \
         norm("In 2024 the cap is 1,50,000")
@@ -183,5 +213,11 @@ if __name__ == "__main__":
     assert norm("Hai there, welcome") == "Hi there, welcome", norm("Hai there, welcome")
     assert norm("aapka plan ready hai", language="hinglish") == "aapka plan ready hai", \
         norm("aapka plan ready hai", language="hinglish")
+
+    # Output is capped at the Bulbul char limit, trimmed at a sentence boundary.
+    _long = ("This plan covers hospitalisation. " * 120)  # ~3,600 chars
+    _capped = norm(_long)
+    assert len(_capped) <= 2500, len(_capped)
+    assert _capped.endswith("."), repr(_capped[-20:])
 
     print("response_queue.py (M_11) self-test passed.")

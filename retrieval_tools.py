@@ -98,6 +98,17 @@ _DYNAMIC_FILTER_RULES: list[tuple[str, str, str]] = [
 # Budget bands ordered cheapest → priciest, for budget_ceiling comparisons.
 _BUDGET_BAND_ORDER = ["micro", "budget", "mid", "premium"]
 
+# Eligibility gates that can NEVER be relaxed — a product legally/structurally
+# cannot cover the user outside these. Everything else in _DYNAMIC_FILTER_RULES
+# (buyer_type, primary_need, needs_opd, budget_band) is a PREFERENCE: if no
+# product satisfies every preference, we relax preferences (not eligibility) and
+# return the nearest matches rather than dead-ending on an empty candidate set.
+_ELIGIBILITY_KEYS = {"age", "gender"}
+_RELAXABLE_KEYS = [
+    user_key for user_key, _reg, _logic in _DYNAMIC_FILTER_RULES
+    if user_key not in _ELIGIBILITY_KEYS
+]
+
 # Sufficiency gate — the agent MUST know these before any retrieval runs.
 # Distinct from the dynamic hard filters above: this is the minimum to start,
 # not a statement about which attributes constrain eligibility.
@@ -520,10 +531,22 @@ def filter_products(user_schema: dict) -> dict:
     # Sort by score descending
     candidates.sort(key=lambda x: x["score"], reverse=True)
 
-    # Determine if we need a probe question
+    # Graceful no-match fallback — if every product was hard-filtered out, the
+    # user's PREFERENCES (e.g. a micro-budget gig_worker wanting daily_cash) have
+    # no exact product. Rather than dead-ending on an empty list (which leaves the
+    # agent with nothing to do but loop on discovery), relax preference filters
+    # while keeping eligibility gates (age/gender) and return the nearest matches.
+    no_exact_match = False
+    relaxed_constraints: list[str] = []
+    if not candidates:
+        no_exact_match = True
+        candidates, relaxed_constraints = _relaxed_candidates(user_schema)
+
+    # Determine if we need a probe question. Skip when we already relaxed: the
+    # caller should pivot to the nearest match, not ask yet another question.
     top_candidates = [c for c in candidates if c["score"] > 0.10]
     probe_question = None
-    if len(top_candidates) > MAX_CANDIDATES_WITHOUT_PROBE:
+    if not no_exact_match and len(top_candidates) > MAX_CANDIDATES_WITHOUT_PROBE:
         top_ids = [c["product_id"] for c in top_candidates]
         probe_question = _select_probe_question(top_ids, user_schema)
 
@@ -540,9 +563,39 @@ def filter_products(user_schema: dict) -> dict:
         "eliminated_count": len(eliminated),
         "total_products":  len(all_product_ids()),
         "probe_question":  probe_question,         # None if ≤3 candidates
+        "no_exact_match":  no_exact_match,         # True → candidates are nearest, not exact
+        "relaxed_constraints": relaxed_constraints,  # which preferences were relaxed to find them
         "missing_fields":  missing_fields,
         "_eliminated":     eliminated,             # orchestrator-internal, stripped before LLM
     }
+
+
+def _relaxed_candidates(user_schema: dict) -> tuple[list[dict], list[str]]:
+    """Fallback ranking when hard filters eliminate every product.
+
+    Keeps only the eligibility gates (age, gender) as hard constraints and drops
+    the user's preference constraints, then ranks the survivors with the FULL
+    schema so preferences still steer ordering (the best near-miss floats up).
+    Returns (candidates, relaxed_constraints).
+    """
+    eligibility_only = {k: v for k, v in user_schema.items() if k in _ELIGIBILITY_KEYS}
+    relaxed = [k for k in _RELAXABLE_KEYS if user_schema.get(k) is not None]
+
+    nearest = []
+    for pid in all_product_ids():
+        passes, _ = _passes_hard_filters(pid, eligibility_only)
+        if not passes:
+            continue
+        score, matched = _soft_score(pid, user_schema)   # full schema → ranking
+        nearest.append({
+            "product_id": pid,
+            "name":       REGISTRY[pid]["name"],
+            "score":      round(score, 3),
+            "matched_on": matched,
+        })
+    nearest.sort(key=lambda x: x["score"], reverse=True)
+    return nearest, relaxed
+
 
 
 # ---------------------------------------------------------------------------
