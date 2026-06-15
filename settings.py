@@ -90,6 +90,10 @@ class AppConfig:
     openai_timeout_seconds: int = _env_int("OPENAI_TIMEOUT_SECONDS", 25)
     openai_temperature: float = _env_float("OPENAI_TEMPERATURE", 0.2)
     fallback_mode: bool = _env_bool("APP_FALLBACK_MODE", True)
+    # Which conversation engine to use:
+    #   "fsm"     → deterministic finite-state-machine orchestrator (default, safe).
+    #   "agentic" → LLM native tool-calling orchestrator (M_16), FSM as fallback.
+    orchestration_mode: str = _env_str("ORCHESTRATION_MODE", "fsm")
     models: ModelCatalog = ModelCatalog()
 
     @property
@@ -99,3 +103,7 @@ class AppConfig:
     @property
     def sarvam_enabled(self) -> bool:
         return bool(self.sarvam_api_key)
+
+    @property
+    def agentic_enabled(self) -> bool:
+        return self.orchestration_mode.strip().lower() == "agentic"

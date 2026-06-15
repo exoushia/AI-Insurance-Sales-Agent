@@ -44,7 +44,7 @@ as a strict eligibility gate during retrieval; otherwise it is a soft scoring si
 |---|-----|------|:-----------:|--------------|---------|
 | 1 | `buyer_type` | enum | ✅ | `individual`, `employer_large`, `employer_sme`, `gig_worker` | Who the cover is for. Gates group-only vs individual-only products. |
 | 2 | `age` | int | ✅ | years | Applicant age. Gates age-banded products (e.g. SP009 18–35, SP006 60–80). |
-| 3 | `gender` | enum | ✅ | `female`, `male`, `other` | Only relevant for female-only products (SP007, SP008); `other` ⇒ treated as `male`. |
+| 3 | `gender` | enum | ✅ | `female`, `male`, `other` | Only relevant for female-only products (SP007, SP008); `other` ⇒ treated as `male`. **Defaulted to `female` at session start and never asked** (keeps the widest product set eligible, incl. maternity); overridden only if the user volunteers it. |
 | 4 | `primary_need` | enum | ✅ | `hospitalisation`, `critical_illness`, `cancer`, `accident`, `maternity`, `top_up`, `international`, `daily_cash` | Strongest product-pointing signal; 7 values map near-deterministically to a product. |
 | 5 | `has_ped` | bool | — | `true` / `false` | Whether any pre-existing disease exists. Triggers the `ped_type` follow-up. |
 | 5 | `ped_type` | enum | ✅ | `diabetes_cardiac`, `other_ped`, `none` | PED category; `diabetes_cardiac` points strongly to SP015. Asked only if `has_ped` is true. |
@@ -291,3 +291,40 @@ answer Q&A → finalise one policy → finalise one plan → close**.
    **and** plan finalised), marking `purchased=true`; `done` soft-closes.
 7. **Safety rails**: `unsafe → S6` and `want_human` / `frustrated` / `consecutive_failures ≥ 3`
    `→ S5` override from any non-terminal state.
+
+---
+
+## 11. Orchestration modes (`ORCHESTRATION_MODE`)
+
+There are two interchangeable conversation engines behind the same
+`process_message()` contract. The flag `ORCHESTRATION_MODE=fsm|agentic`
+(`settings.AppConfig.orchestration_mode`, default `fsm`) selects which one runs;
+`agentic_orchestrator.build_orchestrator()` is the factory used by `main.py` and
+`voice/run_voice.py`.
+
+| Mode | Engine | States | Sub-agents | Notes |
+|------|--------|--------|-----------|-------|
+| `fsm` | `ConversationOrchestrator` (deterministic) | S0–S6 above | M_01–M_15 | Default. Fully auditable; transitions owned by `fsm._next_state`. |
+| `agentic` | `AgenticOrchestrator` | n/a (model-driven) | **M_16 SalesAgent** + M_11 + M_15 | LLM native tool-calling; FSM is the fallback if the LLM/tool loop fails. |
+
+### M_16 — SalesAgent (agentic engine)
+The deterministic FSM is **retained** (`fsm.py`) as the reference we evolved from;
+M_16 is the agentic upgrade. The model drives the whole conversation by calling
+tools — there is no hand-coded state machine on this path — yet every fact still
+comes from a tool and every number is re-checked by M_15.
+
+Tools (OpenAI function-calling format; dispatch injects the live `UserSchema`):
+
+| Tool | Backed by | Purpose |
+|------|-----------|---------|
+| `save_profile` | `UserSchema.set` | Persist discovered fields (validated against the schema enums above). |
+| `recommend_products` | `filter_products` | Rank the 20 products for the current profile. |
+| `explain_product` | `get_product_features` + `search_policy_wording` | Full features (+ optional policy wording on an aspect) before describing a product. |
+| `show_plan_options` | `get_plan_options` | Plan tiers, sums insured, annual premiums. |
+| `estimate_value_vs_cost` | `data/treatment_costs.json` | Real treatment costs to frame value (price-anxiety). |
+| `answer_general_question` | `search_regulations` | IRDAI rights, portability, free-look, general health-insurance Qs. |
+| `finalize_purchase` | `UserSchema.set` (guarded) | Records a sale only with a confirmed product **and** plan. |
+
+The agentic system persona is centralised in `prompts_template.AGENTIC_SALES_SYSTEM`.
+Three local demo flows ship in `demo_agentic.py`: `price_anxiety`, `deep_policy`,
+`general_qa`.

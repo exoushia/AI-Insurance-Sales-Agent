@@ -54,6 +54,7 @@ class AgentID:
     ANALYTICS_LOGGER   = "M_13"
     WHATSAPP           = "M_14"
     NUMERIC_GUARDRAIL  = "M_15"
+    SALES_AGENT        = "M_16"   # agentic LLM tool-calling orchestrator
 
 
 # Human-readable names — used in logs and the analytics record.
@@ -73,6 +74,7 @@ AGENT_NAMES: dict[str, str] = {
     AgentID.ANALYTICS_LOGGER:   "AnalyticsLogger",
     AgentID.WHATSAPP:           "WhatsAppAgent",
     AgentID.NUMERIC_GUARDRAIL:  "NumericGuardrail",
+    AgentID.SALES_AGENT:        "SalesAgent",
 }
 
 

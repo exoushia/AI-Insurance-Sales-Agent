@@ -2,7 +2,7 @@
 
 ## Goal
 A deterministic, auditable health-insurance sales agent built as a `subagents/` package
-of single-responsibility modules (M_01–M_15) behind ONE uniform contract
+of single-responsibility modules (M_01–M_16) behind ONE uniform contract
 (`run(ctx: AgentContext) -> AgentResult`), driven by a deterministic FSM and orchestrator.
 LLM reasoning is layered **on top of** the deterministic core, never replacing it: every
 LLM-bound agent keeps its Phase 0 deterministic behavior as a fallback.
@@ -30,7 +30,7 @@ correct agents firing and a `logs/conversation_<id>.json` log produced.
 
 ### What was built
 - [x] **`subagents/base.py`** — uniform contract: `AgentContext`, `AgentResult`,
-  `BaseSubAgent` protocol, `AgentID` (M_01–M_15) + `AGENT_NAMES`. Agents never mutate
+  `BaseSubAgent` protocol, `AgentID` (M_01–M_16) + `AGENT_NAMES`. Agents never mutate
   state directly; they return `schema_updates` / `handoff_to` / `next_state_hint`.
 - [x] **`subagents/__init__.py`** — `AGENT_REGISTRY` (15 singleton instances) + `get_agent()`.
 - [x] **`fsm.py` refactor** — deterministic core only: `FSMState` (S0–S6), `ConversationRecord`,
@@ -59,7 +59,41 @@ correct agents firing and a `logs/conversation_<id>.json` log produced.
 | M_12 | ResponseValidator | outbound | denylist scan + grounding token-overlap |
 | M_13 | AnalyticsLogger | end of turn | append turn to `logs/conversation_<id>.json` (only I/O sink) |
 | M_14 | WhatsAppAgent | M_03 handoff if purchased | append to `logs/wa_outbox.json` + print |
-| M_15 | NumericGuardrail | inside M_07/08/09 | every number in response must appear in context |
+| M_15 | NumericGuardrail | inside M_07/08/09 + M_16 | every number in response must appear in context |
+| M_16 | SalesAgent | agentic mode (every turn) | native OpenAI tool-calling loop; drives the whole conversation; reuses retrieval tools; M_15-checked |
+
+### Phase B — Agentic orchestration (LLM tool-calling) — ADDED
+Why we moved here (the deterministic FSM in `fsm.py` is **kept** as the reference
+we evolved from): the FSM produced correct but rigid, "robotic" turns and
+mis-routed open follow-ups ("explain that more") into the wrong state. Native
+tool-calling lets the model sequence discovery → recommend → plan → close
+naturally while every fact still comes from a tool and every number is re-checked
+by M_15. Using the OpenAI SDK's `tools` API means the full decision trace shows up
+in standard request/response logs (`logs/llm_calls.log`) for observability.
+
+- **`subagents/sales_agent.py` (M_16)** — the agentic brain. Defines the tool set
+  in OpenAI function format and a dispatch that injects the LIVE user schema, so
+  the model never round-trips it. Tools:
+  `save_profile`, `recommend_products` (→ `filter_products`),
+  `explain_product` (→ `get_product_features` + `search_policy_wording`),
+  `show_plan_options` (→ `get_plan_options`),
+  `estimate_value_vs_cost` (treatment-cost table — price anxiety),
+  `answer_general_question` (→ `search_regulations`),
+  `finalize_purchase` (guarded: needs product + plan).
+- **`llm_gateway.LLMGateway.generate_with_tools()`** — the tool-calling loop
+  (cap 4 hops, `response_generator` model); mutates the message list for a full
+  trace; returns `{text, tool_trace, hops}`.
+- **`agentic_orchestrator.AgenticOrchestrator`** — drop-in for the FSM
+  orchestrator (same `process_message` contract + `record`/`llm`/`sarvam`). Runs
+  M_16, normalises the reply through M_11, and **falls back to the FSM
+  orchestrator (shared record)** if the LLM/tool loop is unavailable or errors.
+- **Flag**: `ORCHESTRATION_MODE=fsm|agentic` (`settings.AppConfig.orchestration_mode`,
+  default `fsm`). `agentic_orchestrator.build_orchestrator()` selects the engine;
+  wired into `main.py` and `voice/run_voice.py`.
+- **Prompts centralised** in `prompts_template.py`
+  (`AGENTIC_SALES_SYSTEM`, `AGENTIC_VALUE_FRAME_NOTE`).
+- **Demos**: `demo_agentic.py` runs the 3 local demo types — `price_anxiety`,
+  `deep_policy`, `general_qa`.
 
 ### Orchestrator pipeline (deterministic, `process_message`)
 1. `schema.increment_turn()`; record user message; `S0→S1` bootstrap.

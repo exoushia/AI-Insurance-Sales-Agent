@@ -32,6 +32,23 @@ _BLOCKED_TEXT = (
 )
 _DISCOVERY_FALLBACK = "Could you share the main thing you'd like this insurance to cover?"
 
+# Discovery is finished but no product matched everything the caller asked for.
+# Used instead of re-asking a discovery question (which would loop forever) when
+# the funnel cannot advance because retrieval returned nothing viable.
+_NO_MATCH_TEXT = (
+    "Thanks for sharing all of that. I couldn't find a Swasthya policy that fits "
+    "every detail you've mentioned, so let me connect you with one of our "
+    "advisors who can explore the options with you."
+)
+
+# Discovery is finished and a product is already resolved, but we're momentarily
+# back in discovery with nothing to ask. Re-offer the recommendation rather than
+# repeating a question.
+_RESUME_RECOMMENDATION_TEXT = (
+    "Based on everything you've told me, I have a plan in mind for you. "
+    "Would you like me to walk you through it?"
+)
+
 # Which agent leads each state's response chain. Handoffs inside the chain are
 # followed automatically by the orchestrator (e.g. M_06→M_07, M_02→M_03→M_14).
 _STATE_ENTRY_AGENT = {
@@ -222,7 +239,20 @@ class ConversationOrchestrator:
 
         if not segments:
             if state == FSMState.S1_DISCOVERY:
-                segments = [self._next_discovery_question()]
+                schema = ctx.record.schema
+                if schema.next_missing_field() is not None:
+                    # Normal case: there is still a field worth asking.
+                    segments = [self._next_discovery_question()]
+                elif schema.resolved_product_id is None:
+                    # Discovery exhausted and nothing matched the stated needs.
+                    # Never loop a discovery prompt here — say so plainly and
+                    # offer a human advisor.
+                    segments = [_NO_MATCH_TEXT]
+                else:
+                    # Discovery exhausted with a product already resolved but
+                    # momentarily back in S1 — re-offer the recommendation
+                    # instead of re-asking (the FSM advances to S2 next turn).
+                    segments = [_RESUME_RECOMMENDATION_TEXT]
             else:
                 segments = [_DISCOVERY_FALLBACK]
         return segments, guard_context

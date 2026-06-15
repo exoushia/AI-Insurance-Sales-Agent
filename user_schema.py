@@ -419,6 +419,11 @@ class UserSchema:
             language=language,
             created_at=ts,
             updated_at=ts,
+            # Gender is a hard eligibility filter for several products, but asking
+            # it adds friction with little demo value. Default to "female" so the
+            # widest product set (incl. maternity) stays eligible and the agent
+            # never has to ask. Overridden if the user volunteers their gender.
+            gender="female",
         )
 
     # ── SETTERS WITH VALIDATION ───────────────────────────────────────────────

@@ -33,6 +33,8 @@ from retrieval_tools import filter_products
 _SCORE_FLOOR = 0.10          # candidates at or below this are not viable
 _CLEAR_WINNER_GAP = 0.25     # top must beat #2 by this to auto-resolve
 _MAX_TO_PRESENT = 3
+_MAX_DISCOVERY_TURNS = 8     # mirrors M_05's discovery ceiling — once we hit it
+                             # (or run out of fields) we must commit to a pick
 
 
 class PolicyRetrievalAgent:
@@ -51,6 +53,14 @@ class PolicyRetrievalAgent:
             resolved = viable[0]
         elif len(viable) >= 2 and (viable[0]["score"] - viable[1]["score"]) >= _CLEAR_WINNER_GAP:
             resolved = viable[0]
+        elif viable and self._discovery_exhausted(schema):
+            # No runaway winner, but discovery is spent — every askable field is
+            # answered, or we've hit the discovery-turn ceiling. A sales agent
+            # must still commit to a best-fit recommendation; without this the
+            # funnel stalls in S1 (resolved_product_id stays None) and the
+            # orchestrator repeats the discovery fallback forever. Resolve the
+            # top-scoring viable product and let M_07 present it.
+            resolved = viable[0]
 
         if resolved is not None:
             updates["resolved_product_id"] = resolved["product_id"]
@@ -68,6 +78,17 @@ class PolicyRetrievalAgent:
                 "resolved": resolved["product_id"] if resolved else None,
                 "probe_question": result.get("probe_question"),
             },
+        )
+
+    @staticmethod
+    def _discovery_exhausted(schema) -> bool:
+        """True once there is nothing left to ask (every askable field is
+        collected) or the discovery-turn ceiling is reached. Matches the
+        conditions under which M_05 stops probing and signals "proceed", so the
+        product is resolved on the same turn the funnel wants to advance."""
+        return (
+            schema.next_missing_field() is None
+            or getattr(schema, "turn_count", 0) >= _MAX_DISCOVERY_TURNS
         )
 
 
@@ -101,6 +122,18 @@ if __name__ == "__main__":
     assert res2.handoff_to == AgentID.POLICY_SUMMARY
     assert len(res2.meta["top_candidates"]) <= 3
     assert res2.tool_calls == ["filter_products"]
+
+    # Discovery-exhaustion fallback: once the discovery-turn ceiling is hit, an
+    # ambiguous multi-candidate need must still commit to the top-scoring pick
+    # (otherwise the funnel stalls in S1 and loops the discovery fallback).
+    rec_amb = ConversationRecord.new(session_id="m06_exhaust")
+    for k, v in {"buyer_type": "individual", "age": 30, "gender": "male",
+                 "primary_need": "hospitalisation"}.items():
+        rec_amb.schema.set(k, v)
+    rec_amb.schema.turn_count = _MAX_DISCOVERY_TURNS
+    res_end = agent.run(AgentContext(record=rec_amb))
+    assert res_end.meta["resolved"] is not None, "must commit when exhausted"
+    assert res_end.schema_updates.get("resolved_product_id") is not None
 
     print("policy_retrieval.py (M_06) self-test passed.")
     print("  maternity  -> resolved:", res.meta["resolved"])

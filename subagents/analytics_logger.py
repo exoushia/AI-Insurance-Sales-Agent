@@ -78,6 +78,14 @@ class AnalyticsLogger:
             "consecutive_failures": ctx.record.consecutive_failures,
             "logged_at": datetime.now(timezone.utc).isoformat(),
         }
+        # Tool-calling telemetry (agentic path) — the ordered sequence of tools
+        # the SalesAgent invoked this turn, plus the full {name,args,result} trace.
+        tool_sequence = ctx.payload.get("tool_sequence")
+        if tool_sequence:
+            turn["tool_sequence"] = list(tool_sequence)
+        tool_trace = ctx.payload.get("tool_trace")
+        if tool_trace:
+            turn["tool_trace"] = tool_trace
         doc["turns"].append(turn)
         doc["final_state"] = ctx.record.state.value
         doc["schema_snapshot"] = schema.to_analytics_record()

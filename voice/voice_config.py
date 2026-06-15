@@ -6,7 +6,7 @@ be tuned in one place. Nothing else in voice/ hard-codes a model name, voice,
 language, sample rate, or threshold.
 
 STT  = Sarvam Saaras  (saaras:v3)   — speech → text, language-preserving.
-TTS  = Sarvam Bulbul  (bulbul:v2)   — text → speech, voice "anushka".
+TTS  = Sarvam Bulbul  (bulbul:v3)   — text → speech, voice "shreya".
 Transport = SmallWebRTCTransport    — browser mic/speaker at localhost:7860.
 VAD  = Silero (Pipecat local)       — turn-taking / barge-in.
 """
@@ -37,15 +37,37 @@ class STTConfig:
 # ── Text-to-Speech (Sarvam Bulbul) ─────────────────────────────────────────
 @dataclass
 class TTSConfig:
-    model: str = "bulbul:v2"           # v2 → supports pitch/loudness, 22050 Hz
-    voice: str = "anushka"             # locked demo voice
+    model: str = "bulbul:v3"           # v3 → temperature control, 24000 Hz
+    voice: str = "shreya"              # locked demo voice (v3 female speaker)
     language: Language = Language.EN_IN
-    sample_rate: int = 22050           # bulbul:v2 native rate
-    # bulbul:v2 ranges: pace 0.3–3.0, pitch/loudness supported (no temperature).
-    pace: float = 0.8
-    pitch: float = 0.0
-    loudness: float = 2.0
-    enable_preprocessing: bool = True  # smooths mixed-language / number reading
+    sample_rate: int = 24000           # bulbul:v3 native rate
+    # bulbul:v3 ranges: pace 0.5–2.0, temperature 0.01–1.0. v3 does NOT support
+    # pitch/loudness (those were v2-only). Lower temperature = steadier, more
+    # consistent delivery, which suits a trustworthy insurance agent.
+    pace: float = 0.9
+    temperature: float = 0.5
+    enable_preprocessing: bool = True  # always-on for v3; smooths numbers / mixed text
+
+
+# ── Voice Activity Detection (Silero, local) ───────────────────────────────
+@dataclass
+class VADConfig:
+    """Turn-taking thresholds for the local Silero VAD.
+
+    stop_secs is the critical anti-fragmentation knob: it is how long the user
+    must stay silent before the VAD declares the turn finished. Pipecat's
+    default (0.2s) is far too eager for spontaneous speech — a caller who pauses
+    mid-sentence to think ("I want maternity cover... and, um, dental too") gets
+    chopped into several tiny transcripts, each driving its own orchestrator
+    turn. The result is a flood of half-answered questions that sounds like the
+    agent is looping. 0.8s lets a normal speaker finish a thought before we
+    treat the turn as over, merging paused phrases into one coherent utterance.
+    Barge-in still works (start_secs is short), so the user can interrupt.
+    """
+    confidence: float = 0.7   # Silero speech-probability threshold (default)
+    start_secs: float = 0.2   # speech must persist this long to start a turn
+    stop_secs: float = 0.8    # silence this long ends the turn (was 0.2 default)
+    min_volume: float = 0.6   # ignore audio quieter than this (default)
 
 
 # ── Transport (SmallWebRTC, browser) ───────────────────────────────────────
@@ -54,7 +76,7 @@ class TransportConfig:
     audio_in_enabled: bool = True
     audio_out_enabled: bool = True
     enable_interruptions: bool = True  # barge-in: user can cut in mid-reply
-    audio_out_sample_rate: int = 22050  # match TTSConfig.sample_rate
+    audio_out_sample_rate: int = 24000  # match TTSConfig.sample_rate (v3)
 
 
 # ── Conversation / demo text ───────────────────────────────────────────────
@@ -92,6 +114,7 @@ def tts_language_for(schema_language: str | None) -> Language:
 class VoiceConfig:
     stt: STTConfig = field(default_factory=STTConfig)
     tts: TTSConfig = field(default_factory=TTSConfig)
+    vad: VADConfig = field(default_factory=VADConfig)
     transport: TransportConfig = field(default_factory=TransportConfig)
     conversation: ConversationConfig = field(default_factory=ConversationConfig)
 

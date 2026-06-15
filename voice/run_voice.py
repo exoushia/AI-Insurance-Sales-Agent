@@ -28,6 +28,7 @@ load_dotenv(os.path.join(_PKG_DIR, ".env"))
 
 from loguru import logger
 from pipecat.audio.vad.silero import SileroVADAnalyzer
+from pipecat.audio.vad.vad_analyzer import VADParams
 from pipecat.frames.frames import TTSSpeakFrame
 from pipecat.pipeline.pipeline import Pipeline
 from pipecat.pipeline.runner import PipelineRunner
@@ -39,6 +40,7 @@ from pipecat.services.sarvam.tts import SarvamTTSService
 from pipecat.transports.base_transport import TransportParams
 
 from orchestrator import ConversationOrchestrator
+from agentic_orchestrator import build_orchestrator
 from voice.orchestrator_processor import OrchestratorProcessor
 from voice.voice_config import VOICE_CONFIG
 
@@ -62,6 +64,7 @@ def _build_stt() -> SarvamSTTService:
 def _build_tts() -> SarvamTTSService:
     cfg = VOICE_CONFIG.tts
     # `sample_rate` stays a top-level arg; model/voice/prosody go through Settings.
+    # bulbul:v3 uses `temperature` (no pitch/loudness — those are v2-only).
     return SarvamTTSService(
         api_key=VOICE_CONFIG.sarvam_api_key,
         sample_rate=cfg.sample_rate,
@@ -70,8 +73,7 @@ def _build_tts() -> SarvamTTSService:
             voice=cfg.voice,
             language=cfg.language,
             pace=cfg.pace,
-            pitch=cfg.pitch,
-            loudness=cfg.loudness,
+            temperature=cfg.temperature,
             enable_preprocessing=cfg.enable_preprocessing,
         ),
     )
@@ -80,19 +82,29 @@ def _build_tts() -> SarvamTTSService:
 async def bot(runner_args: RunnerArguments) -> None:
     """Pipecat entry point — built and run once per browser connection."""
     tcfg = VOICE_CONFIG.transport
+    vcfg = VOICE_CONFIG.vad
 
     transport_params = {
         "webrtc": lambda: TransportParams(
             audio_in_enabled=tcfg.audio_in_enabled,
             audio_out_enabled=tcfg.audio_out_enabled,
             audio_out_sample_rate=tcfg.audio_out_sample_rate,
-            vad_analyzer=SileroVADAnalyzer(),
+            vad_analyzer=SileroVADAnalyzer(
+                params=VADParams(
+                    confidence=vcfg.confidence,
+                    start_secs=vcfg.start_secs,
+                    stop_secs=vcfg.stop_secs,
+                    min_volume=vcfg.min_volume,
+                )
+            ),
         ),
     }
     transport = await create_transport(runner_args, transport_params)
 
     # One orchestrator per connection → one ConversationRecord / session.
-    orchestrator = ConversationOrchestrator(
+    # The engine (deterministic FSM vs agentic tool-calling) is chosen by the
+    # ORCHESTRATION_MODE flag; both share the same process_message contract.
+    orchestrator = build_orchestrator(
         session_id=VOICE_CONFIG.conversation.session_id
     )
 

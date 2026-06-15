@@ -53,6 +53,14 @@ if not _llm_logger.handlers:
     _llm_logger.addHandler(_handler)
     _llm_logger.propagate = False
 
+_openai_event_logger = logging.getLogger("openai_events")
+if not _openai_event_logger.handlers:
+    _openai_event_logger.setLevel(logging.INFO)
+    _event_handler = logging.FileHandler(_LOG_DIR / "openai_events.jsonl", encoding="utf-8")
+    _event_handler.setFormatter(logging.Formatter("%(message)s"))
+    _openai_event_logger.addHandler(_event_handler)
+    _openai_event_logger.propagate = False
+
 
 def log_llm_call(agent_id: str, path: str, model: str, ok: bool, detail: str = "") -> None:
     """Record one LLM/fallback decision. `path` is "llm" or "fallback"."""
@@ -60,6 +68,68 @@ def log_llm_call(agent_id: str, path: str, model: str, ok: bool, detail: str = "
         "%s path=%s model=%s %s %s",
         agent_id, path, model, "ok" if ok else "fail", detail,
     )
+
+
+def _model_dump(obj: Any) -> dict[str, Any] | None:
+    if obj is None:
+        return None
+    if isinstance(obj, dict):
+        return obj
+    dump = getattr(obj, "model_dump", None)
+    if callable(dump):
+        try:
+            return dump()
+        except Exception:
+            return None
+    return None
+
+
+def _openai_usage(completion: Any) -> dict[str, Any]:
+    usage = _model_dump(getattr(completion, "usage", None)) or {}
+    return {
+        "prompt_tokens": usage.get("prompt_tokens"),
+        "completion_tokens": usage.get("completion_tokens"),
+        "total_tokens": usage.get("total_tokens"),
+        "prompt_tokens_details": usage.get("prompt_tokens_details"),
+        "completion_tokens_details": usage.get("completion_tokens_details"),
+    }
+
+
+def log_openai_event(
+    *,
+    operation: str,
+    model: str,
+    ok: bool,
+    latency_ms: float,
+    completion: Any | None = None,
+    hop: int | None = None,
+    tool_names: list[str] | None = None,
+    error_type: str | None = None,
+    finish_reason: str | None = None,
+    context: dict[str, Any] | None = None,
+) -> None:
+    """Append one structured OpenAI event line for observability.
+
+    The payload uses only OpenAI-native response metadata plus local timing.
+    """
+    event = {
+        "ts": int(time.time() * 1000),
+        "operation": operation,
+        "ok": bool(ok),
+        "model": model,
+        "latency_ms": round(latency_ms, 2),
+        "request_id": getattr(completion, "_request_id", None),
+        "openai_response_id": getattr(completion, "id", None),
+        "created": getattr(completion, "created", None),
+        "system_fingerprint": getattr(completion, "system_fingerprint", None),
+        "usage": _openai_usage(completion) if completion is not None else None,
+        "finish_reason": finish_reason,
+        "hop": hop,
+        "tool_names": tool_names or [],
+        "error_type": error_type,
+        "context": context or {},
+    }
+    _openai_event_logger.info(json.dumps(event, ensure_ascii=False, default=str))
 
 
 class LLMGateway:
@@ -99,13 +169,20 @@ class LLMGateway:
     def init_error(self) -> str | None:
         return self._init_error
 
-    def generate_response(self, system_prompt: str, user_message: str) -> str | None:
+    def generate_response(
+        self,
+        system_prompt: str,
+        user_message: str,
+        *,
+        agent_id: str = "unknown",
+        obs_context: dict[str, Any] | None = None,
+    ) -> str | None:
         """Return assistant text or None if generation is unavailable/failed."""
         if not self.is_available:
             return None
 
         def _call():
-            completion = self._client.chat.completions.create(
+            return self._client.chat.completions.create(
                 model=self.config.models.response_generator,
                 temperature=self.config.openai_temperature,
                 timeout=self.config.openai_timeout_seconds,
@@ -114,10 +191,33 @@ class LLMGateway:
                     {"role": "user", "content": user_message},
                 ],
             )
-            content = completion.choices[0].message.content
-            return content.strip() if isinstance(content, str) else None
 
-        return self._with_retries(_call)
+        started = time.perf_counter()
+        completion = self._with_retries(_call)
+        latency_ms = (time.perf_counter() - started) * 1000.0
+        if completion is None:
+            log_openai_event(
+                operation="chat.completions.generate_response",
+                model=self.config.models.response_generator,
+                ok=False,
+                latency_ms=latency_ms,
+                error_type="api_fail_or_retry_exhausted",
+                context={"agent_id": agent_id, **(obs_context or {})},
+            )
+            return None
+        choice = completion.choices[0]
+        content = choice.message.content
+        finish_reason = getattr(choice, "finish_reason", None)
+        log_openai_event(
+            operation="chat.completions.generate_response",
+            model=self.config.models.response_generator,
+            ok=True,
+            latency_ms=latency_ms,
+            completion=completion,
+            finish_reason=finish_reason,
+            context={"agent_id": agent_id, **(obs_context or {})},
+        )
+        return content.strip() if isinstance(content, str) else None
 
     def _with_retries(self, call, attempts: int = 2):
         """Run `call`, retrying transient OpenAI errors once with a short backoff.
@@ -141,6 +241,8 @@ class LLMGateway:
         *,
         model: str | None = None,
         temperature: float | None = None,
+        agent_id: str = "unknown",
+        obs_context: dict[str, Any] | None = None,
     ) -> dict | None:
         """Return a parsed JSON object from the model, or None on failure."""
         if not self.is_available:
@@ -160,18 +262,193 @@ class LLMGateway:
             }
             if use_format:
                 kwargs["response_format"] = {"type": "json_object"}
-            completion = self._client.chat.completions.create(**kwargs)
-            content = completion.choices[0].message.content
-            if not isinstance(content, str):
-                return None
-            match = re.search(r"\{.*\}", content, re.DOTALL)
-            return json.loads(match.group(0) if match else content)
+            return self._client.chat.completions.create(**kwargs)
 
         for use_format in (True, False):   # retry without response_format if rejected
-            result = self._with_retries(lambda: _call(use_format))
-            if result is not None:
-                return result
+            started = time.perf_counter()
+            completion = self._with_retries(lambda: _call(use_format))
+            latency_ms = (time.perf_counter() - started) * 1000.0
+            if completion is None:
+                log_openai_event(
+                    operation="chat.completions.complete_json",
+                    model=use_model,
+                    ok=False,
+                    latency_ms=latency_ms,
+                    error_type="api_fail_or_retry_exhausted",
+                    context={
+                        "agent_id": agent_id,
+                        "response_format": "json_object" if use_format else "none",
+                        **(obs_context or {}),
+                    },
+                )
+                continue
+
+            choice = completion.choices[0]
+            content = choice.message.content
+            finish_reason = getattr(choice, "finish_reason", None)
+            if isinstance(content, str):
+                try:
+                    match = re.search(r"\{.*\}", content, re.DOTALL)
+                    parsed = json.loads(match.group(0) if match else content)
+                    log_openai_event(
+                        operation="chat.completions.complete_json",
+                        model=use_model,
+                        ok=True,
+                        latency_ms=latency_ms,
+                        completion=completion,
+                        finish_reason=finish_reason,
+                        context={
+                            "agent_id": agent_id,
+                            "response_format": "json_object" if use_format else "none",
+                            **(obs_context or {}),
+                        },
+                    )
+                    return parsed
+                except Exception:
+                    pass
+            log_openai_event(
+                operation="chat.completions.complete_json",
+                model=use_model,
+                ok=False,
+                latency_ms=latency_ms,
+                completion=completion,
+                finish_reason=finish_reason,
+                error_type="json_parse_failed",
+                context={
+                    "agent_id": agent_id,
+                    "response_format": "json_object" if use_format else "none",
+                    **(obs_context or {}),
+                },
+            )
         return None
+
+    def generate_with_tools(
+        self,
+        messages: list[dict],
+        tools: list[dict],
+        dispatch,
+        *,
+        model: str | None = None,
+        temperature: float | None = None,
+        max_hops: int = 4,
+        agent_id: str = "M_16",
+        obs_context: dict[str, Any] | None = None,
+    ) -> dict | None:
+        """
+        Native OpenAI tool-calling loop. This is the engine of the agentic
+        orchestrator: the model decides which tools to call, we execute them via
+        `dispatch(name, args) -> dict`, feed results back, and repeat until the
+        model returns a plain text reply (or we hit `max_hops`).
+
+        `messages` is mutated in place so the caller keeps the full trace (system,
+        user, assistant tool_calls, tool results) for observability/persistence.
+
+        Returns a dict:
+            {
+              "text":        final assistant text (str),
+              "tool_trace":  [ {name, arguments, result}, ... ],
+              "hops":        number of tool-calling rounds,
+            }
+        or None if the LLM is unavailable / all attempts failed.
+        """
+        if not self.is_available:
+            return None
+
+        use_model = model or self.config.models.response_generator
+        temp = self.config.openai_temperature if temperature is None else temperature
+        tool_trace: list[dict] = []
+
+        for hop in range(max_hops + 1):
+            def _call():
+                kwargs: dict[str, Any] = {
+                    "model": use_model,
+                    "temperature": temp,
+                    "timeout": self.config.openai_timeout_seconds,
+                    "messages": messages,
+                }
+                # On the final allowed hop, force a text answer (no more tools).
+                if hop < max_hops:
+                    kwargs["tools"] = tools
+                    kwargs["tool_choice"] = "auto"
+                return self._client.chat.completions.create(**kwargs)
+
+            started = time.perf_counter()
+            completion = self._with_retries(_call)
+            latency_ms = (time.perf_counter() - started) * 1000.0
+            if completion is None:
+                log_openai_event(
+                    operation="chat.completions.generate_with_tools",
+                    model=use_model,
+                    ok=False,
+                    latency_ms=latency_ms,
+                    hop=hop,
+                    error_type="api_fail_or_retry_exhausted",
+                    context={"agent_id": agent_id, **(obs_context or {})},
+                )
+                log_llm_call(agent_id, "fallback", use_model, False, f"hop={hop} api_fail")
+                return None
+
+            choice = completion.choices[0]
+            msg = choice.message
+            tool_calls = getattr(msg, "tool_calls", None)
+            finish_reason = getattr(choice, "finish_reason", None)
+            tool_names = [tc.function.name for tc in tool_calls] if tool_calls else []
+            log_openai_event(
+                operation="chat.completions.generate_with_tools",
+                model=use_model,
+                ok=True,
+                latency_ms=latency_ms,
+                completion=completion,
+                hop=hop,
+                tool_names=tool_names,
+                finish_reason=finish_reason,
+                context={"agent_id": agent_id, **(obs_context or {})},
+            )
+
+            if not tool_calls:
+                text = msg.content.strip() if isinstance(msg.content, str) else ""
+                log_llm_call(agent_id, "llm", use_model, True,
+                             f"hops={hop} tools={len(tool_trace)}")
+                return {"text": text, "tool_trace": tool_trace, "hops": hop}
+
+            # Record the assistant turn that requested the tools.
+            messages.append({
+                "role": "assistant",
+                "content": msg.content or "",
+                "tool_calls": [
+                    {
+                        "id": tc.id,
+                        "type": "function",
+                        "function": {
+                            "name": tc.function.name,
+                            "arguments": tc.function.arguments,
+                        },
+                    }
+                    for tc in tool_calls
+                ],
+            })
+
+            # Execute each requested tool and feed the result back.
+            for tc in tool_calls:
+                name = tc.function.name
+                try:
+                    args = json.loads(tc.function.arguments or "{}")
+                except json.JSONDecodeError:
+                    args = {}
+                try:
+                    result = dispatch(name, args)
+                except Exception as exc:  # pragma: no cover - defensive
+                    result = {"error": f"tool '{name}' failed: {exc}"}
+                tool_trace.append({"name": name, "arguments": args, "result": result})
+                messages.append({
+                    "role": "tool",
+                    "tool_call_id": tc.id,
+                    "content": json.dumps(result, default=str)[:8000],
+                })
+
+        # Exhausted hops without a final text answer.
+        log_llm_call(agent_id, "fallback", use_model, False, "max_hops_no_text")
+        return {"text": "", "tool_trace": tool_trace, "hops": max_hops}
 
 
 class SarvamGateway:

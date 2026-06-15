@@ -56,6 +56,7 @@ class OrchestratorProcessor(FrameProcessor):
         # The orchestrator turn is fully synchronous and network-bound; run it
         # off the event loop so audio I/O keeps flowing.
         loop = asyncio.get_running_loop()
+        started = loop.time()
         try:
             result = await loop.run_in_executor(
                 None, self._orchestrator.process_message, text
@@ -67,10 +68,12 @@ class OrchestratorProcessor(FrameProcessor):
             )
             return
 
+        elapsed_ms = (loop.time() - started) * 1000.0
         reply = result.get("assistant_text", "") or ""
         schema_language = self._orchestrator.record.schema.language
         logger.info(
-            f"[voice] assistant ({result.get('state')}, lang={schema_language}): {reply}"
+            f"[voice] assistant ({result.get('state')}, lang={schema_language}, "
+            f"{elapsed_ms:.0f}ms): {reply}"
         )
 
         # Match the TTS voice to the language the reply was rendered in.
