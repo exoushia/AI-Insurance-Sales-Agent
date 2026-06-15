@@ -24,7 +24,7 @@ tool result.
 
 ```
 customer turn
-   └─► M_16 Sales Agent (OpenAI tool-calling loop — legacy OR agents_sdk)
+  └─► M_16 Sales Agent (OpenAI Agents SDK tool-calling loop)
           ├─ save_profile ............ store discovered profile fields
           ├─ recommend_products ...... rank the 20-policy suite for this profile
           ├─ explain_product ......... product features / coverage details
@@ -43,19 +43,15 @@ product facts. **M_15 NumericGuardrail** re-checks every figure in the reply aga
 outputs the model was given (advisory). For voice, **M_10 Translator** renders the reply in the
 customer's detected language before **M_11** normalises it.
 
-### Agentic backends
+### Agentic backend
 
-M_16 ships two execution backends, selectable via `AGENTIC_BACKEND`:
+M_16 now runs on the OpenAI Agents SDK (`SalesAgentAgentsSDK`) by default.
+Set `OPENAI_AGENTS_TRACE=1` to emit real traces to the OpenAI Traces UI.
+The `sdk_trace_id` is written to each turn in `logs/conversation_<session_id>.json`
+for cross-reference with the trace entry.
 
-| `AGENTIC_BACKEND` | Implementation | Tracing |
-|---|---|---|
-| `legacy` (default) | Hand-rolled `chat.completions` tool-calling loop (`SalesAgent`) | `logs/llm_calls.log` |
-| `agents_sdk` | OpenAI Agents SDK `Runner` (`SalesAgentAgentsSDK`) | OpenAI Traces UI (set `OPENAI_AGENTS_TRACE=1`) |
-
-Both backends use the same 7 tools, the same guardrail, and return the same `AgentResult` contract, so they are drop-in interchangeable. The `sdk_trace_id` returned by the agents_sdk backend is written to each turn in `logs/conversation_<session_id>.json` for cross-reference with the OpenAI Traces UI.
-
-- **Run (text, legacy):** `ORCHESTRATION_MODE=agentic python demo_agentic.py`
-- **Run (text, SDK + traces):** `ORCHESTRATION_MODE=agentic AGENTIC_BACKEND=agents_sdk OPENAI_AGENTS_TRACE=1 python demo_agentic.py`
+- **Run (text):** `ORCHESTRATION_MODE=agentic python demo_agentic.py`
+- **Run (text + traces):** `ORCHESTRATION_MODE=agentic OPENAI_AGENTS_TRACE=1 python demo_agentic.py`
 - **Run (voice):** `ORCHESTRATION_MODE=agentic ./run_demo.sh` → browser UI at `localhost:7860`
 
 ### Fallback: deterministic FSM
@@ -112,8 +108,7 @@ FSM uses when the LLM is unavailable. Each has exactly one responsibility.
 | **M_13** | Analytics Logger | **Agentic + FSM** | Logs every turn to `logs/conversation_<session_id>.json` | Captures user message, reply, intent, tool sequence/trace, agents fired, schema snapshot |
 | **M_14** | WhatsApp Agent | **Agentic + FSM** | Sends purchase confirmation via Twilio WhatsApp sandbox | Fired on the `finalize_purchase` turn (agentic) or M_03 handoff (FSM); reads `Account_SID` / `Auth_token` / `DEMO_WA_NUMBER`; always logs to `logs/wa_outbox.json` even if the send fails |
 | **M_15** | Numeric Guardrail | **Agentic + FSM** | Re-checks every number in the reply against the tool outputs the model was given | Flags ungrounded figures (advisory; doesn't block) |
-| **M_16** | Sales Agent | **Agentic** | OpenAI tool-calling orchestrator — drives discovery, recommendation, objection handling, and close via 7 tools | Native tool-calling (`AGENTIC_BACKEND=legacy`, default); tools reuse the shared retrieval implementations; falls back to FSM on error |
-| **M_16_agents_sdk** | Sales Agent (Agents SDK) | **Agentic** | Same 7-tool contract as M_16, executed via the OpenAI Agents SDK `Runner` (`AGENTIC_BACKEND=agents_sdk`) | Emits real OpenAI Traces (`OPENAI_AGENTS_TRACE=1`); identical guardrail and retrieval logic; `sdk_trace_id` written to analytics log |
+| **M_16** | Sales Agent (Agents SDK) | **Agentic** | OpenAI Agents SDK tool-calling orchestrator — drives discovery, recommendation, objection handling, and close via 7 tools | Emits real OpenAI Traces (`OPENAI_AGENTS_TRACE=1`); tools reuse shared retrieval implementations; falls back to FSM on error |
 
 ### The 7 agentic tools (M_16)
 All wrap the same retrieval code in `retrieval_tools.py` / the product registry — one source of truth:
@@ -190,7 +185,7 @@ I use **Sarvam APIs** for voice I/O and **Pipecat** for the real-time pipeline:
 
 **LLM & Embeddings:**
 - OpenAI (gpt-4.1-mini for the agentic orchestrator; gpt-4.1-mini/nano for sub-agents; text-embedding-3-small for vectors)
-- openai-agents 0.17.5 (OpenAI Agents SDK — `AGENTIC_BACKEND=agents_sdk` backend, real OpenAI Traces)
+- openai-agents 0.17.5 (OpenAI Agents SDK backend, real OpenAI Traces)
 - Sarvam APIs (Saaras v3 STT, Bulbul v3 TTS, Translate)
 
 **Voice & Real-time:**
@@ -209,7 +204,7 @@ I use **Sarvam APIs** for voice I/O and **Pipecat** for the real-time pipeline:
 **Dependencies:** See `requirements.txt`.
 
 **Tests:**
-- `tests/test_sales_agent_backend_parity.py` — runs all 6 demo scenarios against both backends (`legacy` and `agents_sdk`), asserts purchase outcome, required tool presence, and product/plan parity. Run with `ORCHESTRATION_MODE=agentic python tests/test_sales_agent_backend_parity.py`. Scope to one backend via `AGENTIC_BACKEND=legacy|agents_sdk`, one scenario via `PARITY_SCENARIO=<name>`.
+- `tests/test_sales_agent_backend_parity.py` — historical migration check that compares legacy and SDK behavior. Keep for reference while old parity logs exist; for current runtime validation, run agentic demos and analytics directly.
 
 **Analytics:**
 - `tools/session_analytics.py` — post-session trace analyser. Reads `logs/openai_events.jsonl` and `logs/conversation_<session>.json` and renders three charts into `logs/analytics_<session>.png`:
@@ -274,16 +269,16 @@ SARVAM_API_KEY=your_key_here
 
 4. Run the agentic pipeline:
 ```bash
-# text demos (legacy backend)
+# text demos
 ORCHESTRATION_MODE=agentic python demo_agentic.py
 
-# text demos with OpenAI Agents SDK backend + traces
-ORCHESTRATION_MODE=agentic AGENTIC_BACKEND=agents_sdk OPENAI_AGENTS_TRACE=1 python demo_agentic.py
+# text demos with OpenAI Traces
+ORCHESTRATION_MODE=agentic OPENAI_AGENTS_TRACE=1 python demo_agentic.py
 
 # voice (browser UI at localhost:7860)
 ORCHESTRATION_MODE=agentic ./run_demo.sh
 
-# backend parity test (both backends, all 6 scenarios)
+# optional historical parity test from migration phase
 ORCHESTRATION_MODE=agentic python tests/test_sales_agent_backend_parity.py
 ```
 
