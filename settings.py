@@ -94,6 +94,12 @@ class AppConfig:
     #   "fsm"     → deterministic finite-state-machine orchestrator (default, safe).
     #   "agentic" → LLM native tool-calling orchestrator (M_16), FSM as fallback.
     orchestration_mode: str = _env_str("ORCHESTRATION_MODE", "fsm")
+    # Which M_16 implementation to use when orchestration_mode=agentic:
+    #   "agents_sdk" → openai-agents Runner — emits real OpenAI Traces.
+    agentic_backend: str = _env_str("AGENTIC_BACKEND", "agents_sdk")
+    # When agentic_backend=agents_sdk, send traces to the OpenAI Traces UI.
+    # Set OPENAI_AGENTS_TRACE=1 to enable (requires OPENAI_API_KEY).
+    agents_sdk_tracing: bool = _env_bool("OPENAI_AGENTS_TRACE", False)
     models: ModelCatalog = ModelCatalog()
 
     @property

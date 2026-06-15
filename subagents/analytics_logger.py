@@ -86,6 +86,12 @@ class AnalyticsLogger:
         tool_trace = ctx.payload.get("tool_trace")
         if tool_trace:
             turn["tool_trace"] = tool_trace
+        # Trace correlation: when the agents_sdk backend is active and tracing is
+        # enabled, the SDK trace id is stored here so the conversation log can be
+        # cross-referenced with the OpenAI Traces UI (platform.openai.com/traces).
+        sdk_trace_id = ctx.payload.get("sdk_trace_id")
+        if sdk_trace_id:
+            turn["sdk_trace_id"] = sdk_trace_id
         doc["turns"].append(turn)
         doc["final_state"] = ctx.record.state.value
         doc["schema_snapshot"] = schema.to_analytics_record()

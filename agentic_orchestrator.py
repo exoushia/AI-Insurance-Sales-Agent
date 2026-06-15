@@ -46,9 +46,11 @@ class AgenticOrchestrator:
         self.record = ConversationRecord.new(session_id=self.session_id)
         self.llm = LLMGateway(self.config)
         self.sarvam = SarvamGateway(self.config)
+        # M_16 now routes through the openai-agents implementation.
         self._sales = AGENT_REGISTRY[AgentID.SALES_AGENT]
         self._queue = AGENT_REGISTRY[AgentID.RESPONSE_QUEUE]
         self._analytics = AGENT_REGISTRY[AgentID.ANALYTICS_LOGGER]
+        self._whatsapp = AGENT_REGISTRY[AgentID.WHATSAPP]
         self._fallback: ConversationOrchestrator | None = None
 
     # ── public contract ────────────────────────────────────────────────────
@@ -96,6 +98,19 @@ class AgenticOrchestrator:
 
         agents_fired = [AgentID.SALES_AGENT, AgentID.RESPONSE_QUEUE, AgentID.ANALYTICS_LOGGER]
 
+        # Fire M_14 on the turn where finalize_purchase is called — same
+        # behaviour as the FSM path (M_03 → M_14). Guard on tool_sequence so
+        # it fires exactly once (not on subsequent turns after purchase).
+        wa_status: str | None = None
+        if rec.schema.purchased and "finalize_purchase" in tool_sequence:
+            wa_result = self._whatsapp.run(ctx)
+            wa_status = wa_result.meta.get("delivery_status")
+            agents_fired.append(AgentID.WHATSAPP)
+
+        # Trace correlation: carry sdk_trace_id through to the analytics log and
+        # the return dict so it can be matched to the OpenAI Traces UI entry.
+        sdk_trace_id = result.meta.get("sdk_trace_id")
+
         # Persist the turn via M_13 (the only agent that writes the conversation
         # log) so intent + tool sequence land in logs/conversation_<session>.json.
         ctx.intent = intent
@@ -104,8 +119,11 @@ class AgenticOrchestrator:
         ctx.payload["agents_fired"] = list(agents_fired)
         ctx.payload["tool_trace"] = tool_trace
         ctx.payload["tool_sequence"] = tool_sequence
+        if sdk_trace_id:
+            ctx.payload["sdk_trace_id"] = sdk_trace_id
         self._analytics.run(ctx)
 
+        backend = result.meta.get("backend", "agents_sdk")
         return {
             "session_id": self.session_id,
             "state": rec.state.value,
@@ -120,9 +138,14 @@ class AgenticOrchestrator:
             "language": rec.schema.language or "english",
             "llm_enabled": self.llm.is_available,
             "orchestration_mode": "agentic",
+            "agentic_backend": backend,
             "tool_trace": result.meta.get("tool_trace", []),
             "guardrail_ok": result.meta.get("guardrail_ok", True),
             "messages": rec.messages[-6:],
+            # Present only when agentic_backend=agents_sdk + OPENAI_AGENTS_TRACE=1.
+            "sdk_trace_id": sdk_trace_id,
+            # Present only on the finalize_purchase turn.
+            "wa_status": wa_status,
         }
 
     # ── helpers ─────────────────────────────────────────────────────────────

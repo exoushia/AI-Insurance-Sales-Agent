@@ -1,6 +1,6 @@
 # Swasthya AI Insurance Sales Agent
 
-**What I built:** A voice-first, multilingual health insurance sales conversational agent that discovers customer needs, recommends policies from a 20-product suite, answers grounded questions, handles price objections with real treatment-cost data, and closes sales — in English, Hindi, or Hinglish. On a confirmed purchase it records the sale and (in the FSM closure path) sends a thank-you WhatsApp note.
+**What I built:** A voice-first, multilingual health insurance sales conversational agent that discovers customer needs, recommends policies from a 20-product suite, answers grounded questions, handles price objections with real treatment-cost data, and closes sales — in English, Hindi, or Hinglish. On a confirmed purchase it records the sale and sends a thank-you WhatsApp confirmation via Twilio.
 
 ---
 
@@ -11,7 +11,7 @@ I am a sales agent, not an FAQ bot. My job is to:
 - **Recommend** the best-fit policy from Swasthya's suite via algorithmic filtering on the discovered profile.
 - **Ground everything** in real data: product features, plan tiers/premiums, treatment costs, IRDAI regulations — and never invent a number.
 - **Handle objections** (price, waiting periods) with empathy and evidence, then pivot to close.
-- **Close** by confirming product + plan tier, recording the purchase, and (on the FSM closure path) sending a WhatsApp confirmation.
+- **Close** by confirming product + plan tier, recording the purchase, and sending a WhatsApp confirmation.
 - **Speak naturally** in the customer's language (text or voice) and keep replies short and spoken-friendly.
 - **Escalate to a human** whenever the customer turns frustrated or asks for one, reassuring them their issue will be handled.
 
@@ -24,7 +24,7 @@ tool result.
 
 ```
 customer turn
-   └─► M_16 Sales Agent (OpenAI tool-calling loop)
+   └─► M_16 Sales Agent (OpenAI tool-calling loop — legacy OR agents_sdk)
           ├─ save_profile ............ store discovered profile fields
           ├─ recommend_products ...... rank the 20-policy suite for this profile
           ├─ explain_product ......... product features / coverage details
@@ -34,6 +34,7 @@ customer turn
           └─ finalize_purchase ....... record the sale once product + plan are confirmed
    └─► M_11 Response Queue ........... normalise the reply for voice (numbers, acronyms, length)
    └─► M_13 Analytics Logger ......... persist the turn (intent, tool sequence, schema snapshot)
+   └─► M_14 WhatsApp Agent ........... send purchase confirmation (on finalize_purchase turn only)
 ```
 
 All seven tools wrap the **same retrieval implementations** used everywhere else
@@ -42,7 +43,19 @@ product facts. **M_15 NumericGuardrail** re-checks every figure in the reply aga
 outputs the model was given (advisory). For voice, **M_10 Translator** renders the reply in the
 customer's detected language before **M_11** normalises it.
 
-- **Run (text):** `ORCHESTRATION_MODE=agentic python demo_agentic.py`
+### Agentic backends
+
+M_16 ships two execution backends, selectable via `AGENTIC_BACKEND`:
+
+| `AGENTIC_BACKEND` | Implementation | Tracing |
+|---|---|---|
+| `legacy` (default) | Hand-rolled `chat.completions` tool-calling loop (`SalesAgent`) | `logs/llm_calls.log` |
+| `agents_sdk` | OpenAI Agents SDK `Runner` (`SalesAgentAgentsSDK`) | OpenAI Traces UI (set `OPENAI_AGENTS_TRACE=1`) |
+
+Both backends use the same 7 tools, the same guardrail, and return the same `AgentResult` contract, so they are drop-in interchangeable. The `sdk_trace_id` returned by the agents_sdk backend is written to each turn in `logs/conversation_<session_id>.json` for cross-reference with the OpenAI Traces UI.
+
+- **Run (text, legacy):** `ORCHESTRATION_MODE=agentic python demo_agentic.py`
+- **Run (text, SDK + traces):** `ORCHESTRATION_MODE=agentic AGENTIC_BACKEND=agents_sdk OPENAI_AGENTS_TRACE=1 python demo_agentic.py`
 - **Run (voice):** `ORCHESTRATION_MODE=agentic ./run_demo.sh` → browser UI at `localhost:7860`
 
 ### Fallback: deterministic FSM
@@ -51,7 +64,7 @@ or the tool loop errors, the orchestrator transparently hands off to the FSM (`f
 sharing the same conversation record and retrieval tools so product data stays consistent. The
 FSM can also be forced (`ORCHESTRATION_MODE=fsm python main.py`) for fully deterministic,
 auditable runs. It adds a few fallback-only agents — probing (M_05), templated policy summaries
-(M_07), policy QA routing (M_08), and the WhatsApp purchase notification (M_14).
+(M_07), and policy QA routing (M_08).
 
 ---
 
@@ -84,22 +97,23 @@ FSM uses when the LLM is unavailable. Each has exactly one responsibility.
 
 | ID | Name | Used in | What it does | Guarantees |
 |----|------|---------|---|---|
-| **M_16** | Sales Agent | **Agentic** | OpenAI tool-calling orchestrator — drives discovery, recommendation, objection handling, and close via 7 tools | Native tool-calling; tools reuse the shared retrieval implementations; falls back to FSM on error |
-| **M_11** | Response Queue | **Agentic + FSM** | Assembles and normalises the final spoken text | ₹ → "rupees", acronyms → spaced letters (IRDAI → "I R D A I"), Indian-format digit grouping (300000 → "3,00,000"), strips markup, caps at 2,500 chars on a sentence boundary |
-| **M_13** | Analytics Logger | **Agentic + FSM** | Logs every turn to `logs/conversation_<session_id>.json` | Captures user message, reply, intent, tool sequence/trace, agents fired, schema snapshot |
-| **M_10** | Translator | **Agentic + FSM** | Renders replies in the customer's detected language (English / Hindi / Hinglish) | Sarvam API; Hinglish stays code-mixed; deterministic passthrough if no key |
-| **M_15** | Numeric Guardrail | **Agentic + FSM** | Re-checks every number in the reply against the tool outputs the model was given | Flags ungrounded figures (advisory; doesn't block) |
 | **M_01** | Intent Classifier | **Agentic + FSM** | OpenAI intent + confidence classification | Safety-critical intents (UNSAFE, WANT_HUMAN, FRUSTRATED) are always validated deterministically; LLM is advisory only |
-| **M_06** | Policy Retrieval | **Agentic + FSM** | Algorithmic ranking behind the `recommend_products` / `show_plan_options` tools: filters the 20 products by profile, scores by SI preference + budget fit + family size | Returns top candidates + recommended tier; relaxes preference filters (keeping eligibility gates) when nothing matches exactly, so the agent never loops |
-| **M_09** | Agentic RAG | **Agentic + FSM** | Vector search behind `answer_general_question` (regulations) and `explain_product` (policy wording) | Top-6 retrieval; dedupes; LLM synthesises; M_15 guardrail; deterministic fallback |
-| **M_05** | Probing Agent | FSM fallback | Asks the next discovery question from missing fields | Glossary-aligned templates; max 8 discovery turns |
-| **M_04** | Schema Extractor | FSM fallback | Regex + LLM pass to extract missing profile fields | Validates against the attribute glossary enum; deterministic pass first (agentic uses the `save_profile` tool instead) |
-| **M_07** | Policy Summary | FSM fallback | Templated spoken summary of the recommended product + tiers | M_15 guardrail on all numbers; deterministic template if guardrail fails |
-| **M_08** | Policy QA | FSM fallback | Routes product questions to policy wording, then RAG | Confident-clause check first; otherwise hands to M_09 |
-| **M_14** | WhatsApp Agent | FSM fallback | Sends purchase confirmation via Twilio WhatsApp sandbox | Reads `TWILIO_*` / `DEMO_WA_NUMBER`; always logs the attempt even if the send fails |
 | **M_02** | Escalation | FSM fallback | Canned escalation messages (want_human / frustrated) | Terminal; hands off to M_03 |
 | **M_03** | Closure | FSM fallback | Canned closure messages; hands off to M_14 if purchased | Terminal |
+| **M_04** | Schema Extractor | FSM fallback | Regex + LLM pass to extract missing profile fields | Validates against the attribute glossary enum; deterministic pass first (agentic uses the `save_profile` tool instead) |
+| **M_05** | Probing Agent | FSM fallback | Asks the next discovery question from missing fields | Glossary-aligned templates; max 8 discovery turns |
+| **M_06** | Policy Retrieval | **Agentic + FSM** | Algorithmic ranking behind the `recommend_products` / `show_plan_options` tools: filters the 20 products by profile, scores by SI preference + budget fit + family size | Returns top candidates + recommended tier; relaxes preference filters (keeping eligibility gates) when nothing matches exactly, so the agent never loops |
+| **M_07** | Policy Summary | FSM fallback | Templated spoken summary of the recommended product + tiers | M_15 guardrail on all numbers; deterministic template if guardrail fails |
+| **M_08** | Policy QA | FSM fallback | Routes product questions to policy wording, then RAG | Confident-clause check first; otherwise hands to M_09 |
+| **M_09** | Agentic RAG | **Agentic + FSM** | Vector search behind `answer_general_question` (regulations) and `explain_product` (policy wording) | Top-6 retrieval; dedupes; LLM synthesises; M_15 guardrail; deterministic fallback |
+| **M_10** | Translator | **Agentic + FSM** | Renders replies in the customer's detected language (English / Hindi / Hinglish) | Sarvam API; Hinglish stays code-mixed; deterministic passthrough if no key |
+| **M_11** | Response Queue | **Agentic + FSM** | Assembles and normalises the final spoken text | ₹ → "rupees", acronyms → spaced letters (IRDAI → "I R D A I"), Indian-format digit grouping (300000 → "3,00,000"), strips markup, caps at 2,500 chars on a sentence boundary |
 | **M_12** | Response Validator | FSM fallback | Checks the reply is safe and grounded | Blocks denylisted over-promise phrases |
+| **M_13** | Analytics Logger | **Agentic + FSM** | Logs every turn to `logs/conversation_<session_id>.json` | Captures user message, reply, intent, tool sequence/trace, agents fired, schema snapshot |
+| **M_14** | WhatsApp Agent | **Agentic + FSM** | Sends purchase confirmation via Twilio WhatsApp sandbox | Fired on the `finalize_purchase` turn (agentic) or M_03 handoff (FSM); reads `Account_SID` / `Auth_token` / `DEMO_WA_NUMBER`; always logs to `logs/wa_outbox.json` even if the send fails |
+| **M_15** | Numeric Guardrail | **Agentic + FSM** | Re-checks every number in the reply against the tool outputs the model was given | Flags ungrounded figures (advisory; doesn't block) |
+| **M_16** | Sales Agent | **Agentic** | OpenAI tool-calling orchestrator — drives discovery, recommendation, objection handling, and close via 7 tools | Native tool-calling (`AGENTIC_BACKEND=legacy`, default); tools reuse the shared retrieval implementations; falls back to FSM on error |
+| **M_16_agents_sdk** | Sales Agent (Agents SDK) | **Agentic** | Same 7-tool contract as M_16, executed via the OpenAI Agents SDK `Runner` (`AGENTIC_BACKEND=agents_sdk`) | Emits real OpenAI Traces (`OPENAI_AGENTS_TRACE=1`); identical guardrail and retrieval logic; `sdk_trace_id` written to analytics log |
 
 ### The 7 agentic tools (M_16)
 All wrap the same retrieval code in `retrieval_tools.py` / the product registry — one source of truth:
@@ -176,6 +190,7 @@ I use **Sarvam APIs** for voice I/O and **Pipecat** for the real-time pipeline:
 
 **LLM & Embeddings:**
 - OpenAI (gpt-4.1-mini for the agentic orchestrator; gpt-4.1-mini/nano for sub-agents; text-embedding-3-small for vectors)
+- openai-agents 0.17.5 (OpenAI Agents SDK — `AGENTIC_BACKEND=agents_sdk` backend, real OpenAI Traces)
 - Sarvam APIs (Saaras v3 STT, Bulbul v3 TTS, Translate)
 
 **Voice & Real-time:**
@@ -193,27 +208,36 @@ I use **Sarvam APIs** for voice I/O and **Pipecat** for the real-time pipeline:
 
 **Dependencies:** See `requirements.txt`.
 
+**Tests:**
+- `tests/test_sales_agent_backend_parity.py` — runs all 6 demo scenarios against both backends (`legacy` and `agents_sdk`), asserts purchase outcome, required tool presence, and product/plan parity. Run with `ORCHESTRATION_MODE=agentic python tests/test_sales_agent_backend_parity.py`. Scope to one backend via `AGENTIC_BACKEND=legacy|agents_sdk`, one scenario via `PARITY_SCENARIO=<name>`.
+
+**Analytics:**
+- `tools/session_analytics.py` — post-session trace analyser. Reads `logs/openai_events.jsonl` and `logs/conversation_<session>.json` and renders three charts into `logs/analytics_<session>.png`:
+  - **Chart 1** — Tokens per sub-agent (prompt + completion stacked bar).
+  - **Chart 2** — LLM latency per sub-agent (avg ms per call) + per-turn wall-clock latency.
+  - **Chart 3** — Conversation flow: each turn's user intent (colour-coded) alongside every tool called / agent fired.
+
+  ```bash
+  # latest session
+  python tools/session_analytics.py
+  # specific session + open window
+  python tools/session_analytics.py --session demo_price_anxiety --show
+  ```
+
 ---
 
 ## Limitations & Forward Tasks
 
 **Current constraints (by design):**
-- **No streaming TTS:** Each reply waits for full synthesis before audio plays. Next: Sarvam streaming API.
-- **Single session mode:** One customer at a time per voice server instance. Next: Concurrent call handling + pooling.
-- **Hinglish only on code-mix:** Not a full Hindi native app; Hinglish is code-mixed English-Hindi. Next: Full Hindi intent classification + entity extraction if demand grows.
-- **WhatsApp on the fallback path:** The confirmation WhatsApp note is currently sent from the FSM closure (M_14); the agentic pipeline records the purchase but does not yet fire it. Next: wire `finalize_purchase` to M_14 directly.
+- **No streaming TTS:** Each reply waits for full synthesis before audio plays.
+- **Single session mode:** One customer at a time per voice server instance.
+- **Hinglish only on code-mix:** Not a full Hindi native app; Hinglish is code-mixed English-Hindi.
+- **Sarvam STT prompt not supported:** `saaras:v3` does not accept a custom STT prompt parameter; the Pipecat 1.3.0 `SarvamSTTService` would raise `ValueError` if one is passed.
+- **No pronunciation dictionary in Pipecat 1.3.0:** `SarvamTTSSettings` does not expose a `pronunciation_dict_id` field in the installed version; acronym pronunciation is handled instead by M_11's text normalization (IRDAI → "I R D A I").
 
 **Known minor issues (not blocking):**
 - M_15 guardrail sometimes flags inline plan-tier option numbers (false positive, advisory only).
-- finalize_purchase plan_id map is heuristic (substring match on label); mismatches are logged but don't fail the purchase.
-
-**Next priorities:**
-1. **Record and analyze** real voice demos (price_anxiety + hinglish) for latency and quality.
-2. **Wire WhatsApp into the agentic close** so the confirmation note fires without the FSM path.
-3. **Implement streaming TTS** to cut end-to-end latency in half.
-4. **Profiling:** Measure per-turn breakdown (STT, LLM, TTS, orchestrator) and optimize slowest path.
-5. **Sarvam pronunciation dictionary:** Once exposed through Pipecat, add custom acronym pronunciations (IRDAI, NCB, PED, etc.).
-6. **Closer tie-in with Sarvam sales team:** Integrate real policy pricing, underwriting rules, and live premium quotes from Sarvam's platform APIs.
+- `finalize_purchase` plan_id resolution is heuristic (substring match on label); mismatches are logged but don't block the purchase record.
 
 ---
 
@@ -250,10 +274,17 @@ SARVAM_API_KEY=your_key_here
 
 4. Run the agentic pipeline:
 ```bash
-# text demos
+# text demos (legacy backend)
 ORCHESTRATION_MODE=agentic python demo_agentic.py
+
+# text demos with OpenAI Agents SDK backend + traces
+ORCHESTRATION_MODE=agentic AGENTIC_BACKEND=agents_sdk OPENAI_AGENTS_TRACE=1 python demo_agentic.py
+
 # voice (browser UI at localhost:7860)
 ORCHESTRATION_MODE=agentic ./run_demo.sh
+
+# backend parity test (both backends, all 6 scenarios)
+ORCHESTRATION_MODE=agentic python tests/test_sales_agent_backend_parity.py
 ```
 
 ### Centralized Model Selection

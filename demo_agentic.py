@@ -37,6 +37,7 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+from datetime import datetime
 
 from dotenv import load_dotenv
 
@@ -93,11 +94,14 @@ SCENARIOS: dict[str, list[str]] = {
 }
 
 
-def run_scenario(name: str, turns: list[str], debug: bool = False) -> None:
+def run_scenario(name: str, turns: list[str], run_tag: str, debug: bool = False) -> None:
     print("=" * 70)
     print(f"SCENARIO: {name}")
     print("=" * 70)
-    orch = AgenticOrchestrator(session_id=f"demo_{name}", config=AppConfig())
+    # Include a per-run suffix so repeated demos don't collide in openai_events.jsonl.
+    session_id = f"demo_{name}_{run_tag}"
+    orch = AgenticOrchestrator(session_id=session_id, config=AppConfig())
+    print(f"[session_id={session_id}]")
     print(f"[llm_enabled={orch.llm.is_available} "
           f"mode={orch.config.orchestration_mode}]\n")
     if not orch.llm.is_available:
@@ -139,9 +143,12 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    # One tag per invocation keeps all scenarios in this run correlated,
+    # while still separating this run from previous runs.
+    run_tag = datetime.now().strftime("%Y%m%d_%H%M%S")
     names = list(SCENARIOS) if args.scenario == "all" else [args.scenario]
     for name in names:
-        run_scenario(name, SCENARIOS[name], debug=args.debug)
+        run_scenario(name, SCENARIOS[name], run_tag, debug=args.debug)
         print()
     return 0
 

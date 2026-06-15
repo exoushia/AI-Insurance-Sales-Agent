@@ -35,7 +35,7 @@ from .response_validator import ResponseValidator
 from .analytics_logger import AnalyticsLogger
 from .whatsapp import WhatsAppAgent
 from .guardrails import NumericGuardrail
-from .sales_agent import SalesAgent
+from .sales_agent_agents_sdk import SalesAgentAgentsSDK
 
 # Single source of truth: agent id → singleton instance.
 AGENT_REGISTRY: dict[str, object] = {
@@ -54,7 +54,10 @@ AGENT_REGISTRY: dict[str, object] = {
     AgentID.ANALYTICS_LOGGER:   AnalyticsLogger(),
     AgentID.WHATSAPP:           WhatsAppAgent(),
     AgentID.NUMERIC_GUARDRAIL:  NumericGuardrail(),
-    AgentID.SALES_AGENT:        SalesAgent(),
+    # M_16 now uses openai-agents as the primary implementation.
+    AgentID.SALES_AGENT:        SalesAgentAgentsSDK(),
+    # Backward-compatible alias for older backend-selection code paths.
+    "M_16_agents_sdk":         SalesAgentAgentsSDK(),
 }
 
 
@@ -72,5 +75,5 @@ __all__ = [
     "IntentClassifier", "EscalationAgent", "ClosureAgent", "SchemaExtractor",
     "ProbingAgent", "PolicyRetrievalAgent", "PolicySummaryAgent", "PolicyQAAgent",
     "AgenticRAGAgent", "TranslatorAgent", "ResponseQueue", "ResponseValidator",
-    "AnalyticsLogger", "WhatsAppAgent", "NumericGuardrail", "SalesAgent",
+    "AnalyticsLogger", "WhatsAppAgent", "NumericGuardrail", "SalesAgentAgentsSDK",
 ]
