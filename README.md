@@ -1,5 +1,9 @@
 # Swasthya AI Insurance Sales Agent
 
+Video walkthrough of the architecture : https://drive.google.com/file/d/15SuntDuTjuN7K-Bl5P8V_BDTeAZDszG0/view?usp=sharing
+Demo 1: https://drive.google.com/file/d/1S2VXazfHXp5NFaaCMZarcZxNxblLC83G/view?usp=sharing
+Demo 2: https://drive.google.com/file/d/19p5UfnTSThwMfvBA7uMelhvGTUMomtbg/view?usp=sharing
+
 **What I built:** A voice-first, multilingual health insurance sales conversational agent that discovers customer needs, recommends policies from a 20-product suite, answers grounded questions, handles price objections with real treatment-cost data, and closes sales — in English, Hindi, or Hinglish. On a confirmed purchase it records the sale and sends a thank-you WhatsApp confirmation via Twilio.
 
 ---
