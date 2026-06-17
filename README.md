@@ -10,15 +10,15 @@ Demo 1: https://drive.google.com/file/d/1S2VXazfHXp5NFaaCMZarcZxNxblLC83G/view?u
 
 Demo 2: https://drive.google.com/file/d/19p5UfnTSThwMfvBA7uMelhvGTUMomtbg/view?usp=sharing
 
-**What I built:** A voice-first, multilingual health insurance sales conversational agent that discovers customer needs, recommends policies from a 20-product suite, answers grounded questions, handles price objections with real treatment-cost data, and closes sales — in English, Hindi, or Hinglish. On a confirmed purchase it records the sale and sends a thank-you WhatsApp confirmation via Twilio.
+**What I built:** A voice-first, multilingual health insurance sales conversational agent that discovers customer needs, recommends policies from a 20-product (dummy created for this project) suite, answers grounded questions about a specific policy or health insurance in general, recommends most suitable policies, handles price objections with real treatment-cost data, and escalates any conversation to human if the user is frustrated — in English, Hindi, or Hinglish. On a confirmed purchase it records the sale and sends a thank-you WhatsApp confirmation via Twilio.
 
 ---
 
-## Overview — What I Do
+## Overview
 
-I am a sales agent, not an FAQ bot. My job is to:
-- **Discover** the customer's needs in a minimal number of turns (age, who's covered, primary need, budget).
-- **Recommend** the best-fit policy from Swasthya's suite via algorithmic filtering on the discovered profile.
+The sales agent:
+- **Discover** the customer's needs in a minimal number of turns (age, who's covered, primary need, budget). It is restricted to recommend before knowing "minimum attributes" of a user, defined in the user schema.
+- **Recommend** the best-fit policy from Swasthya's suite via algorithmic filtering on the discovered profile. The LLM never decides which policy to sell, it extracts the NER from user's natural language into a structured format that is used to update specific attributes in the User schema, call a deterministic function to hard filter + soft-score the 20 policies and extract the best one.  
 - **Ground everything** in real data: product features, plan tiers/premiums, treatment costs, IRDAI regulations — and never invent a number.
 - **Handle objections** (price, waiting periods) with empathy and evidence, then pivot to close.
 - **Close** by confirming product + plan tier, recording the purchase, and sending a WhatsApp confirmation.
@@ -74,7 +74,7 @@ auditable runs. It adds a few fallback-only agents — probing (M_05), templated
 
 ---
 
-## User Intents — How I Classify What the Customer Wants
+## User Intents — How to classify what the customer wants
 
 Each turn is classified into one intent (deterministic safety check first, LLM advisory second).
 The agentic pipeline uses this for routing emphasis, analytics, and the safety-critical exits
@@ -96,7 +96,7 @@ The agentic pipeline uses this for routing emphasis, analytics, and the safety-c
 
 ---
 
-## Sub-Agents — The Specialists
+## Sub-agents — the Specialists
 
 The agentic pipeline runs a small set of specialists; the rest are deterministic fallbacks the
 FSM uses when the LLM is unavailable. Each has exactly one responsibility.
