@@ -26,7 +26,7 @@ I am a sales agent, not an FAQ bot. My job is to:
 - **Escalate to a human** whenever the customer turns frustrated or asks for one, reassuring them their issue will be handled.
 
 ## Architecture — How I Work
-
+![alt text](<tentative worflow.jpeg>)
 The live pipeline is an **agentic LLM orchestrator**: OpenAI native tool-calling drives the
 whole conversation. The model decides, turn by turn, when to discover, recommend, explain,
 price-justify, or close — by calling tools. It never invents facts; every number comes from a
